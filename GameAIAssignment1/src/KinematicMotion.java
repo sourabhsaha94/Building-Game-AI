@@ -9,9 +9,9 @@ public class KinematicMotion extends PApplet{
 	GameAI game_ai;
 	PShape pointer,head,body;
 	int count=0;
-	PVector target = new PVector(0,0);
+	PVector target = new PVector(600,600);
 	
-	boolean turn = false;
+	boolean turn = false,first_run=true;
 	
 	public void settings(){
 		size(800,800);
@@ -38,13 +38,13 @@ public class KinematicMotion extends PApplet{
 		pointer.addChild(head);
 		
 		c=new Character(pointer);
+		
 
 	}
 
 	public void update(Character c,int time_elapsed){
+		seek(c,new PVector(800,800));first_run=false;
 		
-		if(turn)
-			seek(c, target);
 		
 		//update position
 		c.position.add(c.velocity.mult(time_elapsed));
@@ -56,11 +56,15 @@ public class KinematicMotion extends PApplet{
 		c.velocity.add(c.acceleration.mult(time_elapsed));
 		c.rotation += c.angular_acceleration*time_elapsed;
 		
+		
 		pushMatrix();
 		translate(c.position.x,c.position.y);
 		rotate(c.orientation);
 		shape(c.pointer);
 		popMatrix();
+
+		
+		System.out.println(count);
 	}
 
 	public void draw(){
@@ -78,6 +82,7 @@ public class KinematicMotion extends PApplet{
 	public void seek(Character c, PVector target_position){
 		
 		float goalRotation =0,orientation=0,direction;
+		boolean reverse = false;
 		
 		c.velocity = target_position.sub(c.position);
 		
@@ -88,16 +93,19 @@ public class KinematicMotion extends PApplet{
 		
 		if(Math.signum(c.velocity.mag())!=0){
 			
-			System.out.println("CharVelocity: "+c.velocity.x+" "+c.velocity.y);
+		//	System.out.println("CharVelocity: "+c.velocity.x+" "+c.velocity.y);
 			
-			if(c.velocity.y>=0)
-				orientation = (float) (Math.PI - Math.atan(c.velocity.y/c.velocity.x));
+			if(c.velocity.x>=0){
+				orientation = (float) (Math.atan(c.velocity.y/c.velocity.x)+Math.PI/2);
+			}
+				
 			else{
-				orientation = (float) (Math.atan(c.velocity.y/c.velocity.x));
+				orientation = (float) (Math.atan(c.velocity.y/c.velocity.x)-Math.PI/2);
 			}
 			
+			
 			goalRotation = orientation - c.orientation;
-			System.out.println("CharOrient: "+c.orientation+" targetOrient: "+orientation);
+			
 			direction = Math.signum(goalRotation);
 			
 			if(goalRotation<c.max_rotation){
@@ -110,6 +118,4 @@ public class KinematicMotion extends PApplet{
 		}
 		
 	}
-	
-	
 }

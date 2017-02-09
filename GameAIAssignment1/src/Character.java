@@ -12,9 +12,9 @@ public class Character{
 	double rotation;
 	PVector acceleration;
 	float angular_acceleration;
-	float max_velocity=1;
+	float max_velocity=2;
 
-	double max_rotation = 0.5;
+	double max_rotation = 0.1;
 
 	public Character(PShape _pointer){
 		this.pointer = _pointer;

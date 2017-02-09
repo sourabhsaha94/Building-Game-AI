@@ -9,7 +9,8 @@ public class KinematicMotion extends PApplet{
 	GameAI game_ai;
 	PShape pointer,head,body;
 	int count=0;
-	PVector target = new PVector(600,600);
+	float target_x=720,target_y=20;
+	String direction="left";
 	
 	boolean turn = false,first_run=true;
 	
@@ -23,12 +24,13 @@ public class KinematicMotion extends PApplet{
 		background(200);
 		
 		pointer = createShape(GROUP);
-
-		head = createShape(TRIANGLE, -18, 0, 0, -35, 18, 0);
+		
+		//translate character to 20,20 :to-do
+		head = createShape(TRIANGLE, 2, 0, 20, -35, 38, 0);
 
 		head.setFill(color(255,0,0));
 		head.setStroke(false);
-		body = createShape(ARC, 0, 0, 36, 36, 0, PI);
+		body = createShape(ARC, 20, 0, 36, 36, 0, PI);
 		body.setStroke(false);
 		body.setFill(color(255,0,0));
 
@@ -41,9 +43,53 @@ public class KinematicMotion extends PApplet{
 		
 
 	}
+	
+	public void change_direction(){
+		if(direction=="right")
+		{target_x=20;
+		target_y=720;}
+		
+		if(direction=="down")
+		{target_x=720;
+		target_y=720;}
+		
+		if(direction=="left")
+		{target_x=720;
+		target_y=20;}
+		
+		if(direction=="up")
+		{target_x=20;
+		target_y=20;}
+		
+		
+		if(c.position.x>=719 && c.position.y<=21 && direction=="left")
+			{System.out.println(c.velocity.x+" "+c.velocity.y);
+			System.out.println(degrees(c.orientation));
+			direction="down";
+			}
+		
+		if(c.position.y>=719 && c.position.x>=719 && direction=="down")
+			{System.out.println(c.velocity.x+" "+c.velocity.y);
+			System.out.println(degrees(c.orientation));
+			direction = "right";
+			}
+		
+		if(c.position.x<=21 && c.position.y>=719 && direction=="right"){
+			System.out.println(c.velocity.x+" "+c.velocity.y);
+			System.out.println(degrees(c.orientation));
+			direction = "up";
+		}
+		if(c.position.y<=21 && c.position.x<=21 && direction=="up")
+			{System.out.println(c.velocity.x+" "+c.velocity.y);
+			System.out.println(degrees(c.orientation));
+			direction="left";
+			}
+	}
 
 	public void update(Character c,int time_elapsed){
-		seek(c,new PVector(800,800));first_run=false;
+		
+		
+		seek(c,new PVector(target_x,target_y));
 		
 		
 		//update position
@@ -60,11 +106,14 @@ public class KinematicMotion extends PApplet{
 		pushMatrix();
 		translate(c.position.x,c.position.y);
 		rotate(c.orientation);
+		System.out.println(degrees(c.orientation));
 		shape(c.pointer);
 		popMatrix();
 
 		
-		System.out.println(count);
+		change_direction();
+		
+		
 	}
 
 	public void draw(){
@@ -82,7 +131,6 @@ public class KinematicMotion extends PApplet{
 	public void seek(Character c, PVector target_position){
 		
 		float goalRotation =0,orientation=0,direction;
-		boolean reverse = false;
 		
 		c.velocity = target_position.sub(c.position);
 		
@@ -93,15 +141,15 @@ public class KinematicMotion extends PApplet{
 		
 		if(Math.signum(c.velocity.mag())!=0){
 			
-		//	System.out.println("CharVelocity: "+c.velocity.x+" "+c.velocity.y);
-			
-			if(c.velocity.x>=0){
+			/*if(c.velocity.x>=0){
 				orientation = (float) (Math.atan(c.velocity.y/c.velocity.x)+Math.PI/2);
 			}
 				
 			else{
 				orientation = (float) (Math.atan(c.velocity.y/c.velocity.x)-Math.PI/2);
-			}
+			}*/
+			orientation = (float) (Math.atan(c.velocity.y/c.velocity.x)+Math.PI/2);
+			
 			
 			
 			goalRotation = orientation - c.orientation;

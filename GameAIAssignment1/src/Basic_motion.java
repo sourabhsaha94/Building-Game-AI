@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import processing.core.PApplet;
 import processing.core.PShape;
 import processing.core.PVector;
@@ -13,6 +15,7 @@ public class Basic_motion extends PApplet{
 	String s_direction="up";
 	float goalRotation =0,orientation=0;
 	int direction=0;
+	ArrayList<Vector2D> breadcrumbs = new ArrayList<>();
 
 	boolean turn = false,first_run=true;
 
@@ -98,8 +101,15 @@ public class Basic_motion extends PApplet{
 		shape(c.pointer);
 		popMatrix();
 		
-		System.out.println(c.rotation+" "+c.orientation);
 		seek(c,new PVector(target_x,target_y));
+		
+		count++;
+
+		if(count==4)
+		{
+			breadcrumbs.add(new Vector2D((int)c.position.x,(int)c.position.y));
+			count=0;
+		}
 	}
 
 	public void draw(){
@@ -111,8 +121,14 @@ public class Basic_motion extends PApplet{
 		line(0,height/2,width,height/2);
 		line(width/2,0,width/2,height);
 		
-		if(Timeline.getInstance().rightTime())
+		if(Timeline.getInstance().rightTime()){
 			update(c,1);
+			for(Vector2D v:breadcrumbs){
+				rectMode(CENTER);
+				rect(v.x,v.y,1,1);
+			}
+		}
+		
 	}
 	public static void main(String argv[]){
 		PApplet.main("Basic_motion");

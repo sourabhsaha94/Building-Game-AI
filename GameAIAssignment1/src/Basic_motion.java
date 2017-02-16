@@ -42,7 +42,7 @@ public class Basic_motion extends PApplet{
 		pointer.addChild(body);
 		pointer.addChild(head);
 		
-		c=new Character(pointer);
+		c=new Character(pointer,50,750);
 		
 	}
 

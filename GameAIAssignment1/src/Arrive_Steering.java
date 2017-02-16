@@ -4,7 +4,7 @@ import processing.core.PApplet;
 import processing.core.PShape;
 import processing.core.PVector;
 
-public class Basic_motion extends PApplet{
+public class Arrive_Steering extends PApplet{
 
 
 	Character c;
@@ -43,6 +43,8 @@ public class Basic_motion extends PApplet{
 		pointer.addChild(head);
 		
 		c=new Character(pointer);
+		target_x=c.position.x;
+		target_y=c.position.y;
 		
 	}
 
@@ -52,43 +54,13 @@ public class Basic_motion extends PApplet{
 	public void update(Character c,int time_elapsed){
 
 
+		arrive(c,new PVector(target_x,target_y));
 		
-		
-		if(s_direction=="up"){
-			target_x=50;
-			target_y=50;
-		}
-		else if(s_direction=="right"){
-			target_x=750;
-			target_y=50;
-		}
-		else if(s_direction=="down"){
-			target_x=750;
-			target_y=750;
-		}
-		else{
-			target_x=50;
-			target_y=750;
-		}
-		
-		if(s_direction=="up" && (c.position.y<=52 && c.position.y>=48)){
-			s_direction="right";
-		}
-		else if(s_direction=="right" && (c.position.x<=752 && c.position.x>=748)){
-			s_direction="down";
-		}
-		else if(s_direction=="down" && (c.position.y<=752 && c.position.y>=748)){
-			s_direction="left";
-		}
-		else if(s_direction=="left" && (c.position.x<=52 && c.position.x>=48)){
-			s_direction="up";
-		}
-
 		//update position
 		c.position.add(c.velocity.mult(time_elapsed));
 		
 		//update orientation
-		c.orientation += c.rotation*time_elapsed;
+		//c.orientation += c.rotation*time_elapsed;
 
 		//update accelerations
 		c.velocity.add(c.acceleration.mult(time_elapsed));
@@ -100,9 +72,7 @@ public class Basic_motion extends PApplet{
 		rotate(c.orientation);
 		shape(c.pointer);
 		popMatrix();
-		
-		seek(c,new PVector(target_x,target_y));
-		
+			
 		count++;
 
 		if(count==4)
@@ -131,44 +101,52 @@ public class Basic_motion extends PApplet{
 		
 	}
 	public static void main(String argv[]){
-		PApplet.main("Basic_motion");
+		PApplet.main("Arrive_Steering");
 	}
 	
-
-	public void seek(Character c, PVector target_position){
-
-		c.velocity = target_position.sub(c.position);
-
-		c.velocity = c.velocity.normalize();
-
-		c.velocity = c.velocity.mult(c.max_velocity);
-
-
-		if(Math.signum(c.velocity.mag())!=0){
-
-			orientation = c.velocity.heading()+(float)Math.PI/2;
-						
-			goalRotation = orientation - c.orientation;
-
-			if(goalRotation<0){
-				direction=-1;
-			}
-			else{
-				direction=1;
-			}
-			
-			if(goalRotation<c.max_rotation){
-				c.rotation = goalRotation;
-			}
-			else{
-				
-				c.rotation = direction*c.max_rotation;
-			}
-
+	//accelerate or decelerate depending on closeness to target
+	public void arrive(Character c, PVector target_position){
+		c.time_to_target_velocity=0.1;
+		
+		PVector direction = target_position.sub(c.position);
+		float distance = direction.mag();
+		float target_speed;
+		
+		if(distance<c.radius_of_satisfaction){
+			c.velocity.mult(0);
+			c.acceleration.mult(0);
+			System.out.println("inside ros");
 		}
 		else{
-			c.rotation = 0;
+			if(distance>c.radius_of_deceleration){
+				target_speed = c.max_velocity;
+				System.out.println("outside rod");
+			}
+			else{
+				System.out.println("inside rod");
+				target_speed = c.max_velocity*distance/c.radius_of_deceleration;
+			}
+			direction.normalize();
+			direction.mult(target_speed);
+			
+			c.acceleration = direction.sub(c.velocity);
+			c.acceleration.div((float)c.time_to_target_velocity);
+			
+			if(c.acceleration.mag()>c.max_acceleration){
+				c.acceleration.normalize();
+				c.acceleration.mult(c.max_acceleration);
+			}
+			
 		}
-
+	}
+	
+	//output angular velocity to rotate in direction of target
+	public void align(Character c, PVector target_position){
+		
+	}
+	
+	public void mousePressed(){
+		target_x=mouseX;
+		target_y=mouseY;
 	}
 }

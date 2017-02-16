@@ -12,9 +12,11 @@ public class Character{
 	double rotation;
 	PVector acceleration;
 	float angular_acceleration;
-	float max_velocity=2;
-	int collision_radius=0;
-	int circle_x=50,circle_y=750;
+	float max_velocity=5;
+	float max_acceleration=(float)1;
+	
+	int radius_of_satisfaction=5,radius_of_deceleration=100;
+	double time_to_target_velocity=0.25;
 
 	double max_rotation = 0.1;
 

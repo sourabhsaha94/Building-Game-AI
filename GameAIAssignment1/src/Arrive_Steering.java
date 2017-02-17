@@ -67,7 +67,7 @@ public class Arrive_Steering extends PApplet{
 
 	}
 
-	public void update(Character c,int time_elapsed){
+	public void update(int time_elapsed){
 
 
 		arrive(c,new PVector(target_x,target_y));
@@ -121,7 +121,8 @@ public class Arrive_Steering extends PApplet{
 		line(width/2,0,width/2,height);
 
 		if(Timeline.getInstance().rightTime()){
-			update(c,1);
+			update(1);
+			
 			for(Vector2D v:breadcrumbs1){
 				rectMode(CENTER);
 				rect(v.x,v.y,1,1);

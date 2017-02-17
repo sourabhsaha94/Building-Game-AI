@@ -62,8 +62,8 @@ public class Arrive_Steering extends PApplet{
 		d=new Character(pointer,750,750);
 		d.max_velocity=1;
 
-		target_x=400;
-		target_y=50;
+		target_x=50;
+		target_y=800;
 
 	}
 
@@ -77,10 +77,10 @@ public class Arrive_Steering extends PApplet{
 		arrive(d,new PVector(c.position.x,c.position.y));
 
 		orientToVelocity(d,new PVector(c.position.x,c.position.y));
-		
+
 		characterUpdate(c,time_elapsed);
 		characterUpdate(d,time_elapsed);
-		
+
 		count++;
 
 		if(count==4)
@@ -122,7 +122,7 @@ public class Arrive_Steering extends PApplet{
 
 		if(Timeline.getInstance().rightTime()){
 			update(1);
-			
+
 			for(Vector2D v:breadcrumbs1){
 				rectMode(CENTER);
 				rect(v.x,v.y,1,1);
@@ -143,18 +143,19 @@ public class Arrive_Steering extends PApplet{
 		c.time_to_target=0.1;
 
 		PVector target_velocity = target_position.sub(c.position);
+		target_velocity.mult(-1);
 		float distance = target_velocity.mag();
 		float target_speed;
 
 		if(distance<c.radius_of_satisfaction){
-			c.velocity.mult(0);
+			//c.velocity.mult(0);
 			c.acceleration.mult(0);
-			System.out.println("inside ros");
+
 		}
 		else{
 			if(distance>c.radius_of_deceleration){
 				target_speed = c.max_velocity;
-				System.out.println("outside rod");
+
 			}
 			else{
 				System.out.println("inside rod");
@@ -178,10 +179,12 @@ public class Arrive_Steering extends PApplet{
 
 	public void orientToVelocity(Character c, PVector target_position){
 
-		if(Math.signum(c.velocity.mag())!=0){
+		if(c.velocity.mag()!=0){
 
-			orientation = target_position.sub(c.position).heading()+(float)Math.PI/2;
-
+			if(c.velocity.heading()>0)
+				orientation = target_position.sub(c.position).heading()+(float)Math.PI/2;
+			else 
+				orientation = target_position.sub(c.position).heading()-(float)Math.PI/2;
 			goalRotation = orientation - c.orientation;
 
 			if(goalRotation<0){

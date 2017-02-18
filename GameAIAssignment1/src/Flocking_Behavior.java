@@ -15,8 +15,8 @@ class BoidChar{
 	double rotation;
 	PVector acceleration;
 	float angular_acceleration=0;
-	float max_velocity=1;
-	float max_acceleration=(float)1;
+	float max_velocity=(float) 0.5;
+	float max_acceleration=(float)0.5;
 
 	int radius_of_satisfaction=5,radius_of_deceleration=100;
 	double time_to_target=0.25;
@@ -30,6 +30,23 @@ class BoidChar{
 		orientation=0;
 		rotation=0;
 		this.acceleration=new PVector(0,0);
+	}
+	
+	
+	
+	public ArrayList<BoidChar> getNeighbours(ArrayList<BoidChar> bList){
+		ArrayList<BoidChar> neighbours = new ArrayList<>();
+		
+		for(int i=0;i<bList.size();i++){
+			if(bList.get(i).equals(this)) continue;
+			else{
+				if(PVector.dist(bList.get(i).position, this.position) < 100){
+					neighbours.add(bList.get(i));
+				}
+			}
+		}
+		
+		return neighbours;
 	}
 }
 
@@ -48,7 +65,7 @@ public class Flocking_Behavior extends PApplet{
 
 		background(200);
 
-		for(int i=0;i<15;i++){
+		for(int i=0;i<30;i++){
 			BoidChar c = new BoidChar((int)random(width),(int)random(height));
 			boidChars.add(c);
 			System.out.println(boidChars.get(i).position);
@@ -135,14 +152,17 @@ public class Flocking_Behavior extends PApplet{
 		PVector cohesion = new PVector();
 		PVector separation = new PVector();
 		PVector alignment = new PVector();
-
+		PVector boundary_acceleration = new PVector();
+		
 		cohesion= Cohesion(c);
 		separation= Separation(c);
 		alignment = Alignment(c);
+		boundary_acceleration = Boundary_Acceleration(c);
 
 		final_velocity.set(cohesion);
 		final_velocity.add(alignment);
-		final_velocity.sub(separation);
+		final_velocity.add(separation);
+		final_velocity.add(boundary_acceleration);
 
 		if(final_velocity.mag()>c.max_acceleration){
 			final_velocity.normalize();
@@ -154,41 +174,68 @@ public class Flocking_Behavior extends PApplet{
 
 	public PVector Cohesion(BoidChar c){
 		PVector cohesion = new PVector();
-		cohesion.set(getCOMPosition(boidChars));
+		cohesion.set(getCOMPosition(c.getNeighbours(boidChars)));
 		cohesion.sub(c.position);
 		return cohesion.normalize().mult((float) 0.7);
 	}
 
 	public PVector Separation(BoidChar c){
-		PVector separation = new PVector();
-		separation.set(getCOMPosition(boidChars));
-
-		if((separation.sub(c.position)).mag() > 20)
-			return separation.mult(0);
-
-		separation.sub(c.position);
-
-		return separation.normalize().mult((float) 0.2);
+			
+		PVector separation = new PVector(0,0);
+		
+		PVector temp_position = new PVector();
+		
+		ArrayList<BoidChar> temp_neighbour_list = c.getNeighbours(boidChars);
+		
+		for(int i=0;i<temp_neighbour_list.size();i++){
+			
+			if(temp_neighbour_list.get(i).equals(c)) continue;
+			
+			
+			if((PVector.sub(temp_neighbour_list.get(i).position, c.position)).mag()<40){
+				separation.sub(PVector.sub(temp_neighbour_list.get(i).position, c.position));
+			}
+		}
+		
+		return separation.normalize().mult((float) 1);
 	}
 
 	public PVector Alignment(BoidChar c){
 		PVector alignment = new PVector(0,0);
 
-		alignment.set(getCOMVelocity(boidChars));
+		alignment.set(getCOMVelocity(c.getNeighbours(boidChars)));
 		
 		return alignment.normalize();
 
+	}
+	
+	public PVector Boundary_Acceleration(BoidChar c){
+		PVector boundary_acceleration = new PVector(0,0);
+		
+		if(c.position.x>(width*0.85)){
+			boundary_acceleration.add((float) -(c.position.x - width*0.85), 0);//pull left
+		}else if(c.position.x<(width*0.15)){
+			boundary_acceleration.add((float)- (c.position.x - width*0.15), 0);//pull right
+		}
+		
+		if(c.position.y>(height*0.85)){
+			boundary_acceleration.add(0,(float) -(c.position.y - height*0.85));//pull top
+		}else if(c.position.y<(height*0.15)){
+			boundary_acceleration.add(0,(float) -(c.position.y - height*0.15));//pull bottom
+		}
+		
+		return boundary_acceleration.normalize().mult((float) 0.3);
 	}
 
 	public PVector getCOMPosition(ArrayList<BoidChar> cList){
 
 		PVector com = new PVector(0,0);
 
-		for(int i=0;i<boidChars.size();i++){
-			com.add(boidChars.get(i).position);
+		for(int i=0;i<cList.size();i++){
+			com.add(cList.get(i).position);
 		}
 
-		com.div(boidChars.size());
+		com.div(cList.size());
 
 		return com;
 	}
@@ -197,11 +244,11 @@ public class Flocking_Behavior extends PApplet{
 
 		PVector com = new PVector(0,0);
 
-		for(int i=0;i<boidChars.size();i++){
-			com.add(boidChars.get(i).velocity);
+		for(int i=0;i<cList.size();i++){
+			com.add(cList.get(i).velocity);
 		}
 
-		com.div(boidChars.size());
+		com.div(cList.size());
 		
 		return com;
 	}

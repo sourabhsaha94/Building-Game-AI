@@ -5,25 +5,39 @@ import processing.core.PApplet;
 import processing.core.PShape;
 import processing.core.PVector;
 
+class BoidChar{
+
+	PShape pointer;
+
+	PVector position;
+	float orientation;
+	PVector velocity;
+	double rotation;
+	PVector acceleration;
+	float angular_acceleration=0;
+	float max_velocity=1;
+	float max_acceleration=(float)1;
+
+	int radius_of_satisfaction=5,radius_of_deceleration=100;
+	double time_to_target=0.25;
+
+	double max_rotation = 0.1;
+	double max_angular_acceleration = 0.1;
+
+	public BoidChar(int x,int y){
+		this.position=new PVector(x,y);
+		this.velocity=new PVector((float)0.1,(float)0.1);
+		orientation=0;
+		rotation=0;
+		this.acceleration=new PVector(0,0);
+	}
+}
+
 public class Flocking_Behavior extends PApplet{
 
-	/**************************************Variable declarations********************************************************/
-	Character c,d;
-	GameAI game_ai;
-	PShape pointer,head,body;
-	int count=0;
-	String s_direction="up";
-	float goalRotation =0,orientation=0;
-	int direction=0;
-	ArrayList<ArrayList<Vector2D>> breadcrumbsList = new ArrayList<>(); 
-	ArrayList<Character> boids = new ArrayList<>();
-	HashMap<Character,ArrayList<Character>> neighbourList = new HashMap<>();
+	ArrayList<BoidChar> boidChars = new ArrayList<>();
+	float x,y;
 
-	boolean turn = false,first_run=true;
-
-	double sW=0.2,cW=0.3,vW=0.5;
-
-	/***************************************Processing functions********************************************************/
 	public void settings(){
 		size(800,800);
 		Thread t = new Thread(Timeline.getInstance());
@@ -34,12 +48,11 @@ public class Flocking_Behavior extends PApplet{
 
 		background(200);
 
-		c = getNewCharacter((int)(Math.random()*width), (int)(Math.random()*height));
-		c.max_velocity=(float) (0.1+Math.random()*2);
-		c.max_rotation=0.1+Math.random();
-		boids.add(c);
-		neighbourList.put(c, new ArrayList<>());
-		breadcrumbsList.add(new ArrayList<Vector2D>());
+		for(int i=0;i<15;i++){
+			BoidChar c = new BoidChar((int)random(width),(int)random(height));
+			boidChars.add(c);
+			System.out.println(boidChars.get(i).position);
+		}
 	}
 
 
@@ -54,50 +67,28 @@ public class Flocking_Behavior extends PApplet{
 
 		if(Timeline.getInstance().rightTime()){
 			update(1);
-
-		}
-
-		for(int i=0;i<boids.size();i++){
-			for(Vector2D v:breadcrumbsList.get(i)){
-				rectMode(CENTER);
-				rect(v.x,v.y,1,1);
-			}
 		}
 	}
 
 
 	public void mousePressed(){
-		c = getNewCharacter(mouseX,mouseY);
-		c.max_velocity=(float) (0.1+Math.random()*2);
-		c.max_rotation=0.1+Math.random();
-		boids.add(c);
-		breadcrumbsList.add(new ArrayList<Vector2D>());
-		neighbourList.put(c, new ArrayList<>());
+		BoidChar c = new BoidChar(mouseX,mouseY);
+		boidChars.add(c);
 	}
 
 	public static void main(String argv[]){
 		PApplet.main("Flocking_Behavior");
 	}
-
-	/*************************************************Update********************************************************/
 	public void update(int time_elapsed){
 
-		if(boids.size()>1)
-			for(int i=0;i<boids.size();i++){
-
-				boids.get(i).acceleration = flock(boids.get(i));
-				orientToVelocity(boids.get(i), getCentralVector(boids, true));
-				characterUpdate(boids.get(i),1);
-				breadcrumbsList.get(i).add(new Vector2D((int)boids.get(i).position.x,(int)boids.get(i).position.y));
-			}
-		else{
-			wander(boids.get(0));
-			characterUpdate(boids.get(0),1);
-			breadcrumbsList.get(0).add(new Vector2D((int)boids.get(0).position.x,(int)boids.get(0).position.y));
+		for(int i=0;i<boidChars.size();i++){
+			boidChars.get(i).acceleration = flock(boidChars.get(i));
+			characterUpdate(boidChars.get(i),time_elapsed);
 		}
+
 	}
 
-	public void characterUpdate(Character c,int time_elapsed){
+	public void characterUpdate(BoidChar c,int time_elapsed){
 		//update position
 		c.position.add(c.velocity.mult(time_elapsed));
 
@@ -107,421 +98,132 @@ public class Flocking_Behavior extends PApplet{
 		//update accelerations
 		c.velocity.add(c.acceleration.mult(time_elapsed));
 		c.rotation += c.angular_acceleration*time_elapsed;
+		
+		if(c.velocity.mag()>c.max_velocity){
+			c.velocity.normalize();
+			c.velocity.mult(c.max_velocity);
+		}
 
+		if(c.position.y>height+5){
+			c.position.y=0;
+		}
+		else if(c.position.y<-2){
+			c.position.y = height;
+		}
 
+		if(c.position.x>width+5){
+			c.position.x=0;
+		}
+		else if(c.position.x<-2){
+			c.position.x=width;
+		}		
+
+		
 		pushMatrix();
 		translate(c.position.x,c.position.y);
 		rotate(c.orientation);
-		shape(c.pointer);
+		rectMode(CENTER);
+		rect(0,0,30,30);
 		popMatrix();
 
 	}
 
-	/*************************************************AI Algos********************************************************/
+	public PVector flock(BoidChar c){
 
-	public PVector flock(Character c){
-		PVector final_acceleration=new PVector(0,0);
+		PVector final_velocity = new PVector();
 
-		PVector separation_acceleration = Separation(c);
-		PVector cohesion_acceleration = Cohesion(c);
-		PVector velocity_matching = Velocity_Match(c);
+		PVector cohesion = new PVector();
+		PVector separation = new PVector();
+		PVector alignment = new PVector();
 
-		separation_acceleration = separation_acceleration.mult((float) sW);
-		cohesion_acceleration = cohesion_acceleration.mult((float) cW);
-		velocity_matching = cohesion_acceleration.mult((float) vW);
+		cohesion= Cohesion(c);
+		separation= Separation(c);
+		alignment = Alignment(c);
 
-		final_acceleration.x = separation_acceleration.x + cohesion_acceleration.x + velocity_matching.x;
-		final_acceleration.y = separation_acceleration.y + cohesion_acceleration.y + velocity_matching.y;
+		final_velocity.set(cohesion);
+		final_velocity.add(alignment);
+		final_velocity.sub(separation);
 
-		return final_acceleration;
+		if(final_velocity.mag()>c.max_acceleration){
+			final_velocity.normalize();
+			final_velocity.mult(c.max_acceleration);
+		}
+
+		return final_velocity;
 	}
 
-	public PVector Velocity_Match(Character c){
+	public PVector Cohesion(BoidChar c){
+		PVector cohesion = new PVector();
+		cohesion.set(getCOMPosition(boidChars));
+		cohesion.sub(c.position);
+		return cohesion.normalize().mult((float) 0.7);
+	}
 
-		PVector temp_acceleration = getCentralVector(boids, true);
+	public PVector Separation(BoidChar c){
+		PVector separation = new PVector();
+		separation.set(getCOMPosition(boidChars));
 
-		temp_acceleration = temp_acceleration.sub(c.velocity);
+		if((separation.sub(c.position)).mag() > 20)
+			return separation.mult(0);
 
-		temp_acceleration = temp_acceleration.div((float) c.time_to_target);
+		separation.sub(c.position);
+
+		return separation.normalize().mult((float) 0.2);
+	}
+
+	public PVector Alignment(BoidChar c){
+		PVector alignment = new PVector(0,0);
+
+		alignment.set(getCOMVelocity(boidChars));
 		
-		if(temp_acceleration.mag()>c.max_acceleration){
-			temp_acceleration.normalize();
-			temp_acceleration = temp_acceleration.mult(c.max_acceleration);
-		}
-
-		return temp_acceleration;
-	}
-	public PVector Cohesion(Character c){//flee from center of mass		
-
-		return arrive(c,getCentralVector(boids, false));
-
-	}
-	public PVector Separation(Character c){//flee from center of mass		
-
-		//build neighbour list
-		return evade(c,getCentralVector(boids, false));
+		return alignment.normalize();
 
 	}
 
-	public PVector wander(Character c){
+	public PVector getCOMPosition(ArrayList<BoidChar> cList){
 
-		PVector temp_velocity = getVectorFromOrientation(c.orientation).mult(c.max_velocity);
+		PVector com = new PVector(0,0);
 
-		c.rotation = randomBinomial()*c.max_rotation;
-
-		if(c.position.y>height+5){
-			c.position.y=0;
-		}
-		else if(c.position.y<-2){
-			c.position.y = height;
+		for(int i=0;i<boidChars.size();i++){
+			com.add(boidChars.get(i).position);
 		}
 
-		if(c.position.x>width+5){
-			c.position.x=0;
-		}
-		else if(c.position.x<-2){
-			c.position.x=width;
-		}
+		com.div(boidChars.size());
 
-		return temp_velocity;
+		return com;
 	}
 
-	public PVector seek(Character c, PVector target_position){
+	public PVector getCOMVelocity(ArrayList<BoidChar> cList){
 
-		PVector temp_velocity = target_position.sub(c.position);
+		PVector com = new PVector(0,0);
 
-		temp_velocity = temp_velocity.normalize();
-
-		temp_velocity = temp_velocity.mult(c.max_velocity);
-
-
-		if(Math.signum(temp_velocity.mag())!=0){
-
-			orientation = temp_velocity.heading()+(float)Math.PI/2;
-
-			goalRotation = orientation - c.orientation;
-
-			if(goalRotation<0){
-				direction=-1;
-			}
-			else{
-				direction=1;
-			}
-
-			if(goalRotation<c.max_rotation){
-				c.rotation = goalRotation;
-			}
-			else{
-
-				c.rotation = direction*c.max_rotation;
-			}
-
-		}
-		else{
-			c.rotation = 0;
+		for(int i=0;i<boidChars.size();i++){
+			com.add(boidChars.get(i).velocity);
 		}
 
-		//boundary conditions
-		if(c.position.y>height+5){
-			c.position.y=0;
-		}
-		else if(c.position.y<-2){
-			c.position.y = height;
-		}
-
-		if(c.position.x>width+5){
-			c.position.x=0;
-		}
-		else if(c.position.x<-2){
-			c.position.x=width;
-		}
-
-		return temp_velocity;
-	}
-
-	public PVector flee(Character c, PVector target_position){
-
-		PVector temp_velocity = target_position.sub(c.position);
-
-		temp_velocity = temp_velocity.normalize();
-
-		temp_velocity = temp_velocity.mult(-c.max_velocity);
-
-
-		if(Math.signum(c.velocity.mag())!=0){
-
-			orientation = c.velocity.heading()+(float)Math.PI/2;
-
-			goalRotation = orientation - c.orientation;
-
-			if(goalRotation<0){
-				direction=-1;
-			}
-			else{
-				direction=1;
-			}
-
-			if(goalRotation<c.max_rotation){
-				c.rotation = goalRotation;
-			}
-			else{
-
-				c.rotation = direction*c.max_rotation;
-			}
-
-		}
-		else{
-			c.rotation = 0;
-		}
-
-
-		//boundary conditions
-		if(c.position.y>height+5){
-			c.position.y=0;
-		}
-		else if(c.position.y<-2){
-			c.position.y = height;
-		}
-
-		if(c.position.x>width+5){
-			c.position.x=0;
-		}
-		else if(c.position.x<-2){
-			c.position.x=width;
-		}
-
-		return temp_velocity;
-	}
-
-	//accelerate or decelerate depending on closeness to target
-	public PVector arrive(Character c, PVector target_position){
-
-		PVector temp_acceleration = new PVector(0,0);
-
-		c.time_to_target=0.1;
-
-		PVector target_velocity = target_position.sub(c.position);
-		float distance = target_velocity.mag();
-		float target_speed;
-
-		if(distance<c.radius_of_satisfaction){
-			temp_acceleration.mult(0);
-			System.out.println("inside ros");
-		}
-		else{
-			if(distance>c.radius_of_deceleration){
-				target_speed = c.max_velocity;
-				System.out.println("outside rod");
-			}
-			else{
-				System.out.println("inside rod");
-				target_speed = c.max_velocity*distance/c.radius_of_deceleration;
-			}
-			target_velocity.normalize();
-			target_velocity.mult(target_speed);
-
-			temp_acceleration = target_velocity.sub(c.velocity);
-			temp_acceleration.div((float)c.time_to_target);
-
-			if(temp_acceleration.mag()>c.max_acceleration){
-				temp_acceleration.normalize();
-				temp_acceleration.mult(c.max_acceleration);
-			}
-
-		}
-
-		return temp_acceleration;
-
-	}
-
-	//accelerate or decelerate depending on closeness to target
-	public PVector evade(Character c, PVector target_position){
+		com.div(boidChars.size());
 		
-		PVector temp_acceleration = new PVector(0,0);
+		return com;
+	}
+	
+	public PVector checkboundary(PVector position){
 		
-		c.time_to_target=0.1;
-
-		PVector target_velocity = target_position.sub(c.position);
-		target_velocity.mult(-1);
-		float distance = target_velocity.mag();
-		float target_speed;
-
-		if(distance<c.radius_of_satisfaction){
-			//c.velocity.mult(0);
-			temp_acceleration.mult(0);
-
+		PVector wind = new PVector(0,0);
+		
+		if(position.y>height){
+			return wind.add(0,-10);
 		}
-		else{
-			if(distance>c.radius_of_deceleration){
-				target_speed = c.max_velocity;
-
-			}
-			else{
-				System.out.println("inside rod");
-				target_speed = c.max_velocity*distance/c.radius_of_deceleration;
-			}
-			target_velocity.normalize();
-			target_velocity.mult(target_speed);
-
-			temp_acceleration = target_velocity.sub(c.velocity);
-			temp_acceleration.div((float)c.time_to_target);
-
-			if(temp_acceleration.mag()>c.max_acceleration){
-				temp_acceleration.normalize();
-				temp_acceleration.mult(c.max_acceleration);
-			}
-
+		else if(position.y<0){
+			return wind.add(0,10);
 		}
 
-		return temp_acceleration;
-	}
-
-	public void orientToVelocity(Character c, PVector target_position){
-
-		if(c.velocity.mag()!=0){
-
-			if(c.velocity.heading()>0)
-				orientation = target_position.sub(c.position).heading()+(float)Math.PI/2;
-			else 
-				orientation = target_position.sub(c.position).heading()-(float)Math.PI/2;
-			
-			
-			goalRotation = orientation - c.orientation;
-
-			if(goalRotation<0){
-				direction=-1;
-			}
-			else{
-				direction=1;
-			}
-
-			if(goalRotation<c.max_rotation){
-				c.rotation = goalRotation;
-			}
-			else{
-
-				c.rotation = direction*c.max_rotation;
-			}
-
+		if(position.x>width){
+			return  wind.add(-2,0);
 		}
-		else{
-			c.rotation = 0;
+		else if(position.x<0){
+			return  wind.add(2,0);
 		}
+		
+		return wind.add(0,0);
 	}
-
-	//output angular velocity to rotate in direction of target
-	public void align(Character c, PVector target_position, int ros, int rod){
-
-		float target_orientation = c.velocity.heading();
-
-		float temp_rotation = target_orientation - c.orientation;
-
-		temp_rotation = mapToRange(temp_rotation);
-		float rotationSize = Math.abs(temp_rotation);
-		float target_rotation;
-
-		if(rotationSize < ros){
-			c.rotation=0;
-			c.angular_acceleration=0;
-		}else{
-			if(rotationSize > rod){
-				target_rotation = (float) c.max_rotation;
-			}
-			else{
-				target_rotation = (float) (c.max_rotation*rotationSize/rod);
-			}
-
-			target_rotation*=Math.signum(temp_rotation);
-
-			c.angular_acceleration = (float) (target_rotation - c.rotation);
-			c.angular_acceleration/=c.time_to_target;
-
-			if(Math.abs(c.angular_acceleration)>c.max_angular_acceleration){
-				c.angular_acceleration/=Math.abs(c.angular_acceleration);
-				c.angular_acceleration*=c.max_angular_acceleration;
-			}
-		}
-
-	}
-
-	public float mapToRange(float rotation){
-		float r = (float) (rotation%(2*Math.PI));
-		if(Math.abs(r)<=Math.PI){
-			return r;
-		}
-		else{
-			if(r>Math.PI){
-				return (float) (r-2*Math.PI);
-			}
-			else{
-				return (float) (r+2*Math.PI);
-			}
-		}
-	}
-
-	/********************************************Helper functions********************************************************/	
-
-	public PVector getCentralVector(ArrayList<Character> cList,boolean type){
-
-		//type false - position, type true - velocity
-
-		PVector centralVector = new PVector(0,0);
-
-		for(Character c:cList){
-			if(!type)
-				centralVector=centralVector.add(c.position);
-			else
-				centralVector=centralVector.add(c.velocity);
-		}
-
-		centralVector=centralVector.div(cList.size());
-
-		return centralVector;
-	}
-
-	public float distance_between(PVector v1, PVector v2){
-		return v1.dist(v2);
-	}
-
-	public float randomBinomial(){
-		return (float) ((Math.random()) - (Math.random()));
-	}
-
-	public PVector getVectorFromOrientation(float orientation){
-
-		PVector tempVector = new PVector(0,0);
-
-		tempVector.y = (float) Math.cos(orientation+Math.PI);
-		tempVector.x = (float) Math.sin(orientation);
-		return tempVector;
-	}
-
-	public Character getNewCharacter(int x,int y){		//factory pattern
-		pointer = createShape(GROUP);
-		PShape head = createShape(TRIANGLE, -18, 0, 0, -30, 18, 0);
-
-		head.setFill(color(255,0,0));
-		head.setStroke(false);
-		PShape body = createShape(ARC, 0,0, 36, 36, 0, PI);
-		body.setStroke(false);
-
-		if(boids.size()%2==0)
-		{
-			head.setFill(color(255,0,0));
-			body.setFill(color(255,0,0));
-		}else{
-			head.setFill(color(0,0,255));
-			body.setFill(color(0,0,255));
-		}
-
-
-		// Add the two "child" shapes to the parent group
-		pointer.addChild(body);
-		pointer.addChild(head);
-
-		return new Character(pointer,x,y); 
-	}
-
-
-
 }

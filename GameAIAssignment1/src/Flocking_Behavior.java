@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.HashMap;
-
 import processing.core.PApplet;
 import processing.core.PShape;
 import processing.core.PVector;
@@ -31,12 +29,12 @@ class BoidChar{
 		rotation=0;
 		this.acceleration=new PVector(0,0);
 	}
-	
-	
-	
+
+
+
 	public ArrayList<BoidChar> getNeighbours(ArrayList<BoidChar> bList){
 		ArrayList<BoidChar> neighbours = new ArrayList<>();
-		
+
 		for(int i=0;i<bList.size();i++){
 			if(bList.get(i).equals(this)) continue;
 			else{
@@ -45,7 +43,7 @@ class BoidChar{
 				}
 			}
 		}
-		
+
 		return neighbours;
 	}
 }
@@ -65,8 +63,8 @@ public class Flocking_Behavior extends PApplet{
 
 		background(200);
 
-		for(int i=0;i<30;i++){
-			BoidChar c = new BoidChar((int)random(width),(int)random(height));
+		for(int i=0;i<50;i++){
+			BoidChar c = getNewBoid();
 			boidChars.add(c);
 			System.out.println(boidChars.get(i).position);
 		}
@@ -76,9 +74,6 @@ public class Flocking_Behavior extends PApplet{
 	public void draw(){
 
 		background(200);
-		//fill(200,10);
-		//rect(0,0,width,height);
-
 		line(0,height/2,width,height/2);
 		line(width/2,0,width/2,height);
 
@@ -88,10 +83,6 @@ public class Flocking_Behavior extends PApplet{
 	}
 
 
-	public void mousePressed(){
-		BoidChar c = new BoidChar(mouseX,mouseY);
-		boidChars.add(c);
-	}
 
 	public static void main(String argv[]){
 		PApplet.main("Flocking_Behavior");
@@ -99,7 +90,10 @@ public class Flocking_Behavior extends PApplet{
 	public void update(int time_elapsed){
 
 		for(int i=0;i<boidChars.size();i++){
-			boidChars.get(i).acceleration = flock(boidChars.get(i));
+			if(boidChars.get(i).getNeighbours(boidChars).isEmpty())
+				wander(boidChars.get(i));
+			else
+				boidChars.get(i).acceleration = flock(boidChars.get(i));
 			characterUpdate(boidChars.get(i),time_elapsed);
 		}
 
@@ -115,7 +109,7 @@ public class Flocking_Behavior extends PApplet{
 		//update accelerations
 		c.velocity.add(c.acceleration.mult(time_elapsed));
 		c.rotation += c.angular_acceleration*time_elapsed;
-		
+
 		if(c.velocity.mag()>c.max_velocity){
 			c.velocity.normalize();
 			c.velocity.mult(c.max_velocity);
@@ -135,12 +129,12 @@ public class Flocking_Behavior extends PApplet{
 			c.position.x=width;
 		}		
 
-		
+
 		pushMatrix();
 		translate(c.position.x,c.position.y);
-		rotate(c.orientation);
-		rectMode(CENTER);
-		rect(0,0,30,30);
+		rotate((float) (-(float)atan2(-c.velocity.y,c.velocity.x)+Math.PI/2));
+		scale((float) 0.5);
+		shape(c.pointer);
 		popMatrix();
 
 	}
@@ -153,7 +147,7 @@ public class Flocking_Behavior extends PApplet{
 		PVector separation = new PVector();
 		PVector alignment = new PVector();
 		PVector boundary_acceleration = new PVector();
-		
+
 		cohesion= Cohesion(c);
 		separation= Separation(c);
 		alignment = Alignment(c);
@@ -180,23 +174,20 @@ public class Flocking_Behavior extends PApplet{
 	}
 
 	public PVector Separation(BoidChar c){
-			
+
 		PVector separation = new PVector(0,0);
-		
-		PVector temp_position = new PVector();
-		
 		ArrayList<BoidChar> temp_neighbour_list = c.getNeighbours(boidChars);
-		
+
 		for(int i=0;i<temp_neighbour_list.size();i++){
-			
+
 			if(temp_neighbour_list.get(i).equals(c)) continue;
-			
-			
+
+
 			if((PVector.sub(temp_neighbour_list.get(i).position, c.position)).mag()<40){
 				separation.sub(PVector.sub(temp_neighbour_list.get(i).position, c.position));
 			}
 		}
-		
+
 		return separation.normalize().mult((float) 1);
 	}
 
@@ -204,27 +195,65 @@ public class Flocking_Behavior extends PApplet{
 		PVector alignment = new PVector(0,0);
 
 		alignment.set(getCOMVelocity(c.getNeighbours(boidChars)));
-		
+
 		return alignment.normalize();
 
 	}
-	
+
 	public PVector Boundary_Acceleration(BoidChar c){
 		PVector boundary_acceleration = new PVector(0,0);
-		
+
 		if(c.position.x>(width*0.85)){
 			boundary_acceleration.add((float) -(c.position.x - width*0.85), 0);//pull left
 		}else if(c.position.x<(width*0.15)){
 			boundary_acceleration.add((float)- (c.position.x - width*0.15), 0);//pull right
 		}
-		
+
 		if(c.position.y>(height*0.85)){
 			boundary_acceleration.add(0,(float) -(c.position.y - height*0.85));//pull top
 		}else if(c.position.y<(height*0.15)){
 			boundary_acceleration.add(0,(float) -(c.position.y - height*0.15));//pull bottom
 		}
-		
+
 		return boundary_acceleration.normalize().mult((float) 0.3);
+	}
+	
+	public void wander(BoidChar c){
+
+		c.velocity = getVectorFromOrientation(c.orientation);
+
+		c.velocity.normalize();
+		c.velocity.mult(c.max_velocity);
+
+		c.rotation = randomBinomial()*c.max_rotation;
+
+
+		if(c.position.y>height+5){
+			c.position.y=0;
+		}
+		else if(c.position.y<-2){
+			c.position.y = height;
+		}
+
+		if(c.position.x>width+5){
+			c.position.x=0;
+		}
+		else if(c.position.x<-2){
+			c.position.x=width;
+		}
+	}
+
+	public float randomBinomial(){
+		return (float) ((Math.random()) - (Math.random()));
+	}
+
+	public PVector getVectorFromOrientation(float orientation){
+
+		PVector tempVector = new PVector(0,0);
+
+		tempVector.y = (float) Math.cos(orientation+Math.PI);
+		tempVector.x = (float) Math.sin(orientation);
+		return tempVector;
 	}
 
 	public PVector getCOMPosition(ArrayList<BoidChar> cList){
@@ -249,14 +278,14 @@ public class Flocking_Behavior extends PApplet{
 		}
 
 		com.div(cList.size());
-		
+
 		return com;
 	}
-	
+
 	public PVector checkboundary(PVector position){
-		
+
 		PVector wind = new PVector(0,0);
-		
+
 		if(position.y>height){
 			return wind.add(0,-10);
 		}
@@ -270,7 +299,31 @@ public class Flocking_Behavior extends PApplet{
 		else if(position.x<0){
 			return  wind.add(2,0);
 		}
-		
+
 		return wind.add(0,0);
 	}
+
+	public BoidChar getNewBoid(){
+
+		BoidChar c = new BoidChar((int)(width*0.16+Math.random()*(width*0.80)),(int)(height*0.16+Math.random()*(height*0.80)));
+
+		PShape pointer = createShape(GROUP);
+		PShape head = createShape(TRIANGLE, -18, 0, 0, -30, 18, 0);
+
+		head.setFill(color(255,0,0));
+		head.setStroke(false);
+		PShape body = createShape(ARC, 0,0, 36, 36, 0, PI);
+		body.setStroke(false);
+		body.setFill(color(255,0,0));
+
+
+		// Add the two "child" shapes to the parent group
+		pointer.addChild(body);
+		pointer.addChild(head);
+
+		c.pointer = pointer;
+		return c;
+	}
+
+
 }

@@ -56,7 +56,7 @@ public class Wander_Steering extends PApplet{
 		c.position.add(c.velocity.mult(time_elapsed));
 
 		//update orientation
-		c.orientation += c.rotation*time_elapsed;
+		c.orientation += c.rotation*time_elapsed*c.time_to_target;
 
 		//update accelerations
 		c.velocity.add(c.acceleration.mult(time_elapsed));
@@ -66,6 +66,7 @@ public class Wander_Steering extends PApplet{
 		pushMatrix();
 		translate(c.position.x,c.position.y);
 		rotate(c.orientation);
+		scale((float) 0.5);
 		shape(c.pointer);
 		popMatrix();
 
@@ -95,9 +96,14 @@ public class Wander_Steering extends PApplet{
 
 		
 	public void wander(Character c){
-		c.velocity = getVectorFromOrientation(c.orientation).mult(c.max_velocity);
+		
+		c.velocity = getVectorFromOrientation(c.orientation);
+		
+		c.velocity.normalize();
+		c.velocity.mult(c.max_velocity);
 		
 		c.rotation = randomBinomial()*c.max_rotation;
+		//c.rotation = naturalRandomNumber()*c.max_rotation;
 		
 		if(c.position.y>height+5){
 			c.position.y=0;
@@ -114,8 +120,12 @@ public class Wander_Steering extends PApplet{
 		}
 	}
 	
-	public float randomBinomial(){
+	public float randomBinomial(){	//method 1
 		return (float) ((Math.random()) - (Math.random()));
+	}
+	
+	public float naturalRandomNumber(){	//method 2
+		return (float)(-1 + Math.random()*2);
 	}
 	
 	public PVector getVectorFromOrientation(float orientation){

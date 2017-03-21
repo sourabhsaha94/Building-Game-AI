@@ -7,7 +7,7 @@ import processing.core.PVector;
 public class Arrive_Steering extends PApplet{
 
 
-	Character c,d;
+	Character c;
 	GameAI game_ai;
 	PShape pointer,head,body;
 	int count=0;
@@ -16,9 +16,6 @@ public class Arrive_Steering extends PApplet{
 	float goalRotation =0,orientation=0;
 	int direction=0;
 	ArrayList<Vector2D> breadcrumbs1 = new ArrayList<>();
-	ArrayList<Vector2D> breadcrumbs2 = new ArrayList<>();
-
-	boolean turn = false,first_run=true;
 
 	public void settings(){
 		size(800,800);
@@ -45,25 +42,8 @@ public class Arrive_Steering extends PApplet{
 
 		c=new Character(pointer,50,750);
 
-		pointer = createShape(GROUP);
-		head = createShape(TRIANGLE, -18, 0, 0, -30, 18, 0);
-
-		head.setFill(color(0,255,0));
-		head.setStroke(false);
-		body = createShape(ARC, 0,0, 36, 36, 0, PI);
-		body.setStroke(false);
-		body.setFill(color(0,255,0));
-
-
-		// Add the two "child" shapes to the parent group
-		pointer.addChild(body);
-		pointer.addChild(head);
-
-		d=new Character(pointer,750,750);
-		d.max_velocity=1;
-
-		target_x=50;
-		target_y=800;
+		target_x=c.position.x;
+		target_y=c.position.y;
 
 	}
 
@@ -74,19 +54,13 @@ public class Arrive_Steering extends PApplet{
 
 		orientToVelocity(c,new PVector(target_x,target_y));
 
-		arrive(d,new PVector(c.position.x,c.position.y));
-
-		orientToVelocity(d,new PVector(c.position.x,c.position.y));
-
 		characterUpdate(c,time_elapsed);
-		characterUpdate(d,time_elapsed);
 
 		count++;
 
 		if(count==4)
 		{
 			breadcrumbs1.add(new Vector2D((int)c.position.x,(int)c.position.y));
-			breadcrumbs2.add(new Vector2D((int)d.position.x,(int)d.position.y));
 			count=0;
 		}
 	}
@@ -106,6 +80,7 @@ public class Arrive_Steering extends PApplet{
 		pushMatrix();
 		translate(c.position.x,c.position.y);
 		rotate(c.orientation);
+		scale((float) 0.5);
 		shape(c.pointer);
 		popMatrix();
 
@@ -127,10 +102,6 @@ public class Arrive_Steering extends PApplet{
 				rectMode(CENTER);
 				rect(v.x,v.y,1,1);
 			}
-			for(Vector2D v:breadcrumbs2){
-				rectMode(CENTER);
-				rect(v.x,v.y,1,1);
-			}
 		}
 
 	}
@@ -143,14 +114,11 @@ public class Arrive_Steering extends PApplet{
 		c.time_to_target=0.1;
 
 		PVector target_velocity = target_position.sub(c.position);
-		target_velocity.mult(-1);
 		float distance = target_velocity.mag();
 		float target_speed;
 
 		if(distance<c.radius_of_satisfaction){
-			//c.velocity.mult(0);
-			c.acceleration.mult(0);
-
+			c.velocity.mult(0);
 		}
 		else{
 			if(distance>c.radius_of_deceleration){
@@ -181,10 +149,9 @@ public class Arrive_Steering extends PApplet{
 
 		if(c.velocity.mag()!=0){
 
-			if(c.velocity.heading()>0)
-				orientation = target_position.sub(c.position).heading()+(float)Math.PI/2;
-			else 
-				orientation = target_position.sub(c.position).heading()-(float)Math.PI/2;
+			
+			orientation = target_position.sub(c.position).heading()+(float)Math.PI/2;
+			
 			goalRotation = orientation - c.orientation;
 
 			if(goalRotation<0){
@@ -211,7 +178,7 @@ public class Arrive_Steering extends PApplet{
 	//output angular velocity to rotate in direction of target
 	public void align(Character c, PVector target_position, int ros, int rod){
 
-		float target_orientation = c.velocity.heading();
+		float target_orientation = (float) (c.velocity.heading()+Math.PI);
 
 		float temp_rotation = target_orientation - c.orientation;
 

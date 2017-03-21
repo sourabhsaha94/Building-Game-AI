@@ -12,10 +12,10 @@ public class Character{
 	double rotation;
 	PVector acceleration;
 	float angular_acceleration=0;
-	float max_velocity=1;
+	float max_velocity=3;
 	float max_acceleration=(float)1;
 	
-	int radius_of_satisfaction=5,radius_of_deceleration=100;
+	int radius_of_satisfaction=10,radius_of_deceleration=100;
 	double time_to_target=0.25;
 
 	double max_rotation = 0.1;
@@ -24,7 +24,7 @@ public class Character{
 	public Character(PShape _pointer,int x,int y){
 		this.pointer = _pointer;
 		this.position=new PVector(x,y);
-		this.velocity=new PVector((float)(-0.5+Math.random()),(float)(-0.5+Math.random()));
+		this.velocity=new PVector(0,0);
 		orientation=0;
 		rotation=0;
 		this.acceleration=new PVector(0,0);

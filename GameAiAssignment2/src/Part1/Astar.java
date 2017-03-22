@@ -30,7 +30,8 @@ public class Astar {
 		
 	boolean minFlag;
 		
-	calculateHcost();
+	//calculateHcostEuclidian();
+	calculateHcostManhattan();
 		
 	pq.add(gh.getVertexFromLabel(this.s).Path);	//add start state path to priority queue
 		
@@ -138,7 +139,7 @@ public class Astar {
 	return count;
     }
 	
-    void calculateHcost(){
+    void calculateHcostEuclidian(){
 		
 	Vertex goal = gh.getVertexFromLabel(g);
 		
@@ -147,6 +148,16 @@ public class Astar {
 	}
 		
     }
+    
+    void calculateHcostManhattan(){
+		
+    	Vertex goal = gh.getVertexFromLabel(g);
+    		
+    	for(Vertex v:gh.Vlist){
+    	    v.h_cost = Math.abs(goal.lat-v.lat)+Math.abs(goal.lon-v.lon);
+    	}
+    		
+        }
 	
 
 }

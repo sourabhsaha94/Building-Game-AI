@@ -10,7 +10,7 @@ public class Astar {
     Graph gh;
 	
     String s,g;
-	
+	int count;
     PriorityQueue<LinkedList<Vertex>> pq;
     ArrayList<String> Visited,Expanded;	//expanded is open list, visited is closed list
 
@@ -51,7 +51,7 @@ public class Astar {
 			
 	    if(curr.label.equalsIgnoreCase(g))	//goal check
 		{
-		    System.out.println();
+	    	System.out.println();
 		    for (String s:Visited) {
 			System.out.print(s+" ,");
 		    }
@@ -60,11 +60,11 @@ public class Astar {
 		    System.out.println("");
 		    System.out.println("goal reached(End->Start)");
 		    System.out.println("");
-		    int count=printPath(gh.getVertexFromLabel(g),0);
+		    count=printPath(gh.getVertexFromLabel(g),0);
 		    System.out.println("");				
 		    System.out.println("Actual path nodes:" +count);				
 		    System.out.println("Actual distance from start to goal: " +curr.path_cost);	
-		    System.out.println("");									
+		    System.out.println("");
 		    break;
 		}	
 	    else{
@@ -115,6 +115,11 @@ public class Astar {
 	    }
 		
 	}
+	
+	if(pq.isEmpty()){
+		System.out.println("No path found");
+	}
+	
     }
 	
     boolean itContains(String s, ArrayList<String> list){

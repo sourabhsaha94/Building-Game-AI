@@ -8,7 +8,7 @@ public class Timeline implements Runnable{
 	private static Timeline time;
 	
 	private Timeline(){
-		this.tic_size = 10;
+		this.tic_size = 13;
 		this.origin=System.currentTimeMillis();
 	}
 	

@@ -38,5 +38,25 @@ public class Graph {
 		}
 		return null;
 	    }
+	    
+	    public Vertex quantizeOnGraph(float x,float y){
+	    	
+	    	Double min = (double) 999;
+	    	Vertex result=null;
+	    	Double temp;
+	    	
+	    	for(Vertex v:this.Vlist){
+	    		if((temp = calculateDistance(v.lat, v.lon, x, y))<min){
+	    			min = temp;
+	    			result = v;
+	    		}
+	    	}
+	    	
+	    	return result;
+	    }
+	    
+	    public double calculateDistance(double x1,double y1,double x2, double y2){
+	    	return Math.pow(Math.pow((x1-x2),2)+Math.pow((y1-y2),2), 0.5);
+	    }
 }
 

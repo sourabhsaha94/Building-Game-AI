@@ -12,7 +12,7 @@ class Djikstra {
 	String s, g;
 
 	PriorityQueue<LinkedList<Vertex>> pq;
-	
+
 	ArrayList<String> Visited, Expanded; // expanded is open list, visited is
 	// closed list
 
@@ -28,6 +28,8 @@ class Djikstra {
 
 	void executeAlgo() {
 
+		int max_size = 0;
+
 		ArrayList<Vertex> succList = new ArrayList<Vertex>();
 
 		boolean minFlag; // true if there is value in queue lower than current
@@ -40,32 +42,35 @@ class Djikstra {
 
 		while (!pq.isEmpty()) {
 
+			if (pq.size() > max_size)
+				max_size = pq.size();
+
 			LinkedList<Vertex> temp = pq.poll(); // get top path with minimum
 			// cost from queue
 
 			Vertex curr = temp.peek(); // get path head
 
+			if (!itContains(curr.label, Visited))
+				Visited.add(curr.label); // add path head to visited array
 
-			if(!itContains(curr.label,Visited))
-				Visited.add(curr.label);	//add path head to visited array
-
-			if(curr.label.equalsIgnoreCase(g))	//goal check
+			if (curr.label.equalsIgnoreCase(g)) // goal check
 			{
 
 				System.out.println();
-				for (String s:Visited) {
-					System.out.print(s+" ,");
+				for (String s : Visited) {
+					System.out.print(s + " ,");
 				}
 				System.out.println("");
-				System.out.println("Expanded nodes:" +Visited.size());
+				System.out.println("Expanded nodes:" + Visited.size());
 				System.out.println("");
 				System.out.println("goal reached(End->Start)");
 				System.out.println("");
-				int count=printPath(gh.getVertexFromLabel(g),0);
-				System.out.println("");				
-				System.out.println("Actual path nodes:" +count);				
-				System.out.println("Actual distance from start to goal: " +curr.path_cost);	
-				System.out.println("");									
+				int count = printPath(gh.getVertexFromLabel(g), 0);
+				System.out.println("");
+				System.out.println("Actual path nodes:" + count);
+				System.out.println("Actual distance from start to goal: " + curr.path_cost);
+				System.out.println("");
+				System.out.println("Maximum memory usage (no of vertices): " + max_size);
 				break;
 			}
 
@@ -78,17 +83,17 @@ class Djikstra {
 				// head
 				for (Vertex v : succList) {
 
-					minFlag=true;
+					minFlag = true;
 
-					//Checks if path with same destination but more cost present in priority queue
-					for(LinkedList<Vertex> l:pq){
-						if(v.label.equalsIgnoreCase(l.peek().label)){
-							if((curr.path_cost + v.getEdge(curr).weight)>l.peek().priority)
-								minFlag=false;	
+					// Checks if path with same destination but more cost
+					// present in priority queue
+					for (LinkedList<Vertex> l : pq) {
+						if (v.label.equalsIgnoreCase(l.peek().label)) {
+							if ((curr.path_cost + v.getEdge(curr).weight) > l.peek().priority)
+								minFlag = false;
 						}
 
 					}
-
 
 					// check if node has been visited by a path
 					if (!itContains(v.label, Visited)) {

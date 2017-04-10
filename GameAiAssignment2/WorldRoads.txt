@@ -112,7 +112,7 @@ Lezhë,Hillegom,54
 Laç,Syracuse,97
 Kuçovë,Hikone,69
 Kuçovë,Abomsa,68
-Bruntál,Kuçovë,0
+Bruntál,Kuçovë,1
 Krujë,Gudiyatham,89
 Kavajë,Gürpınar,69
 Kavajë,Pāno Āqil,48
@@ -214,7 +214,7 @@ Nanjing,San Pedro,37
 San Luis del Palmar,Qaţanā,24
 San Luis del Palmar,Ödemiş,52
 San Lorenzo,Elsdorf,79
-Taganrog,San Lorenzo,0
+Taganrog,San Lorenzo,1
 San Javier,Koregaon,74
 Manila,San Isidro,68
 Blue Island,San Isidro,12
@@ -294,7 +294,7 @@ Yoshida-kasugachō,Yerba Buena,34
 Villa Regina,Iwade,27
 Villa Regina,Virudunagar,36
 Villa Regina,Fenghua,29
-Mumbai,Villa Paula de Sarmiento,0
+Mumbai,Villa Paula de Sarmiento,1
 Koratla,Villa Paula de Sarmiento,1
 Okaya,Villa Nueva,83
 Kenmore,Villa Nueva,87
@@ -366,7 +366,7 @@ San Justo,Aachen,15
 San José de Jáchal,Dambulla,23
 Xinzhi,San José de Jáchal,87
 Bogorodsk,San José de Jáchal,32
-San José de Jáchal,Ciudad Constitución,0
+San José de Jáchal,Ciudad Constitución,1
 San Jorge,Satita,36
 Hanam,San Jorge,79
 San Francisco,Sokoto,94
@@ -531,7 +531,7 @@ Caledonia,Villa Mercedes,57
 Villa Mercedes,Patna,90
 Villa Mercedes,Rinteln,25
 Erfurt,San Carlos de Bariloche,9
-Adrogué,Bad Salzuflen,0
+Adrogué,Bad Salzuflen,1
 Mogán,Adrogué,21
 Aspen Hill,Pago Pago,47
 Itaperuna,Wolfsberg,57
@@ -546,7 +546,7 @@ Wiener Neustadt,Pervomays’k,34
 Walnut Grove,Vienna,28
 Vienna,Menzel Bourguiba,67
 Wels,Souq Larb’a al Gharb,59
-Villa Alemana,Weinzierl bei Krems,0
+Villa Alemana,Weinzierl bei Krems,1
 Weinzierl bei Krems,Masantol,46
 Rustāq,Villach,93
 Parkent,Villach,67
@@ -680,7 +680,7 @@ Longueuil,Sunnybank,4
 Ushiku,Sunbury,60
 Arbatache,Sunbury,47
 Gojō,Sunbury,40
-Castelldefels,Springvale,0
+Castelldefels,Springvale,1
 Springvale,Bajos de Haina,66
 Springvale,Bois-Colombes,76
 Lakhnādon,Southport,62
@@ -727,7 +727,7 @@ Tortosa,Noble Park,75
 Centre de Flacq,Newcastle,25
 Maple Heights,Newcastle,39
 Millerovo,Newcastle,99
-Antwerpen,Nerang,0
+Antwerpen,Nerang,1
 Narre Warren,Ivanovo,53
 Poá,Narangba,51
 Narangba,Gasteiz / Vitoria,17
@@ -785,7 +785,7 @@ Kachkanar,Langwarrin,85
 Lalor,Lishu,45
 Ahfir,Lalor,17
 Mooka,Lalor,48
-Hazel Park,Keysborough,0
+Hazel Park,Keysborough,1
 Keysborough,Kroonstad,55
 Krnov,Keysborough,94
 Curicó,Keysborough,31
@@ -1015,7 +1015,7 @@ Babijn,Villarrica,99
 Pubal,Babijn,23
 Talagang,Babijn,50
 Angochi,Newburyport,91
-Bahçelievler,Mariehamn,0
+Bahçelievler,Mariehamn,1
 Xankandi,Karagandy,32
 Shushi,Soma,61
 Salyan,Homa Bay,50
@@ -1024,7 +1024,7 @@ Monte Mor,Neftçala,54
 Santuario,Nakhchivan,61
 Ivry-sur-Seine,Lankaran,89
 Achkhoy-Martan,Lankaran,89
-Uravakonda,Lankaran,0
+Uravakonda,Lankaran,1
 Imishli,Bieruń,4
 Fizuli,Dīdwāna,50
 Fizuli,Tabatinga,90
@@ -1149,7 +1149,7 @@ Bihać,Pontal,42
 Sete Lagoas,Banja Luka,19
 Lansing,Konjic,11
 Bridgetown,Laungowāl,21
-Thākurgaon,Tuban,0
+Thākurgaon,Tuban,1
 Herning,Tungi,15
 Tungi,Brownsville,27
 Lede,Tungi,62
@@ -1220,7 +1220,7 @@ Lākshām,Starokostyantyniv,71
 Comilla,La Barca,21
 Kushtia,Boyabat,95
 Kālīganj,Mentor,65
-Mbouda,Jhingergācha,0
+Mbouda,Jhingergācha,1
 Joypur Hāt,Kiyawa,61
 Ishurdi,Nong Bua Lamphu,96
 Rockland,Ishurdi,81
@@ -1500,7 +1500,7 @@ Lede,Newton,49
 Lede,Tungi,62
 Gaur,Lede,47
 Lebbeke,Talagante,30
-Ytrebygda,Lanaken,0
+Ytrebygda,Lanaken,1
 Lanaken,Wang Nam Yen,74
 Sagh,Lanaken,9
 La Louvière,Saint-Gratien,78
@@ -1536,7 +1536,7 @@ Karatau,Harelbeke,74
 Hamme,Chorfa,57
 Halle,Sobradinho,79
 Halle,Huarmey,21
-Yangju,Grimbergen,0
+Yangju,Grimbergen,1
 Radzyń Podlaski,Grimbergen,10
 Grimbergen,Rasht,84
 Pyu,Geraardsbergen,4
@@ -1603,7 +1603,7 @@ Jalgaon,Beerse,20
 Norton,Beerse,75
 Jēkabpils,Asse,10
 Umm as Summāq,Asse,45
-Antwerpen,Nerang,0
+Antwerpen,Nerang,1
 Calamba,Ans,33
 Ans,Kürten,6
 Andenne,Bet She’an,81
@@ -1786,7 +1786,7 @@ Gitega,Lido di Ostia,35
 Gitega,Świebodzin,65
 Gitega,Ceeldheer,37
 Kālānwāli,Ruyigi,58
-Ruyigi,Le Pecq,0
+Ruyigi,Le Pecq,1
 Nālchiti,Ruyigi,50
 Hanover,Ruyigi,50
 Ghoti Budrukh,Ruyigi,72
@@ -1844,7 +1844,7 @@ Hamilton,Johannesburg,76
 Franklin Square,Hamilton,58
 Iwai,Tutong,28
 Gävle,Seria,2
-Dartmouth,Seria,0
+Dartmouth,Seria,1
 Kuala Belait,Maevatanana,47
 Eskilstuna,Kuala Belait,80
 Kuala Belait,Spitak,25
@@ -1905,7 +1905,7 @@ Istok,Conde,69
 Ajalpan,Conde,14
 Conde,Veinticinco de Mayo,74
 San Miguel Xico Viejo,Vigia,63
-Vigia,Ełk,0
+Vigia,Ełk,1
 Sal’sk,Vigia,49
 Kovancılar,Vigia,37
 Naksalbāri,Viçosa do Ceará,12
@@ -2102,7 +2102,7 @@ Nazaré da Mata,Daytona Beach,71
 Francavilla al Mare,Nazaré da Mata,31
 Nazaré da Mata,Minakuchichō-matoba,2
 Temapache,Nazaré da Mata,16
-Nazaré da Mata,Le Plessis-Trévise,0
+Nazaré da Mata,Le Plessis-Trévise,1
 Mukher,Natal,76
 Murici,Mount Laurel,51
 Bunda,Moreno,36
@@ -2146,7 +2146,7 @@ Palín,Limoeiro,80
 Lavras da Mangabeira,Tupelo,56
 Loei,Lavras da Mangabeira,84
 José de Freitas,Troyes,75
-José de Freitas,Bar,0
+José de Freitas,Bar,1
 José de Freitas,Ningde,99
 Sinjai,João Pessoa,9
 Jaguaruana,Paracatu,92
@@ -2180,7 +2180,7 @@ Itaitinga,Tizi Ouzou,75
 Gobindpur,Itaitinga,78
 Tandil,Itabaiana,38
 Itabaiana,Echo Park,61
-Ipueiras,Jablonec nad Nisou,0
+Ipueiras,Jablonec nad Nisou,1
 Lecce,Ipubi,22
 Gul’kevichi,Ipubi,23
 Balş,Ipubi,88
@@ -2208,7 +2208,7 @@ Grajaú,Świdnik,48
 Grajaú,Morinda,92
 Goiana,Assab,15
 Trelleborg,Glória do Goitá,44
-Glória do Goitá,Bodhan,0
+Glória do Goitá,Bodhan,1
 Garanhuns,Udipi,38
 Garanhuns,Havana,83
 Kamojimachō-jōgejima,Garanhuns,51
@@ -2350,7 +2350,7 @@ Lüdinghausen,Arapiraca,49
 Kilis,Araguaína,35
 Kuche,Aracati,37
 Aosta,Aracati,47
-Aracati,Showot,0
+Aracati,Showot,1
 Lakewood,Aquiraz,92
 Ryazhsk,Ananindeua,80
 Ban Na San,Ananindeua,15
@@ -2380,7 +2380,7 @@ Votorantim,Columbus,85
 Volta Redonda,Kettering,81
 Barrhead,Volta Redonda,49
 Vitória da Conquista,Bāh,1
-Romblon,Vitória da Conquista,0
+Romblon,Vitória da Conquista,1
 Lytkarino,Vitória,85
 Brikama,Vitória,69
 Visconde do Rio Branco,Neu-Anspach,35
@@ -2477,7 +2477,7 @@ Tijucas,Anūppur,90
 Tangping,Tietê,55
 Tietê,Hereford,2
 Covington,Teutônia,41
-Teresópolis,Macas,0
+Teresópolis,Macas,1
 Teófilo Otoni,Burbank,97
 Teófilo Otoni,Viana,6
 Teodoro Sampaio,Dazhou,40
@@ -2508,7 +2508,7 @@ Soledade,Chiquinquirá,81
 Douz,Soledade,84
 Pontivy,Socorro,71
 Socorro,Salekhard,35
-Santafé,Socorro,0
+Santafé,Socorro,1
 Halle,Sobradinho,79
 Panabo,Sobradinho,98
 Silva Jardim,Lugoj,68
@@ -2588,7 +2588,7 @@ Culleredo,São Joaquim da Barra,42
 São Joaquim,Chipinge,62
 Yahyalı,São Joaquim,19
 Piscataway,São João de Meriti,62
-São João de Meriti,Batāla,0
+São João de Meriti,Batāla,1
 São João del Rei,Campeche,90
 Lunéville,São João del Rei,75
 Batouri,São João da Boa Vista,22
@@ -2731,7 +2731,7 @@ Ribeirão Preto,Santiago Atitlán,22
 Gragnano,Ribeirão Pires,70
 Ribeirão das Neves,Adelaide Hills,34
 Ribeirão das Neves,Chkalov,63
-Gobindpur,Ribeirão das Neves,0
+Gobindpur,Ribeirão das Neves,1
 Ribeirão das Neves,Lappeenranta,75
 Cork,Ribeirão das Neves,62
 Sindelfingen,Ribeirão da Ilha,34
@@ -2780,7 +2780,7 @@ Porto Ferreira,Giddalūr,92
 Porto Ferreira,Como,74
 Porto Ferreira,Khurja,92
 Toshloq,Porto Feliz,86
-Settat,Porto Feliz,0
+Settat,Porto Feliz,1
 Bayanhongor,Porto Feliz,19
 Itapevi,Porto Feliz,79
 Porto Alegre,Sovetsk,25
@@ -2822,7 +2822,7 @@ Länsi-Turunmaa,Poços de Caldas,75
 Likasi,Poços de Caldas,50
 Poconé,Tando Allāhyār,51
 Poções,Mtsensk,15
-Poções,Alsip,0
+Poções,Alsip,1
 Poções,Mendefera,93
 Poá,Narangba,51
 Poá,Sulţānah,9
@@ -3054,7 +3054,7 @@ Martinópolis,Bulawayo,90
 Maringá,Ishqoshim,88
 Marília,Fondi,7
 Vernon,Marília,83
-Osmanabad,Marília,0
+Osmanabad,Marília,1
 Orahovac,Maricá,33
 Phan Thong,Maricá,37
 Maricá,Bharthana,58
@@ -3208,7 +3208,7 @@ Ivoti,Lüdinghausen,73
 Ituverava,Lede,46
 Chilecito,Iturama,46
 Pruszcz Gdański,Iturama,31
-Itupeva,Naju,0
+Itupeva,Naju,1
 Itupeva,Suruç,18
 Itupeva,Saint-Avertin,19
 Itumbiara,Maputo,35
@@ -3243,7 +3243,7 @@ Nahiyat Ghammas,Itapetininga,47
 Gangāpur,Itapetinga,80
 Itaperuna,Wolfsberg,57
 Amasya,Itaperuçu,31
-Itapemirim,Espoo,0
+Itapemirim,Espoo,1
 University Place,Itapecerica da Serra,77
 Iskandar,Itapecerica da Serra,39
 Cheshire,Itapecerica,38
@@ -3409,7 +3409,7 @@ Garça,Nueva Loja,31
 Sikandarpur,Gandu,27
 Gandu,Alblasserdam,56
 Gandu,Akçaabat,35
-Maheshwar,Frutal,0
+Maheshwar,Frutal,1
 Phalaborwa,Frutal,52
 Pashkovskiy,Frutal,63
 Frutal,Abomey-Calavi,69
@@ -3507,7 +3507,7 @@ Kyshtym,Coronel Vivida,65
 Coronel Vivida,Ooty,23
 Coromandel,Akbarpur,69
 Nocera Inferiore,Coromandel,18
-Coromandel,Manbij,0
+Coromandel,Manbij,1
 Turinsk,Coromandel,73
 Cornélio Procópio,Nairobi,30
 Corinto,Villa de Cura,79
@@ -3590,7 +3590,7 @@ Canguçu,Shūsh,8
 Oristano,Cândido Mota,58
 La Defense,Cândido Mota,99
 San Juan,Cândido Mota,49
-Donghai,Candelária,0
+Donghai,Candelária,1
 Canavieiras,Heidenheim an der Brenz,32
 Campo Verde,Biel/Bienne,20
 Campos Gerais,Charleville-Mézières,36
@@ -3799,7 +3799,7 @@ Lommel,Amparo,36
 Américo Brasiliense,Athens,80
 Américo Brasiliense,Kertosono,71
 Américo Brasiliense,Jālna,98
-Shangmei,Americana,0
+Shangmei,Americana,1
 Cho Dok,Americana,54
 Ludhiāna,Amargosa,82
 Amargosa,Emmen,17
@@ -4093,7 +4093,7 @@ Cochrane,Wilmette,68
 Collingwood,Karabük,46
 Conception Bay South,Balykchy,2
 Corner Brook,Dęblin,3
-Rethymno,Corner Brook,0
+Rethymno,Corner Brook,1
 Quarto,Cornwall,21
 Côte-Saint-Luc,Basavana Bāgevādi,16
 Courtenay,Morales,97
@@ -4102,7 +4102,7 @@ Cranbrook,Miass,82
 Dartmouth,Emmiganūr,87
 Dartmouth,Tall Rif‘at,37
 Biankouma,Dartmouth,80
-Dartmouth,Seria,0
+Dartmouth,Seria,1
 Dartmouth,Vikhorevka,25
 Chino,Delta,69
 Delta,Burē,53
@@ -4172,13 +4172,13 @@ Lethbridge,Złotów,12
 Amin’yevo,London,73
 Corato,London,51
 Bignay Uno,London,54
-London,Castrovillari,0
+London,Castrovillari,1
 Longueuil,Sunnybank,4
 Longueuil,Hagonoy,43
 Ārt Khwājah,Magog,81
 Magog,Kyzylorda,65
 Forbesganj,Magog,23
-Magog,Waegwan,0
+Magog,Waegwan,1
 Maple Ridge,Chidawa,65
 Saravia,Markham,6
 Tromsø,Markham,37
@@ -4379,7 +4379,7 @@ Ash Shaţrah,Cole Harbour,72
 Cole Harbour,South Elmsall,87
 Cole Harbour,Machhlīshahr,80
 Okanagan,High Peak,40
-Akonolinga,Okanagan,0
+Akonolinga,Okanagan,1
 Pittsfield,Okanagan,51
 Lahore,West Kelowna,94
 Gravataí,Bellechasse Regional County Municipality,96
@@ -4415,7 +4415,7 @@ Centerville,Mwene-Ditu,61
 Vahdat,Mwene-Ditu,68
 Mwene-Ditu,Seondha,97
 Macau,Mwene-Ditu,45
-Mach,Mweka,0
+Mach,Mweka,1
 Mweka,North Fort Myers,75
 Lusambo,Bhawāna,38
 Espelkamp,Lusambo,28
@@ -4549,7 +4549,7 @@ Bouar,Dingzhou,9
 Bouar,Doncaster East,21
 Bossangoa,Stargard Szczeciński,76
 Santa Clara,Boda,40
-Calceta,Boda,0
+Calceta,Boda,1
 Bālāpur,Boda,95
 Puerto del Carmen,Bimbo,10
 Berbérati,Kimje,35
@@ -4588,7 +4588,7 @@ Marataizes,Brazzaville,34
 Zürich,Fort Dodge,99
 Zürich,Nattam,42
 Kirishi,Zürich,96
-Kenmore,Zug,0
+Kenmore,Zug,1
 Pemangkat,Zug,95
 Jarābulus,Yverdon-les-Bains,88
 Yverdon-les-Bains,Rugeley,68
@@ -4716,7 +4716,7 @@ Oberwinterthur (Kreis 2),Bekasi,95
 Serilingampalle,Zürich (Kreis 10),73
 Zürich (Kreis 10),Kraljevo,5
 Sirsi,Zürich (Kreis 2),20
-Zürich (Kreis 2),Puttūr,0
+Zürich (Kreis 2),Puttūr,1
 Zürich (Kreis 2),Hoshangābād,10
 Le Havre,Zürich (Kreis 8),35
 Zürich (Kreis 8),Numata,86
@@ -4767,7 +4767,7 @@ Middleton,Katiola,7
 Issia,Country Club,31
 Guiglo,San-Pédro,31
 Guiglo,Genhe,93
-Grand-Bassam,Gimcheon,0
+Grand-Bassam,Gimcheon,1
 Affery,Osterholz-Scharmbeck,33
 Affery,Namioka,62
 Gagnoa,Minas,8
@@ -4823,7 +4823,7 @@ Abobo,Udaipur,21
 Abobo,Tel Aviv,4
 Abidjan,Jhunjhunūn,89
 Brčko,Abidjan,31
-Challans,Abidjan,0
+Challans,Abidjan,1
 Zion,Abengourou,26
 Al Khārijah,Séguéla,8
 Séguéla,Český Těšín,37
@@ -4833,7 +4833,7 @@ Mount Pleasant,Avarua,12
 Kalamnūri,Avarua,20
 Villarrica,Dayrūţ,25
 Ресен,Villa Alemana,27
-Villa Alemana,Weinzierl bei Krems,0
+Villa Alemana,Weinzierl bei Krems,1
 Hangzhou,Victoria,47
 Vallenar,Durango,86
 Vallenar,Hamburg-Nord,96
@@ -4881,7 +4881,7 @@ Okrika,Pucón,67
 Stenløse,Peñaflor,49
 Bhawānipatna,Peñaflor,6
 Parral,Piñas,30
-Parral,Dawukou,0
+Parral,Dawukou,1
 Swakopmund,Paine,52
 Covina,Osorno,69
 Osorno,Kamojimachō-jōgejima,99
@@ -5023,7 +5023,7 @@ Odenthal,Melong,56
 Melong,Kunnamkulam,64
 Meïganga,Al Mawşil al Jadīdah,3
 South Bradenton,Meïganga,54
-Mbouda,Jhingergācha,0
+Mbouda,Jhingergācha,1
 Moses Lake,Mbandjok,3
 Mbandjok,Oschersleben,91
 Attingal,Mbandjok,44
@@ -5051,7 +5051,7 @@ Al Wakrah,Garoua Boulaï,43
 Garoua Boulaï,Summit,53
 Kent,Garoua,67
 Garoua,El Reno,49
-Garoua,Acatlán de Osorio,0
+Garoua,Acatlán de Osorio,1
 Garoua,Tervuren,64
 Saidpur,Fundong,81
 Fundong,Busia,18
@@ -5092,7 +5092,7 @@ Bafang,Round Lake Beach,91
 Boulder,Bafang,34
 Akonolinga,Bhayandar,10
 Kasangulu,Akonolinga,28
-Akonolinga,Okanagan,0
+Akonolinga,Okanagan,1
 Akonolinga,Cypress,87
 Idenao,Chodavaram,65
 Idenao,Tsubame,56
@@ -5182,7 +5182,7 @@ Zhicheng,Pumiao,50
 Zhicheng,Sidhaulī,64
 Zhicheng,Whitefield,35
 Zhicheng,Belas,27
-Chūhar Kāna,Zhenzhou,0
+Chūhar Kāna,Zhenzhou,1
 Bentong Town,Zhenzhou,98
 Zhenzhou,Esenyurt,17
 Zhenjiang,Makrāna,96
@@ -5317,7 +5317,7 @@ Auburn,Xinyu,34
 Xinyu,Nīshābūr,65
 Hancheng,Maroúsi,82
 Xinyang,Kwangmyŏng,65
-Xinyang,Sololá,0
+Xinyang,Sololá,1
 Bang Len,Xinyang,29
 Xinyang,Carcavelos,17
 Nangandao,Metlili Chaamba,27
@@ -5327,7 +5327,7 @@ Majenang,Xinji,78
 Xinji,Haifa,5
 Naranjal,Xining,5
 Xining,Rio Bonito,76
-Shangmei,Americana,0
+Shangmei,Americana,1
 Xingtai,Cabo,38
 Xingtai,Verden,69
 Xindian,Thakurdwara,87
@@ -5335,7 +5335,7 @@ Xindian,Montrouge,31
 Geislingen an der Steige,Xindi,17
 Feicheng,Jaboatão,67
 Alliance,Sanshui,25
-Mosta,Sanshui,0
+Mosta,Sanshui,1
 Ximei,Nangomba,81
 Ximei,Nīmbāhera,71
 Buinsk,Wacheng,1
@@ -5384,7 +5384,7 @@ Schwechat,Xi’an,49
 Kufstein,Xi’an,19
 Apia,Xiamen,57
 Ponnūru,Xiamen,98
-Wuzhou,Amadeo,0
+Wuzhou,Amadeo,1
 Wuzhou,Wichian Buri,60
 Wuzhou,Bikin,61
 Agrínio,Wuxue,86
@@ -5397,7 +5397,7 @@ Dongyang,Cimahi,40
 Providence,Dongyang,51
 Pitanga,Wuhu,42
 Wuhu,Fujieda,20
-Wuhan,Ech Chettia,0
+Wuhan,Ech Chettia,1
 Kashira,Wuhan,2
 Wuhan,Brentwood,57
 Zavodoukovsk,Wuhai,96
@@ -5592,7 +5592,7 @@ Pumiao,Elbistan,77
 Glen Avon,Pulandian,12
 Xonacatlán,Pulandian,58
 Pulandian,Taşköprü,64
-Poyang,Cam Ranh,0
+Poyang,Cam Ranh,1
 San Lorenzo,Poyang,68
 Poyang,Roxas City,56
 Pingyin,São Mateus do Sul,75
@@ -5721,7 +5721,7 @@ Oegstgeest,Linxia Chengguanzhen,49
 Carora,Linxi,51
 Nizhnyaya Salda,Linxi,68
 Saint-Raphaël,Linshui,72
-Linshui,Saqqez,0
+Linshui,Saqqez,1
 Albacete,Linqu,67
 Ueno-ebisumachi,Linqiong,44
 Linqiong,Tippi,2
@@ -5965,7 +5965,7 @@ Vanderbijlpark,Gejiu,40
 Gaozhou,Coatepeque,45
 Noda,Gaoyou,52
 Bagé,Gaoping,36
-Gaomi,Hikari,0
+Gaomi,Hikari,1
 Gaogou,Jarash,50
 Xinyi,Gaogou,99
 San Narciso,Gaogou,3
@@ -6010,7 +6010,7 @@ Dongtai,Seversk,86
 T’ongch’ŏn-ŭp,Dongsheng,33
 Juchitán de Zaragoza,Dongsheng,57
 Dongsheng,Jiangmen,41
-Donghai,Candelária,0
+Donghai,Candelária,1
 Donghai,Bakıxanov,71
 Balta,Dongcun,87
 Envigado,Dongcun,96
@@ -6039,7 +6039,7 @@ Lijiang,Hamhŭng,71
 Polyarnyye Zori,Dazhou,68
 Teodoro Sampaio,Dazhou,40
 Dawukou,Plymouth,75
-Parral,Dawukou,0
+Parral,Dawukou,1
 Şabrātah,Datong,65
 Dārayyā,Fenghua,65
 Villa Regina,Fenghua,29
@@ -6095,7 +6095,7 @@ Changleng,Meridian,37
 Changleng,Vercelli,20
 Changleng,Capesterre-Belle-Eau,82
 Cardito,Caohe,17
-Caohe,Chelles,0
+Caohe,Chelles,1
 Weining,Batumi,18
 Kasugai,Weining,68
 Puttūr,Cangzhou,17
@@ -6177,7 +6177,7 @@ Zhaoyuan,Simpsonville,88
 Arapongas,Zhaodong,28
 Zalantun,Fano,32
 Duluth,Youhao,80
-Halberstadt,Youhao,0
+Halberstadt,Youhao,1
 Yingkou,Saga,33
 Yingkou,Westford,43
 Centar Župa,Yilan,89
@@ -6328,7 +6328,7 @@ Lingdong,Lustenau,4
 Liaozhong,Azua,55
 Lanxi,Biaora,50
 Garges-lès-Gonesse,Lanxi,41
-Lanxi,Sevilla,0
+Lanxi,Sevilla,1
 Shājāpur,Lanxi,97
 Lanxi,Netrakona,9
 Weilerswist,Lanxi,9
@@ -6378,7 +6378,7 @@ Blaj,Hulan Ergi,9
 Monza,Hulan Ergi,57
 Allende,Huinan,49
 Caxias,Huinan,56
-Bay Point,Huanren,0
+Bay Point,Huanren,1
 Huangnihe,Cascais,50
 Obihiro,Huanan,86
 Huadian,Samborondón,31
@@ -6507,7 +6507,7 @@ Wenshan City,Dinalupihan,81
 Santiago de las Vegas,Zipaquirá,15
 Zarzal,Móstoles,48
 Zarzal,San Pedro Ayampuc,83
-Zaragoza,Druten,0
+Zaragoza,Druten,1
 Pécs,Yumbo,72
 Yumbo,Pithampur,47
 Yumbo,Eravur Town,15
@@ -6557,7 +6557,7 @@ Sibaté,Skegness,78
 Sibaté,Yafran,95
 Sibaté,Brookings,66
 Bailén,Sibaté,27
-Lanxi,Sevilla,0
+Lanxi,Sevilla,1
 Segovia,Nettuno,4
 Segovia,Otradnyy,84
 Santuario,Miyoshi,36
@@ -6566,7 +6566,7 @@ Santuario,Nakhchivan,61
 North Tustin,Santo Tomás,37
 Bīlāspur,Santo Tomás,91
 Santo Tomás,Limpio,93
-Kozeyevo,Santa Rosa de Cabal,0
+Kozeyevo,Santa Rosa de Cabal,1
 Santa Rosa de Cabal,Skövde,11
 Santander de Quilichao,Boiro,80
 Empalme,Santander de Quilichao,65
@@ -6693,7 +6693,7 @@ Kobuleti,Manzanares,43
 Yalova,Manzanares,94
 Manzanares,Sarayköy,86
 Bijelo Polje,Manizales,96
-Manizales,Bytom,0
+Manizales,Bytom,1
 Qiqihar,Malambo,98
 Malambo,Banfora,54
 Rotterdam,Málaga,44
@@ -6776,7 +6776,7 @@ Envigado,Nakhon Nayok,3
 Yemanzhelinsk,El Retén,58
 Irun,El Retén,37
 Chaksu,El Retén,28
-Zandvoort,El Retén,0
+Zandvoort,El Retén,1
 Ystad,El Retén,18
 El Copey,Shisui,9
 Kirzhach,El Charco,25
@@ -7062,7 +7062,7 @@ Jovellanos,Marseille 11,75
 Jovellanos,Rāipur,85
 Kibondo,Jobabo,34
 Jobabo,Yurimaguas,46
-Jobabo,Carol City,0
+Jobabo,Carol City,1
 Jobabo,Shambu,40
 Amadora,Jobabo,74
 Jobabo,Ecatepec,19
@@ -7348,7 +7348,7 @@ Jihlava,Wakiso,60
 Zürich (Kreis 11),Jihlava,13
 Jihlava,College Station,33
 Bay Village,Jihlava,52
-Ipueiras,Jablonec nad Nisou,0
+Ipueiras,Jablonec nad Nisou,1
 Hradec Králové,Guatemala City,92
 Munich,Hradec Králové,19
 Hradec Králové,Piuí,18
@@ -7373,7 +7373,7 @@ Séguéla,Český Těšín,37
 Brugherio,Česká Třebová,83
 Teotihuacán de Arista,Česká Třebová,84
 Česká Třebová,Saint-Michel-sur-Orge,82
-Bruntál,Kuçovë,0
+Bruntál,Kuçovë,1
 Brno,Belgrade,19
 Chittaurgarh,Břeclav,15
 Břeclav,Saratoga Springs,11
@@ -7543,7 +7543,7 @@ Illingen,Wardenburg,3
 Warburg,San Cristóbal,99
 Warburg,Bergen op Zoom,78
 Wandlitz,Zoucheng,76
-Wandlitz,Kan’onjichō,0
+Wandlitz,Kan’onjichō,1
 Mbanza-Ngungu,Waltrop,91
 Walsrode,Boumahra Ahmed,89
 Ouro Preto,Walsrode,28
@@ -7586,7 +7586,7 @@ Viersen,Kayar,99
 Ōme,Viernheim,37
 Viernheim,Wałcz,56
 Dedham,Verl,79
-Verl,Piaseczno,0
+Verl,Piaseczno,1
 Verden,Oeiras,86
 Xingtai,Verden,69
 Verden,Jauharābād,50
@@ -7605,7 +7605,7 @@ Wāris Alīganj,Vaihingen an der Enz,36
 Vaihingen an der Enz,Abony,56
 Vaihingen an der Enz,Al Miqdādīyah,8
 Baguim do Monte,Uslar,63
-Bissāu,Uslar,0
+Bissāu,Uslar,1
 Bahir Dar,Unterhaching,64
 Unterhaching,Ōi,91
 Unterkrozingen,Kukawa,11
@@ -7615,7 +7615,7 @@ Candiac,Ulm,4
 Four Corners,Uelzen,79
 Uelzen,Çaycuma,54
 Uelzen,Peoria,92
-Überlingen,Eberswalde,0
+Überlingen,Eberswalde,1
 Überlingen,Anzhero-Sudzhensk,32
 Murlīganj,Überlingen,53
 Übach-Palenberg,Sarzedo,34
@@ -7912,7 +7912,7 @@ Quedlinburg,Fennpfuhl,60
 Püttlingen,Guanare,22
 Montclair,Püttlingen,3
 Barreiras,Püttlingen,29
-Pulheim,Klamath Falls,0
+Pulheim,Klamath Falls,1
 Selçuk,Pulheim,14
 Puchheim,San Luis de la Paz,39
 Béoumi,Prenzlauer Berg,63
@@ -8077,11 +8077,11 @@ Neuburg an der Donau,Muzambinho,95
 Neubrück,Vitré,8
 Novi Sad,Neubrück,29
 Neubrandenburg,San Justo,61
-Ḩarastā,Neubrandenburg,0
+Ḩarastā,Neubrandenburg,1
 Parla,Neubrandenburg,8
 Springdale,Neubrandenburg,65
 Neubrandenburg,Nanuque,50
-Neubrandenburg,Asbest,0
+Neubrandenburg,Asbest,1
 Neu-Anspach,Martigues,6
 Visconde do Rio Branco,Neu-Anspach,35
 Asnières-sur-Seine,Nettetal,9
@@ -8100,10 +8100,10 @@ Nowy Sącz,Munster,36
 Munster,Cardona,60
 Münster,Maao,89
 Finglas,Münster,16
-Hannoversch Münden,Kozan,0
+Hannoversch Münden,Kozan,1
 Hannoversch Münden,Marseille 10,66
 Munich,Hradec Králové,19
-Monoharpur,Müllheim,0
+Monoharpur,Müllheim,1
 New Smyrna Beach,Mülheim (Ruhr),20
 Mülheim (Ruhr),Terni,89
 Dingzhou,Mühlheim am Main,29
@@ -8318,7 +8318,7 @@ Tangzhai,Kronach,7
 Northcote,Kronach,74
 Chon Daen,Kreuztal,69
 Kreuztal,Huaura,24
-Kogalym,Kreuzau,0
+Kogalym,Kreuzau,1
 Muzaffarpur,Krefeld,17
 Krefeld,Benghazi,85
 Köthen,Toyokawa,48
@@ -8356,7 +8356,7 @@ Koblenz,Dera Ismāīl Khān,4
 Conceição do Araguaia,Kleve,60
 Kleve,Tambo Grande,53
 Itaguaí,Kleve,68
-Kleve,Jhol,0
+Kleve,Jhol,1
 Kleve,La Unión,47
 Raleigh,Kleinmachnow,90
 Kleinmachnow,Iskandar,22
@@ -8585,7 +8585,7 @@ State College,Halle (Saale),74
 Halle (Saale),Gierłoż,3
 Haldensleben I,Ado-Ekiti,78
 Iserlohn,Haldensleben I,76
-Halberstadt,Youhao,0
+Halberstadt,Youhao,1
 Halberstadt,Chillupār,55
 Hakenfelde,Barnstable,91
 Abhar,Hakenfelde,44
@@ -8611,7 +8611,7 @@ Günzburg,Pandacaqui,51
 Günzburg,Aranda de Duero,14
 Cové,Gummersbach,44
 Groß-Umstadt,Péruwelz,56
-Groß-Umstadt,Vulcan,0
+Groß-Umstadt,Vulcan,1
 Groß-Gerau,Maradi,29
 Tarhuna,Großenhain,45
 South Bradenton,Gronau,65
@@ -8835,7 +8835,7 @@ Eckernförde,Khopoli,44
 Eckernförde,Vagonoremont,98
 Itumbiara,Eckernförde,73
 Krasnyy Lyman,Eckernförde,72
-Überlingen,Eberswalde,0
+Überlingen,Eberswalde,1
 Hagi,Eberswalde,47
 Ebersbach an der Fils,Khardah,91
 Eberbach,Mae Sai,82
@@ -9066,7 +9066,7 @@ Bad Segeberg,Canoga Park,62
 Bijāwar,Bad Schwartau,56
 Bad Salzungen,Shiwan,28
 Bad Salzungen,Wārāseonī,54
-Adrogué,Bad Salzuflen,0
+Adrogué,Bad Salzuflen,1
 Türkmenbaşy,Bad Salzuflen,4
 North La Crosse,Bad Salzuflen,52
 Panevėžys,Bad Säckingen,59
@@ -9089,7 +9089,7 @@ Bad Münstereifel,Laungowāl,48
 Bad Münder am Deister,Mungaoli,49
 Bad Mergentheim,Hassi Messaoud,51
 Bad Lippspringe,Castrop-Rauxel,75
-Āstārā,Bad Lippspringe,0
+Āstārā,Bad Lippspringe,1
 Bad Lippspringe,Kalugumalai,55
 Bad Lippspringe,Lidingö,19
 Ongjin,Bad Langensalza,77
@@ -9152,7 +9152,7 @@ Tikhoretsk,Alzey,77
 Hardenberg,Alzenau in Unterfranken,25
 Alzenau in Unterfranken,Lecheng,23
 Alzenau in Unterfranken,Pembroke,41
-Patti,Altglienicke,0
+Patti,Altglienicke,1
 Altenburg,Gorodets,42
 Nāḩīyat Saddat al Hindīyah,Altenburg,12
 Altenburg,Sidoarjo,86
@@ -9533,7 +9533,7 @@ Sétif,Guliston,11
 Sétif,Olney,4
 Casavatore,Sétif,4
 Rāmganj Mandi,Sedrata,83
-Sedrata,Sechura,0
+Sedrata,Sechura,1
 Enterprise,Seddouk,90
 Seddouk,Almirante Tamandaré,72
 Sebdou,Sønderborg,92
@@ -9711,7 +9711,7 @@ El Abiodh Sidi Cheikh,Koch'ang,57
 Neustadt am Rübenberge,El Abiodh Sidi Cheikh,98
 El Abadia,Parsippany,75
 Xinghua,El Abadia,85
-Wuhan,Ech Chettia,0
+Wuhan,Ech Chettia,1
 Suzuka,Ech Chettia,37
 Paoua,Ech Chettia,52
 Naugachhia,Ech Chettia,77
@@ -9832,7 +9832,7 @@ Ilkal,Bejaïa,9
 Guanare,Bejaïa,24
 Bejaïa,Erāttupetta,9
 Ixmiquilpan,Batna,41
-La Carlota,Batna,0
+La Carlota,Batna,1
 Brussels,Batna,3
 Barika,Bad Rappenau,93
 Saltpond,Barbacha,40
@@ -9927,7 +9927,7 @@ Aflou,Mudu,98
 Itoigawa,Aflou,58
 Rho,Abou el Hassan,55
 Kharar,BABOR - VILLE,26
-Kalghatgi,BABOR - VILLE,0
+Kalghatgi,BABOR - VILLE,1
 Orekhovo-Borisovo,Yaguachi Nuevo,1
 Yaguachi Nuevo,Las Torres de Cotillas,87
 Yaguachi Nuevo,Portimão,94
@@ -9982,7 +9982,7 @@ Boksitogorsk,Montecristi,95
 Vaihingen an der Enz,Montalvo,99
 Montalvo,Bathurst,16
 Rio Rico,Machachi,73
-Teresópolis,Macas,0
+Teresópolis,Macas,1
 Macas,Germantown,57
 Yangambi,Macas,41
 Altay,Macas,45
@@ -10023,7 +10023,7 @@ Pando,Catamayo,27
 Catamayo,Fuenlabrada,76
 Cariamanga,Oildale,94
 Miass,Cariamanga,59
-Calceta,Boda,0
+Calceta,Boda,1
 Calceta,Vazante,28
 Calceta,Fryazevo,39
 Jevargi,Calceta,37
@@ -10144,7 +10144,7 @@ Farshūţ,Pukekohe East,41
 Fāraskūr,Macerata,78
 Fāraskūr,Lévis,98
 Fāqūs,Lindenhurst,73
-Oum Hadjer,Fāqūs,0
+Oum Hadjer,Fāqūs,1
 Fāqūs,Clarksdale,50
 Beni Douala,Fāqūs,12
 Fāqūs,Chaeryŏng-ŭp,86
@@ -10170,7 +10170,7 @@ Port Said,Neustadt bei Coburg,24
 Bilqās,Salāya,79
 Bilqās,Roses,93
 Basyūn,Chāmpa,82
-Banī Suwayf,Morozovsk,0
+Banī Suwayf,Morozovsk,1
 Banī Suwayf,Kumanovo,16
 Banī Mazār,Barceloneta,25
 Coyoacán,Banī Mazār,83
@@ -10342,7 +10342,7 @@ Markova,Santa Lucía,29
 Santa Lucía,Siófok,26
 Norwood,Santafé,28
 Arras,Santafé,42
-Santafé,Socorro,0
+Santafé,Socorro,1
 Santafé,Kālānwāli,39
 Santa Cruz de Tenerife,Dabou,53
 Motru,Santa Cruz de Tenerife,3
@@ -10556,7 +10556,7 @@ Jerez de la Frontera,Bafia,68
 Datia,Javea,72
 Helong,Javea,58
 Chon Daen,Isla Cristina,16
-Isla Cristina,Saky,0
+Isla Cristina,Saky,1
 Kailua,Ingenio,11
 Sultanbeyli,Ingenio,44
 Ingenio,Kingsland,88
@@ -10580,7 +10580,7 @@ Guardamar del Segura,Zamānia,19
 Timóteo,Guadix,62
 Granadilla de Abona,Lealman,64
 Haines City,Granada,3
-Tosya,Granada,0
+Tosya,Granada,1
 Chieri,Granada,13
 Santa Cecília,Granada,15
 Gandia,Bahlā’,68
@@ -10740,7 +10740,7 @@ Dipayal,Aldaia,73
 Zinjibār,Alcúdia,70
 Alcoy,Sukumo,59
 Alcoy,Pupri,42
-Alzira,Palm Beach Gardens,0
+Alzira,Palm Beach Gardens,1
 Alzira,Marseille,75
 Mettmann,Alzira,58
 Sawāi Mādhopur,Alcázar de San Juan,89
@@ -10929,7 +10929,7 @@ Plasencia,Quảng Ngãi,59
 Pinto,Seal Beach,68
 Ippy,Pinto,37
 Pineda de Mar,Dera Ghazi Khan,51
-Kishtwār,Pineda de Mar,0
+Kishtwār,Pineda de Mar,1
 Pineda de Mar,Pontevedra,76
 Pineda de Mar,Uravakonda,70
 Parla,Hinthada,3
@@ -10959,7 +10959,7 @@ Kharmanli,Nigrán,42
 Nigrán,Jaboatão dos Guararapes,37
 Navalcarnero,Győr,63
 Navalcarnero,Cordenons,53
-Santa Maria,Narón,0
+Santa Maria,Narón,1
 Boynton Beach,Narón,63
 Narón,Pirmasens,35
 Vargem Grande,Narón,69
@@ -11108,7 +11108,7 @@ Chamartín,Sinjhoro,34
 Columbus,Chamartín,38
 Castro-Urdiales,Miami Gardens,11
 Ubá,Castro-Urdiales,31
-Castelldefels,Springvale,0
+Castelldefels,Springvale,1
 Castellar del Vallès,Biryulëvo,54
 Faruka,Castellar del Vallès,36
 Cardedeu,Lautoka,77
@@ -11346,7 +11346,7 @@ Oegstgeest,Gambēla,3
 Finote Selam,Santa Elena,57
 Fichē,Zaraysk,2
 Fichē,Kadınhanı,46
-Wai,Felege Neway,0
+Wai,Felege Neway,1
 Roșiorii de Vede,Dubti,64
 Dubti,Huauchinango,46
 Żagań,Dodola,64
@@ -11461,7 +11461,7 @@ Pirkkala,Gokak,8
 Nurmijärvi,Itigi,90
 Nurmijärvi,Dijon,47
 Nurmijärvi,Kefamenanu,67
-Nokia,Owase,0
+Nokia,Owase,1
 Santa Lucía,Nokia,44
 Nokia,Land O' Lakes,66
 Nokia,Luofeng,29
@@ -11527,7 +11527,7 @@ Forssa,Rufino,62
 Buulobarde,Forssa,14
 Espoo,Parnamirim,87
 Roeselare,Espoo,34
-Itapemirim,Espoo,0
+Itapemirim,Espoo,1
 Prichard,Porvoo,11
 Ebute Ikorodu,Porvoo,89
 Martinez,Anjala,42
@@ -11579,7 +11579,7 @@ Nowa Ruda,Villenave-d’Ornon,60
 Villemomble,Brentwood,13
 Ho Chi Minh City,Villejuif,95
 Villejuif,Erdek,64
-Dakoro,Villejuif,0
+Dakoro,Villejuif,1
 Villefontaine,Ambato Boeny,77
 Vigneux-sur-Seine,San Germán,55
 Vierzon,Rāmganj Mandi,72
@@ -11710,7 +11710,7 @@ Saran,Illichivs’k,40
 Saran,Gujrāt,9
 Sannois,Salamá,89
 Córdoba,Sannois,87
-Sannois,Sortavala,0
+Sannois,Sortavala,1
 Santander,Salon-de-Provence,9
 Salon-de-Provence,Seligenstadt,37
 Bukoba,Saint-Sébastien-sur-Loire,3
@@ -11810,7 +11810,7 @@ Rodez,Jashpurnagar,89
 Rodez,San Kamphaeng,89
 Guna,Roanne,5
 North Platte,Roanne,34
-Roanne,Catacaos,0
+Roanne,Catacaos,1
 Tanakpur,Ris-Orangis,8
 Kuroda,Riom,52
 Riom,Palm Springs,62
@@ -11855,7 +11855,7 @@ Plaisance-du-Touch,Itumbiara,47
 Pierrefitte-sur-Seine,Mers el Kebir,56
 Sūsangerd,Pessac,47
 Six-Fours-les-Plages,Pertuis,92
-Gretna,Pertuis,0
+Gretna,Pertuis,1
 Pertuis,Persianovka,28
 Perpignan,Jessore,30
 Tuen Mun,Perpignan,90
@@ -12038,7 +12038,7 @@ Bergerac,Malakoff,3
 Santo Domingo,Maisons-Laffitte,8
 Maisons-Laffitte,Juticalpa,79
 Maisons-Laffitte,Daet,45
-Maisons-Laffitte,Bangor,0
+Maisons-Laffitte,Bangor,1
 Nakhodka,Maisons-Alfort,23
 Maisons-Alfort,Teluk Intan,70
 Mâcon,Rosedale,27
@@ -12059,7 +12059,7 @@ Lucé,Castelvetrano,34
 Lucé,Taylors Lakes,66
 Nyzhn’ohirs’kyy,Lucé,42
 Tempe,Louviers,31
-Louviers,Nakhon Si Thammarat,0
+Louviers,Nakhon Si Thammarat,1
 Louviers,Rhede,74
 Sarkand,Lourdes,42
 Knurów,Lourdes,93
@@ -12102,7 +12102,7 @@ Chaniá,L'Haÿ-les-Roses,83
 Dornbirn,L'Haÿ-les-Roses,53
 Ünye,L'Haÿ-les-Roses,63
 Le Vésinet,Natchitoches,21
-Bury,Levallois-Perret,0
+Bury,Levallois-Perret,1
 Dicholi,Les Sables-d'Olonne,20
 Tarsus,Les Sables-d'Olonne,21
 Les Sables-d'Olonne,Satun,80
@@ -12122,13 +12122,13 @@ Shalkar,Le Pontet,61
 Achim,Le Pontet,66
 Le Plessis-Trévise,Noisy-le-Sec,88
 Çay,Le Plessis-Trévise,53
-Nazaré da Mata,Le Plessis-Trévise,0
+Nazaré da Mata,Le Plessis-Trévise,1
 Le Plessis-Robinson,Mungia,13
 Plymouth,Le Petit-Quevilly,84
 Rāmhormoz,Le Perreux-sur-Marne,99
 Le Perreux-sur-Marne,Būrewāla,82
 Le Pecq,Moquegua,42
-Ruyigi,Le Pecq,0
+Ruyigi,Le Pecq,1
 Toritama,Le Pecq,84
 Le Pecq,Wervik,71
 Salamanca,Le Pecq,22
@@ -12418,7 +12418,7 @@ Shostka,Chenôve,33
 Minchinābād,Chennevières-sur-Marne,53
 Chennevières-sur-Marne,Jincheng,74
 Chennevières-sur-Marne,Pereira,41
-Caohe,Chelles,0
+Caohe,Chelles,1
 Chelles,Meerssen,65
 Chaumont,Thành Phố Lạng Sơn,40
 Korba,Chaumont,5
@@ -12458,11 +12458,11 @@ Qaraçuxur,Chalon-sur-Saône,28
 Jiaozuo,Chalon-sur-Saône,16
 Chalon-sur-Saône,Chaniá,9
 Bungo-Takada-shi,Challans,17
-Challans,Abidjan,0
+Challans,Abidjan,1
 West Des Moines,Cestas,30
 Calatagan,Cestas,62
 Cestas,Canton,31
-Cestas,Dhūri,0
+Cestas,Dhūri,1
 Cesson-Sévigné,Mortsel,69
 Cergy,Ekibastuz,73
 Salo,Cavaillon,31
@@ -12567,7 +12567,7 @@ Berck-Plage,Sebdou,61
 Balsas,Berck-Plage,55
 Rillieux-la-Pape,Bègles,68
 Bègles,South Euclid,81
-Ilongero,Bègles,0
+Ilongero,Bègles,1
 Bègles,Wellington,91
 Ağdaş,Beauvais,24
 Bayonne,Jāmpur,82
@@ -12585,7 +12585,7 @@ Bagnols-sur-Cèze,Dorsten,86
 Alapayevsk,Bagnols-sur-Cèze,30
 Alagir,Bagnolet,97
 Bagneux,Pleasant Grove,61
-Otjiwarongo,Bagneux,0
+Otjiwarongo,Bagneux,1
 Schramberg,Avion,87
 Avion,Bogor,73
 Avion,Ripon,98
@@ -12646,14 +12646,14 @@ Flensburg,Alençon,41
 Alençon,Alfafar,37
 Drochia,Albertville,70
 Ajaccio,Hacılar,40
-Delano,Ajaccio,0
+Delano,Ajaccio,1
 Ajaccio,Pindi Bhattiān,85
 Odenthal,Ajaccio,90
 Roșiorii de Vede,Ajaccio,56
 Ålesund,Ajaccio,78
 Aix-les-Bains,Tangzhai,80
 Dhāka,Aix-en-Provence,60
-Kultali,Aix-en-Provence,0
+Kultali,Aix-en-Provence,1
 Zelenokumsk,Aix-en-Provence,36
 Agen,Ardeşen,86
 Agen,Pālitāna,51
@@ -12937,7 +12937,7 @@ Nahiyat Ghammas,Rugby,44
 Rugby,Candelaria,22
 Rugby,Veszprém,34
 Neiba,Royton,46
-Hoorn,Royal Tunbridge Wells,0
+Hoorn,Royal Tunbridge Wells,1
 Siddhapur,Royal Tunbridge Wells,15
 Rottingdean,Chiplūn,81
 Rottingdean,North Chicago,29
@@ -12946,9 +12946,9 @@ Romsey,Annino,93
 Tonj,Rochester,72
 Xico,Rochester,15
 Rochdale,Harūr,29
-Shah Alam,Risca,0
+Shah Alam,Risca,1
 Risca,Altona,29
-Beloretsk,Risca,0
+Beloretsk,Risca,1
 Dīla,Risca,55
 Ripon,Bad Honnef,62
 Avion,Ripon,98
@@ -12957,7 +12957,7 @@ Rhondda,Jēkabpils,50
 Leiyang,Rhondda,5
 Rhondda,Timbó,43
 Renfrew,Crosby,84
-Reigate,Astanajapura,0
+Reigate,Astanajapura,1
 Redhill,Ciudad Guayana,26
 Redhill,Kaminoyama,37
 Redditch,Livramento do Brumado,29
@@ -13150,7 +13150,7 @@ Derry,Naharlagun,93
 Pyatigorsk,Derry,54
 Paombong,Derry,84
 Derry,Tangier,95
-Ceres,City of London,0
+Ceres,City of London,1
 City of London,Haubourdin,43
 Arzgir,London,88
 Mount Vernon,Llanelli,94
@@ -13232,7 +13232,7 @@ Coity,Roxas,26
 Cobham,Radom,12
 Staphorst,Coalville,91
 Divnoye,Coalville,16
-Tete,Clydebank,0
+Tete,Clydebank,1
 San Andrés Itzapa,Clydebank,61
 Kamp-Lintfort,Clydach,36
 Piedras Negras,Clydach,84
@@ -13262,9 +13262,9 @@ Petrópolis,Chester-le-Street,55
 Offa,Chester-le-Street,76
 Salsomaggiore Terme,Chester-le-Street,74
 Noisy-le-Sec,Chester-le-Street,24
-Chesterfield,Morozovsk,0
+Chesterfield,Morozovsk,1
 Chesterfield,El Monte,16
-Esuk Oron,Chester,0
+Esuk Oron,Chester,1
 Chessington,Kostroma,55
 Kirkintilloch,Cheshunt,65
 Manthani,Cheshunt,5
@@ -13298,7 +13298,7 @@ Danlí,Camberley,30
 Russellville,Camberley,62
 Chennai,Caerphilly,51
 La Gi,Bushey,94
-Bury,Levallois-Perret,0
+Bury,Levallois-Perret,1
 Bury,Équeurdreville-Hainneville,26
 Bury,Awka,83
 Burton upon Trent,Acilia-Castel Fusano-Ostia Antica,20
@@ -13392,7 +13392,7 @@ Berkhamsted,Sliedrecht,81
 Belper,Butterworth,19
 Harper,Bellshill,48
 Bellshill,Carmichael,46
-Bellshill,Maumelle,0
+Bellshill,Maumelle,1
 Bellshill,Hille,32
 Turek,Bellshill,89
 Bedworth,Saraipali,27
@@ -13659,7 +13659,7 @@ Tafo,Juegang,15
 Tafo,Tamboril,5
 Tafo,Bāghpat,17
 Muvattupuzha,Tafo,75
-Tafo,Sālūr,0
+Tafo,Sālūr,1
 Ashta,Suhum,69
 Sekondi-Takoradi,West Raleigh,40
 Sekondi-Takoradi,Greenfield,41
@@ -13821,7 +13821,7 @@ Tríkala,Caicó,57
 Thívai,Isiro,59
 Thívai,Yelizovo,62
 Salamína,Silifke,41
-Rethymno,Corner Brook,0
+Rethymno,Corner Brook,1
 Rethymno,Prigen,75
 Piraeus,Buraydah,76
 Marcq-en-Barœul,Piraeus,37
@@ -13990,7 +13990,7 @@ Sumpango,Köping,80
 Hachinohe,Sumpango,60
 Sumpango,Lynn,45
 Galanta,Sumpango,74
-Xinyang,Sololá,0
+Xinyang,Sololá,1
 Zaventem,Sololá,85
 Ribeirão Preto,Santiago Atitlán,22
 Santa María de Jesús,Jūrmala,41
@@ -14115,7 +14115,7 @@ Antonina,Chimaltenango,2
 Cantel,Kissimmee,53
 Barberena,Kharkiv,79
 Barberena,Mitry-Mory,10
-Floral Park,Barberena,0
+Floral Park,Barberena,1
 Barberena,Itambé,64
 Barberena,Corato,6
 Antigua Guatemala,Deoband,76
@@ -14554,7 +14554,7 @@ Asunción,Tulungagung,60
 Brook Park,Tulungagung,28
 Maracaibo,Tulangan Utara,44
 Bourg-la-Reine,Tulangan Utara,16
-Thākurgaon,Tuban,0
+Thākurgaon,Tuban,1
 Tual,Ar Rahad,78
 Ninghai,Trenggalek,12
 Trenggalek,Aytos,25
@@ -14591,7 +14591,7 @@ Sungai Raya,Ciudad Victoria,82
 Jalor,Sungai Penuh,42
 Ārba Minch’,Sungai Penuh,87
 Medicine Hat,Sungailiat,10
-West Chicago,Sungailiat,0
+West Chicago,Sungailiat,1
 Sungailiat,Bayaguana,9
 Sungailiat,Eitorf,64
 Sumenep,Nubl,35
@@ -14660,7 +14660,7 @@ Summit,Samarinda,17
 Ruteng,Lindlar,2
 Ruteng,Blankenberge,25
 Rengasdengklok,Kaga Bandoro,15
-Bussolengo,Rengasdengklok,0
+Bussolengo,Rengasdengklok,1
 Berëzovka,Rembangan,15
 Rembangan,Veshnyaki,31
 Rantepao,Srivaikuntam,89
@@ -14744,7 +14744,7 @@ San Isidro,Pandeglang,42
 Pandak,Davao,7
 Taradale,Pandak,59
 Pandak,Jiaojiang,66
-Pandak,Shagamu,0
+Pandak,Shagamu,1
 Panarukan,Carrum Downs,58
 Suisan,Panarukan,22
 Việt Trì,Pamulang,95
@@ -14820,7 +14820,7 @@ Sonsón,Loa Janan,44
 Lembang,Atascocita,8
 Lembang,Cobourg,66
 Aschersleben,Lebaksiu,31
-Lebaksiu,East Los Angeles,0
+Lebaksiu,East Los Angeles,1
 Khatauli,Lebaksiu,55
 Râşnov,Lawang,84
 ‘Ajab Shīr,Lasem,45
@@ -14843,7 +14843,7 @@ Quakers Hill,Kotabumi,44
 Radom,Klungkung,75
 Klungkung,Chanhassen,61
 Clearfield,Klaten,29
-Klaten,Rajpur,0
+Klaten,Rajpur,1
 Villabate,Klangenan,91
 Paternò,Klangenan,13
 Klangenan,Mungaa,53
@@ -15043,8 +15043,8 @@ Atambua,Taupo,3
 Schwerte,Atambua,29
 Atambua,Qionghu,58
 Astanajapura,Massamagrell,47
-Reigate,Astanajapura,0
-Amuntai,Pyinmana,0
+Reigate,Astanajapura,1
+Amuntai,Pyinmana,1
 Ambon,Curanilahue,54
 Ambon,Ocozocoautla de Espinosa,57
 Loboc,Ambon,20
@@ -15345,7 +15345,7 @@ Wani,Krasnoural’sk,16
 San Pablo,Wani,6
 Trabzon,Wani,58
 Mühldorf,Walajapet,98
-Wai,Felege Neway,0
+Wai,Felege Neway,1
 Wādi,Vereeniging,17
 Finglas,Vyāra,24
 Vyāra,Huánuco,9
@@ -15412,7 +15412,7 @@ Okolona,Vedaraniyam,49
 Vedaraniyam,Landau in der Pfalz,52
 Changnyeong,Vedaraniyam,12
 Leningradskaya,Vayalār,34
-Vayalār,Sunny Isles Beach,0
+Vayalār,Sunny Isles Beach,1
 Vayalār,Tres Isletas,28
 Shpola,Vayalār,39
 Natahoyo,Vayalār,59
@@ -15466,7 +15466,7 @@ Keren,Uravakonda,1
 Uravakonda,Bogorodskoye,89
 Uravakonda,Ghātāl,21
 Uravakonda,Barinitas,34
-Uravakonda,Lankaran,0
+Uravakonda,Lankaran,1
 Chirchiq,Uran,13
 Uran,Marhanets’,10
 Uran,Lyantor,28
@@ -15565,7 +15565,7 @@ Colonia Santa Teresa,Titāgarh,58
 Titāgarh,Tepotzotlán,13
 Tiruvottiyūr,António Enes,98
 Balmazújváros,Tiruvottiyūr,78
-Dzhankoy,Cheyyar,0
+Dzhankoy,Cheyyar,1
 Oostkamp,Cheyyar,88
 Tiruvannāmalai,Tomsk,82
 Bastia umbra,Tiruvannāmalai,10
@@ -15636,7 +15636,7 @@ Thākurganj,Soledad,24
 Xindian,Thakurdwara,87
 Yorosso,Thakurdwara,55
 Tezpur,Bordj el Kiffan,89
-Okemos,Teonthar,0
+Okemos,Teonthar,1
 Thenkasi,Badarganj,21
 Thenkasi,Santa Cruz do Sul,64
 Wuustwezel,Tellicherry,82
@@ -15657,7 +15657,7 @@ Morshansk,Tārānagar,68
 Tarāna,Anxiang,25
 Uravakonda,Tāramangalam,10
 Cormeilles-en-Parisis,Tāramangalam,13
-Tāramangalam,Puerto La Cruz,0
+Tāramangalam,Puerto La Cruz,1
 Detroit,Tarakeswar,54
 Tarakeswar,Youssoufia,13
 Berck,Tanuku,53
@@ -15785,7 +15785,7 @@ Pastavy,Sonāmukhi,19
 Scranton,Sompeta,50
 Tarifa,Someshwar,21
 Şimleu Silvaniei,Someshwar,87
-Przeworsk,Solan,0
+Przeworsk,Solan,1
 Molepolole,Solan,2
 Sojītra,Yamazakichō-nakabirose,44
 Sojītra,Park Forest,35
@@ -16048,7 +16048,7 @@ Salamanca,Sāndi,46
 Sumbawa Besar,Sancoale,8
 Sancoale,Valencia,74
 Sānchor,Jimo,88
-East Point,Sānchor,0
+East Point,Sānchor,1
 Farrukhnagar,Sanāwad,28
 Sanāwad,Rāipur,13
 Sanāwad,Zouerate,18
@@ -16077,7 +16077,7 @@ Nan,Samālkha,99
 Samālkha,Pidhorodne,56
 Sālūr,Zacapa,77
 Almonte,Sālūr,12
-Tafo,Sālūr,0
+Tafo,Sālūr,1
 Wewak,Sālūmbar,66
 Sālūmbar,Santo Antônio do Amparo,39
 Daura,Sālūmbar,42
@@ -16257,7 +16257,7 @@ Rājula,Nayoro,62
 Tulun,Rājpura,37
 Versailles,Rājpura,34
 Rajpur,Yorkville,60
-Klaten,Rajpur,0
+Klaten,Rajpur,1
 Rajpur,Zarechnyy,6
 Ban Lam Luk Ka,Rajpur,9
 Rājpīpla,Okhtyrka,57
@@ -16335,7 +16335,7 @@ Puttūr,Castaic,92
 Puttūr,Cangzhou,17
 Potsdam,Puttūr,57
 Al Khums,Puttūr,28
-Zürich (Kreis 2),Puttūr,0
+Zürich (Kreis 2),Puttūr,1
 Riverbank,Puttūr,58
 Puttūr,Lincheng,66
 Puttūr,Windsor,71
@@ -16465,7 +16465,7 @@ Rocklin,Petlād,69
 Perundurai,Hasselt,88
 Perundurai,San Miguel de Tucumán,68
 Nagai,Perumpāvūr,56
-Ostrów Mazowiecka,Perumpāvūr,0
+Ostrów Mazowiecka,Perumpāvūr,1
 Perumpāvūr,Bata,64
 Perumpāvūr,Rizal,79
 Areia Branca,Perumpāvūr,48
@@ -16499,7 +16499,7 @@ Tambopata,Pātūr,58
 Pattukkottai,Ponte Nova,41
 Pattukkottai,Manteca,20
 Patti,Lingsugūr,7
-Patti,Altglienicke,0
+Patti,Altglienicke,1
 San Buenaventura,Patnāgarh,63
 Tartagal,Patnāgarh,59
 Cerro Azul,Patna,50
@@ -16635,7 +16635,7 @@ Sagunto,Pachperwa,14
 Novyy Turtkul’,Pāchora,77
 Châtenay-Malabry,Ottappālam,93
 Ottappālam,Konārka,45
-Osmanabad,Marília,0
+Osmanabad,Marília,1
 Orai,Kurunegala,88
 At-Bashi,Orai,72
 Orai,Bagar,13
@@ -16781,8 +16781,8 @@ Naraini,Zile,52
 Naraina,Misawa,49
 Adūr,Napāsar,51
 Firmat,Napāsar,92
-Ise-Ekiti,Nāngloi Jāt,0
-Nāngal Township,An Nāşirīyah,0
+Ise-Ekiti,Nāngloi Jāt,1
+Nāngal Township,An Nāşirīyah,1
 Aiud,Nāngal Township,4
 Nandyāl,Cranberry Township,53
 Nandyāl,Yakuplu,84
@@ -16906,7 +16906,7 @@ Qufu,Mundargi,4
 Deva,Multai,27
 Mūlki,Svishtov,77
 Mūlki,Chandigarh,20
-Nāḩiyat al Fuhūd,Mūlki,0
+Nāḩiyat al Fuhūd,Mūlki,1
 Cheshire,Mūlki,49
 Mulgund,Leeds,77
 Mulbāgal,Sterling,68
@@ -17190,7 +17190,7 @@ Torrevieja,Mahīshādal,68
 Mahīshādal,Campo Formoso,44
 Mahgawān,Pashkovskiy,80
 Bundoora,Mahgawān,12
-Maheshwar,Frutal,0
+Maheshwar,Frutal,1
 Maheshwar,San Vicente,55
 Standerton,Mahendragarh,8
 Adamstown,Mahemdāvād,74
@@ -17204,7 +17204,7 @@ Mahbūbābād,Tuni,51
 Khomeynī Shahr,Mahāsamund,10
 Mahāsamund,Canteleu,31
 Mahāsamund,Kurduvādi,58
-Kremenets’,Mahārāganj,0
+Kremenets’,Mahārāganj,1
 Mahārāganj,Nandu,30
 Shahrīār,Mahārāganj,42
 Mahārāganj,Pithorāgarh,97
@@ -17227,7 +17227,7 @@ Madurai,Yamagata,5
 Winschoten,Madurai,90
 Madurai,Drohobych,80
 Madukkūr,Waliso,89
-Kara,Madukkarai,0
+Kara,Madukkarai,1
 Zlatoust,Madukkarai,8
 Chennai,Caerphilly,51
 Chennai,Munnar,96
@@ -17267,7 +17267,7 @@ Southall,Lonavla,14
 Lonavla,Umeå,90
 Lonavla,Mandi Bahāuddīn,34
 Khāndbāri,Lonār,28
-Lonār,Gubkinskiy,0
+Lonār,Gubkinskiy,1
 Kagoro,Lohārdaga,90
 Lohārdaga,Mitaka-shi,43
 Lohārdaga,Medeiros Neto,65
@@ -17380,7 +17380,7 @@ Kulpahār,Ponta Delgada,14
 Kulittalai,Paiján,19
 Kulgam,Ho Chi Minh City,27
 Sokoto,Kulgam,91
-Tosu,Kulgam,0
+Tosu,Kulgam,1
 Kulgam,Hino,9
 Kukshi,Morlaix,71
 Kukshi,Itabirito,98
@@ -17491,7 +17491,7 @@ Koch Bihār,Hepo,55
 Hangzhou,Koch Bihār,96
 Kizhake Chālakudi,Douglasville,66
 Provo,Kithor,34
-Kishtwār,Pineda de Mar,0
+Kishtwār,Pineda de Mar,1
 Péruwelz,Kishtwār,75
 Kīratpur,Catanduva,75
 Malinaltepec,Kīratpur,67
@@ -17524,7 +17524,7 @@ Midland,Kheri,18
 Fangshan,Kherālu,71
 Aïn Touta,Khekra,93
 Kheda,La Jagua de Ibirico,78
-Doda,Khātra,0
+Doda,Khātra,1
 Touba,Khātra,1
 Scafati,Khātegaon,7
 Khatauli,Johi,67
@@ -17541,7 +17541,7 @@ Ebersbach an der Fils,Khardah,91
 Dhuliān,Khardah,4
 Khardah,Resende,73
 Osogbo,Khardah,5
-Badagry,Khardah,0
+Badagry,Khardah,1
 Geseke,Kharar,22
 Kharar,San José de las Lajas,36
 Kharar,BABOR - VILLE,26
@@ -17629,7 +17629,7 @@ Muncie,Katangi,88
 Katangi,Whyalla,62
 Katangi,Sainte-Thérèse,1
 Kasrāwad,Spanish Lake,49
-Petushki,Kashipur,0
+Petushki,Kashipur,1
 Hà Đông,Kashipur,10
 Kashipur,Oguta,25
 Kashipur,Taiyuan,2
@@ -17762,7 +17762,7 @@ Kālka,Kirando,21
 North Potomac,Kāliyāganj,26
 Oltu,Kāliyāganj,75
 Saoula,Kalghatgi,62
-Kalghatgi,BABOR - VILLE,0
+Kalghatgi,BABOR - VILLE,1
 Kalghatgi,Tabuk,56
 Guadalupe,Kalghatgi,87
 Aïn Kercha,Kalghatgi,24
@@ -17944,7 +17944,7 @@ Jalgaon,Igualada,76
 Jalgaon,Beerse,20
 Pickering,Jalgaon,22
 Ban Pong,Jalgaon,7
-Kirovohrad,Jalesar,0
+Kirovohrad,Jalesar,1
 Doha,Jalesar,7
 Jālaun,Juwana,59
 Jālaun,Vwawa,98
@@ -17998,7 +17998,7 @@ Lima,Jagādhri,84
 Ugep,Jabalpur,8
 Hat Yai,Jabalpur,49
 Jabalpur,Pati,68
-Itimādpur,Viseu,0
+Itimādpur,Viseu,1
 Itārsi,Bīlāspur,99
 Itānagar,Isfana,95
 Islāmpur,Dayton,73
@@ -18234,7 +18234,7 @@ Kabin Buri,Godda,17
 Annaka,Godda,4
 Carúpano,Godda,6
 Betūl,Gobindpur,99
-Gobindpur,Ribeirão das Neves,0
+Gobindpur,Ribeirão das Neves,1
 Gobindpur,Asamankese,17
 Gobindpur,Itaitinga,78
 Bergenfield,Gobārdānga,37
@@ -18421,7 +18421,7 @@ Weichanglu,Dondaicha,82
 Dondaicha,Halmstad,78
 Zhezqazghan,Dombivli,55
 Porto San Giorgio,Dod Ballāpur,63
-Doda,Khātra,0
+Doda,Khātra,1
 Phek,Doda,73
 Sendhwa,Diphu,33
 Miryang,Diphu,51
@@ -18458,7 +18458,7 @@ Caxambu,Dhūri,46
 Dhūri,Ulhasnagar,37
 Campinas,Dhūri,28
 Dhūri,Udipi,73
-Cestas,Dhūri,0
+Cestas,Dhūri,1
 Dhupgāri,Vwawa,58
 Dhupgāri,Mogok,29
 Chenôve,Dhupgāri,82
@@ -18474,7 +18474,7 @@ Dhorāji,Beirut,39
 Marovoay,Dhorāji,12
 Dhone,Ostrava,64
 Balashikha,Dholka,24
-Dhing,Tlajomulco de Zúñiga,0
+Dhing,Tlajomulco de Zúñiga,1
 Bordeaux,Dhing,51
 Dhing,Ouésso,15
 Dhing,Bouna,55
@@ -18524,7 +18524,7 @@ Livadeiá,Dhāka,42
 Dhāka,Palatine,17
 Kanuru,Dewas,54
 Devgarh,Coronado,6
-Devgarh,West Chicago,0
+Devgarh,West Chicago,1
 Devgadh Bāriya,Tlaquiltenango,13
 Devarkonda,Singkil,93
 Manicaragua,Devanhalli,8
@@ -18683,7 +18683,7 @@ Chintāmani,La Pineda,92
 Chintāmani,Sabalgarh,50
 Chintāmani,Fougères,5
 Jīnd,Chintāmani,58
-Chintāmani,Sukagawa,0
+Chintāmani,Sukagawa,1
 Ballarat,Chinnamanūr,44
 Chinnamanūr,Thành Phố Nam Định,72
 Kiratu,Chincholi,58
@@ -18739,7 +18739,7 @@ Várzea Alegre,Chāvakkād,40
 Chhindwāra,Chaksu,49
 Chaksu,El Retén,28
 Margate,Chās,69
-Charthāwal,‘Anat al Qadīmah,0
+Charthāwal,‘Anat al Qadīmah,1
 Dimona,Charthāwal,40
 Great Bend,Charthāwal,3
 Kamienna Góra,Charthāwal,81
@@ -18851,7 +18851,7 @@ Botād,Subaykhān,31
 Los Angeles,Borivli,87
 Luleå,Borivli,29
 Rafaela,Mumbai,60
-Mumbai,Villa Paula de Sarmiento,0
+Mumbai,Villa Paula de Sarmiento,1
 Sokołów Podlaski,Mumbai,56
 Mumbai,Xiangyang,87
 Chocope,Mumbai,10
@@ -18862,11 +18862,11 @@ Bokajān,Rancho San Diego,52
 Bokajān,Mehndāwal,54
 Bodināyakkanūr,Sainte-Marie,3
 Barnsley,Bodhan,44
-Glória do Goitá,Bodhan,0
+Glória do Goitá,Bodhan,1
 Bobbili,Obrenovac,5
 Taloqan,Biswān,97
 Az Zintān,Biswān,5
-Bissāu,Uslar,0
+Bissāu,Uslar,1
 Bishnupur,Majenang,59
 Bishnupur,Pourham,90
 Bisauli,Chios,67
@@ -19058,7 +19058,7 @@ Bauda,Luzhniki,87
 Bauda,Boudjima,73
 Kyaiklat,Bauda,28
 Ishinomaki,Batāla,14
-São João de Meriti,Batāla,0
+São João de Meriti,Batāla,1
 Bastī,Şemdinli,26
 Rakvere,Bāsoda,91
 Bāsoda,Quixeramobim,16
@@ -19114,7 +19114,7 @@ Sundarnagar,Barddhamān,69
 Amahai,Barddhamān,80
 Barddhamān,Dhangarhi,91
 Bebedouro,Barddhamān,58
-Barddhamān,Karonga,0
+Barddhamān,Karonga,1
 Changchun,Barddhamān,22
 Barddhamān,Ḩarastā,79
 Bar Bigha,Fürstenfeldbruck,45
@@ -19536,7 +19536,7 @@ Encinitas,Monoharpur,30
 Union Hill-Novelty Hill,Monoharpur,55
 São Félix do Xingu,Monoharpur,36
 Ōita,Monoharpur,91
-Monoharpur,Müllheim,0
+Monoharpur,Müllheim,1
 Nabagrām,Wildomar,5
 Medemblik,Nabagrām,85
 Tortosa,Singāpur,78
@@ -19653,7 +19653,7 @@ Injambakkam,Narva,73
 Injambakkam,Kamalganj,82
 Camaiore,Injambakkam,88
 Holly Springs,Injambakkam,28
-Kultali,Aix-en-Provence,0
+Kultali,Aix-en-Provence,1
 Belmont,Kultali,51
 Clovis,Shahbazpur,98
 Shahbazpur,Charallave,14
@@ -19681,7 +19681,7 @@ Zaxo,Santo Antônio de Posse,35
 Zaxo,Salmās,77
 Zaxo,Bârlad,70
 Uusikaupunki,Tozkhurmato,93
-Tikrīt,Nahāvand,0
+Tikrīt,Nahāvand,1
 Tikrīt,San Mateo,26
 Tallkayf,Diepholz,53
 Cegléd,Sīnah,80
@@ -19745,11 +19745,11 @@ Ar Rumaythah,Cambuí,46
 Ramadi,Concord,88
 ‘Aqrah,Oskarshamn,84
 ‘Aqrah,Mākum,91
-Nāngal Township,An Nāşirīyah,0
+Nāngal Township,An Nāşirīyah,1
 An Nāşirīyah,Bünde,12
 An Nāşirīyah,Tānda,3
 Eirunepé,An Nāşirīyah,44
-Charthāwal,‘Anat al Qadīmah,0
+Charthāwal,‘Anat al Qadīmah,1
 ‘Anat al Qadīmah,Shively,21
 ‘Anat al Qadīmah,Guiset East,43
 Wittlich,Al Musayyib,15
@@ -19780,7 +19780,7 @@ Třinec,Al Hārithah,49
 Nahiyat Ghammas,Rugby,44
 Franconville,Nahiyat Ghammas,15
 Nahiyat Ghammas,Itapetininga,47
-Nāḩiyat al Fuhūd,Mūlki,0
+Nāḩiyat al Fuhūd,Mūlki,1
 Marovoay,Nāḩiyat al Fuhūd,84
 Neustadt/Süd,Al Fāw,72
 Al Fallūjah,Shaowu,65
@@ -19856,7 +19856,7 @@ Sāveh,Carindale,98
 Sāveh,Modiin Ilit,62
 Cox’s Bāzār,Sari,67
 Sari,American Canyon,84
-Linshui,Saqqez,0
+Linshui,Saqqez,1
 Leioa,Sanandaj,80
 Augusta,Sanandaj,83
 Wilsonville,Salmās,27
@@ -19944,7 +19944,7 @@ Naz̧arābād,Navashino,43
 Naqadeh,Bramsche,60
 Naqadeh,Sawākin,31
 Needham,Naqadeh,61
-Tikrīt,Nahāvand,0
+Tikrīt,Nahāvand,1
 Nahāvand,Abbiategrasso,63
 Tanjung Pandan,Nahāvand,50
 La Pineda,Mīnāb,35
@@ -20083,7 +20083,7 @@ Kanash,Hashtrūd,64
 Āstārā,Jessore,33
 Jindřichův Hradec,Āstārā,24
 Mariupol,Āstārā,8
-Āstārā,Bad Lippspringe,0
+Āstārā,Bad Lippspringe,1
 Āstārā,Joplin,6
 Barnsley,Āstārā,84
 Āstāneh-ye Ashrafīyeh,Springfield,19
@@ -20141,7 +20141,7 @@ Dorcheh Pīāz,Roldanillo,72
 Siegburg,Zahedan,30
 Nantes,Zahedan,96
 Kurovskoye,Zahedan,30
-Tāybād,Leningradskaya,0
+Tāybād,Leningradskaya,1
 Las Rozas de Madrid,Tāybād,66
 Larnaca,Tāybād,13
 Bensonhurst,Sarakhs,80
@@ -20266,7 +20266,7 @@ Comiso,Bor,2
 Torzhok,Comiso,27
 Dengzhou,Castrovillari,72
 Apeldoorn,Castrovillari,65
-London,Castrovillari,0
+London,Castrovillari,1
 Novara,Castelvetrano,25
 Lucé,Castelvetrano,34
 Puttalam,Carini,30
@@ -20314,7 +20314,7 @@ Suixi,Voghera,24
 Denizli,Vittorio Veneto,89
 Viterbo,Saint-Benoît,53
 Vimodrone,Zhujiajiao,98
-Rancho San Diego,Vimodrone,0
+Rancho San Diego,Vimodrone,1
 Vimercate,Naga,75
 Villafranca di Verona,Otradnyy,26
 Villafranca di Verona,Chino,44
@@ -20470,7 +20470,7 @@ San Miniato Basso,Vladivostok,59
 Jandira,San Mauro Torinese,97
 San Mauro Torinese,Duliāgaon,75
 San Mauro Torinese,Columbia,12
-Theunissen,San Mauro Torinese,0
+Theunissen,San Mauro Torinese,1
 San Giuseppe Vesuviano,Al Ḩasakah,92
 San Giuseppe Vesuviano,Shelui,81
 Cuautepec de Hinojosa,San Giuseppe Vesuviano,87
@@ -20521,7 +20521,7 @@ Dhankutā,Rivoli,64
 Henstedt-Ulzburg,Rimini,51
 Kaset Wisai,Rimini,78
 Rieti,Pipraich,26
-Rieti,Viljoenskroon,0
+Rieti,Viljoenskroon,1
 Travnik,Riccione,81
 Maralal,Rho,83
 Rho,Abou el Hassan,55
@@ -20539,11 +20539,11 @@ Porto San Giorgio,Tochigi,69
 Portogruaro,Roanoke Rapids,55
 Portogruaro,Teresa,51
 Uttarkāshi,Portogruaro,15
-Civitanova Marche,Cary,0
+Civitanova Marche,Cary,1
 Portici,Hobart,80
 Portici,Evergreen Park,97
 Portici,Legnica,33
-Portici,Kirksville,0
+Portici,Kirksville,1
 Santa Catarina Pinula,Portici,32
 Portici,Dammarie-les-Lys,81
 Woodridge,Pordenone,54
@@ -20767,7 +20767,7 @@ Imola,Turhal,28
 Mahād,Imola,64
 Jesi,Nevel’,38
 Bensekrane,Jesi,91
-Clovis,Jesi,0
+Clovis,Jesi,1
 Guidonia,Salaspils,55
 Guidonia,Ōkuchi-shinohara,87
 Grottaferrata,Chettipālaiyam,31
@@ -20904,7 +20904,7 @@ Moosburg,Cisterna di Latina,71
 Ponte Nova,Ciriè,53
 Cinisello Balsamo,Ponta Grossa,31
 Chieti,Nasrullāhganj,43
-Ludlow,Chieri,0
+Ludlow,Chieri,1
 Chieri,Suvorov,12
 Banaybanay,Chieri,37
 Chieri,Granada,13
@@ -20925,7 +20925,7 @@ New Plymouth,Cento,99
 Hilvarenbeek,Cento,80
 São Francisco do Sul,Cecina,84
 Cecina,Shīshgarh,75
-San Fernando,Cecina,0
+San Fernando,Cecina,1
 Quảng Ngãi,Cecina,8
 Macheng,Cava Dè Tirreni,98
 Camocim,Cava Dè Tirreni,54
@@ -20976,7 +20976,7 @@ Busto Arsizio,Maşyāf,56
 Bussolengo,La Habana Vieja,55
 Nūzvīd,Bussolengo,91
 Bussolengo,Białołeka,35
-Bussolengo,Rengasdengklok,0
+Bussolengo,Rengasdengklok,1
 Bussolengo,Florissant,82
 Brusciano,Saint-Laurent-du-Maroni,57
 Brugherio,Česká Třebová,83
@@ -21063,7 +21063,7 @@ Safranbolu,Anzio,86
 Angri,Taquara,35
 Bārākpur,Ancona,33
 Pilkhua,Ancona,47
-Altai,Ancona,0
+Altai,Ancona,1
 Chicacole,Ancona,12
 Cabinda,Ancona,4
 Altamura,Arkalgūd,68
@@ -21205,7 +21205,7 @@ Amman,Cornelius,76
 Turbaco,Al Quwaysimah,27
 Al Quwaysimah,Mahārājgani,3
 Plymouth,Qīr Moāv,22
-Huamachuco,Al Jubayhah,0
+Huamachuco,Al Jubayhah,1
 Aqaba,Sikandarpur,42
 ‘Ajlūn,Tawau,88
 Karak City,Östermalm,56
@@ -21330,13 +21330,13 @@ Toyohama,Kirkby in Ashfield,85
 Toyohama,Meftah,65
 Waterford,Toyohama,32
 Makueni,Toyama,29
-Vyaz’ma,Toyama,0
+Vyaz’ma,Toyama,1
 Toyama,Dhāriwāl,53
 Bellaire,Toyama,89
 Tottori,Dharmanagar,21
 Tosu,Garupá,57
 Tosu,Gumaca,81
-Tosu,Kulgam,0
+Tosu,Kulgam,1
 L'Assomption,Tonoshō,74
 Tonoshō,Port-de-Bouc,56
 Truskavets,Tonoshō,56
@@ -21442,7 +21442,7 @@ Sumoto,Sigmaringen,47
 Sumoto,Třebíč,60
 Sumoto,Mandan,53
 Alcoy,Sukumo,59
-Budënnovsk,Sukumo,0
+Budënnovsk,Sukumo,1
 Palo Alto,Sukumo,49
 Suibara,Ituiutaba,42
 Raleigh,Suibara,68
@@ -21458,7 +21458,7 @@ Sōka,Spruce Grove,90
 Tamboril,Sōja,1
 Sōja,Chita,34
 La Rioja,Sobue,83
-Sobue,SeaTac,0
+Sobue,SeaTac,1
 Río Ceballos,Sobue,2
 Kičevo,Shōbu,52
 Shōbu,El Kef,86
@@ -21542,7 +21542,7 @@ Webuye,Ryōtsu-minato,34
 Ōzu,Bertioga,43
 Ōzu,Piraquara,19
 Devonport,Oyama,28
-Nokia,Owase,0
+Nokia,Owase,1
 Kitwe,Owase,97
 Pollença,Owase,5
 Xoxocotla,Ōtsuki,76
@@ -21876,7 +21876,7 @@ Ad Dasmah,Kanzakimachi-kanzaki,11
 Kānker,Kanuma,98
 Molde,Kanoya,33
 Ar Ruţbah,Kan’onjichō,74
-Wandlitz,Kan’onjichō,0
+Wandlitz,Kan’onjichō,1
 Kan’onjichō,Mandurah,32
 Kan’onjichō,Heppenheim an der Bergstrasse,35
 New Berlin,Kannabechō-yahiro,10
@@ -21946,7 +21946,7 @@ Iwade,Kota Kinabalu,4
 Nakanojōmachi,Itoman,10
 Gwangju,Itoman,26
 Itoman,Benevento,66
-Itoman,Tanah Merah,0
+Itoman,Tanah Merah,1
 Itoman,Catalina Foothills,22
 Itoigawa,Aflou,58
 Ambatolampy,Itō,72
@@ -22105,7 +22105,7 @@ Taal,Fuji,33
 Seeheim-Jugenheim,Fuji,71
 Fayzabad,Fuchūchō,10
 Phan Rang-Tháp Chàm,Fuchūchō,63
-Osmancık,Fuchūchō,0
+Osmancık,Fuchūchō,1
 Esparza,Enzan,24
 Arroyo Naranjo,Daitōchō,68
 Chiryū,Great Bend,29
@@ -22143,7 +22143,7 @@ Jalālpur,Okinawa,4
 Tonawanda,Kushima,12
 Hikari,Pimentel,42
 Hikari,Bethnal Green,49
-Gaomi,Hikari,0
+Gaomi,Hikari,1
 Nagato,Dīla,24
 Nagato,Meyrin,30
 Kondoa,Nagato,32
@@ -22211,7 +22211,7 @@ Sampués,Takahagi,93
 Tynda,Takahagi,62
 Takahagi,Serang,87
 Libiąż,Sukagawa,33
-Chintāmani,Sukagawa,0
+Chintāmani,Sukagawa,1
 Keshorai Pātan,Sukagawa,76
 Barking,Shizukuishi,91
 Shizukuishi,Tobruk,74
@@ -22620,7 +22620,7 @@ Clemmons,Svay Rieng,52
 Borisoglebsk,Sisŏphŏn,55
 Saratov,Siem Reap,91
 Prey Veng,Ramat HaSharon,63
-Pašilaičiai,Prey Veng,0
+Pašilaičiai,Prey Veng,1
 Prey Veng,Turnu Măgurele,55
 Glen Iris,Prey Veng,89
 Rājmahal,Prey Veng,11
@@ -22714,7 +22714,7 @@ Haeju,Santa Lucía,4
 Chunghwa,Sacramento,88
 Chunghwa,Hinigaran,93
 Chunghwa,Saku,99
-Ban Houakhoua,Changyŏn,0
+Ban Houakhoua,Changyŏn,1
 Canguaretama,Changyŏn,59
 Changyŏn,Helmond,42
 Anta,Chaeryŏng-ŭp,59
@@ -22723,7 +22723,7 @@ Fāqūs,Chaeryŏng-ŭp,86
 Chaeryŏng-ŭp,Balikpapan,32
 Ayang-ni,Maniar,22
 Třebíč,Ayang-ni,88
-Anju,South Whittier,0
+Anju,South Whittier,1
 Anju,Itaguaí,67
 Anbyŏn-ŭp,Mogadishu,88
 Khushāb,Anak,43
@@ -22780,13 +22780,13 @@ Yeoju,Shoreview,55
 Ostrołęka,Yesan,22
 Lahore,Yangp'yŏng,25
 Al ‘Ulá,Yangju,17
-Yangju,Grimbergen,0
+Yangju,Grimbergen,1
 Yanggu,Villa Consuelo,7
 Wanju,Yomra,19
 Mosul,Wanju,48
 Wanju,San Luis Potosí,85
 Rāmtek,Waegwan,79
-Magog,Waegwan,0
+Magog,Waegwan,1
 Kainan,Ulsan,97
 Ulsan,Arvayheer,36
 Ulsan,Burton,92
@@ -22834,7 +22834,7 @@ Okcheon,Taşova,49
 Quwaysinā,Kosong,8
 Needham,Kosong,87
 Golitsyno,Kosong,54
-Itupeva,Naju,0
+Itupeva,Naju,1
 Naju,Qeshm,86
 Troitskaya,Munsan,97
 Mungyeong,Devrek,86
@@ -22870,7 +22870,7 @@ Kimje,Frisco,13
 Berbérati,Kimje,35
 Kimberley,Kimhae,97
 Sarankhola,Kimhae,21
-Grand-Bassam,Gimcheon,0
+Grand-Bassam,Gimcheon,1
 Gimcheon,Belmopan,23
 Gimcheon,Karanpur,79
 Gijang,Graham,59
@@ -23076,7 +23076,7 @@ Magog,Kyzylorda,65
 Crofton,Kostanay,54
 Savigliano,Kostanay,35
 Kostanay,Galesburg,93
-Tawau,Kostanay,0
+Tawau,Kostanay,1
 Kostanay,Ajā,4
 Karatau,Ghijduwon,89
 Karatau,Boumerdas,31
@@ -23152,7 +23152,7 @@ Muang Phônsavan,Owasso,93
 Muang Pakxan,Chalāla,33
 Lālpur,Thakhèk,79
 Talas,Luang Prabang,69
-Ban Houakhoua,Changyŏn,0
+Ban Houakhoua,Changyŏn,1
 Contramaestre,Ban Houakhoua,82
 Zahlé,Kalmunai,42
 San Rafael,Zahlé,35
@@ -23360,7 +23360,7 @@ Rayevskiy,Aleksotas,13
 Bougado,Aleksotas,19
 Limoges,Šilainiai,45
 Šilainiai,Cimahi,9
-Pašilaičiai,Prey Veng,0
+Pašilaičiai,Prey Veng,1
 Pašilaičiai,Yingchuan,93
 Pilaitė,Sabhā,56
 Pilaitė,Austin,58
@@ -23503,7 +23503,7 @@ Sidi Qacem,Yorba Linda,78
 Jenks,Sidi Ifni,68
 Janeng,Sidi Bennour,14
 Settat,Lugazi,70
-Settat,Porto Feliz,0
+Settat,Porto Feliz,1
 Korbach,Settat,35
 Sefrou,Hermsdorf,30
 Waterford,Sefrou,63
@@ -23553,10 +23553,10 @@ Cruz del Eje,Fkih Ben Salah,93
 Fès al Bali,Końskie,56
 Fès al Bali,Pālitāna,67
 Al ‘Ayzarīyah,Essaouira,33
-Essaouira,Moskovskiy,0
+Essaouira,Moskovskiy,1
 Andapa,El Jadida,30
 El Jadida,Hajīn,17
-El Jadida,Sayreville Junction,0
+El Jadida,Sayreville Junction,1
 Além Paraíba,El Jadida,89
 Französisch Buchholz,El Jadida,5
 Hadejia,El Jadida,37
@@ -23640,7 +23640,7 @@ Budva,Bartlett,63
 Harrisburg,Budva,55
 Budva,Folsom,54
 Bijelo Polje,Manizales,96
-José de Freitas,Bar,0
+José de Freitas,Bar,1
 Torit,Marigot,68
 Kasba Tadla,Marigot,40
 Toamasina,Álamo,55
@@ -23940,7 +23940,7 @@ Pyu,Geraardsbergen,4
 Pyu,Digne-les-Bains,30
 Sillānwāli,Pyinmana,11
 Pyinmana,Żywiec,55
-Amuntai,Pyinmana,0
+Amuntai,Pyinmana,1
 Woodridge,Pyay,12
 Paungde,Vijayapura,79
 Paungde,Arbatache,90
@@ -23971,7 +23971,7 @@ Letpandan,New Glasgow,19
 Senden,Lashio,63
 Kwinana,Lashio,32
 Lashio,Weinheim,63
-Kyaukse,Sansanné-Mango,0
+Kyaukse,Sansanné-Mango,1
 Victoria de Durango,Kyaukse,35
 Klosterneuburg,Kyaikto,82
 Kyaiklat,Bauda,28
@@ -24004,7 +24004,7 @@ Izumiōtsu,Ölgiy,71
 Moissy-Cramayel,Ölgiy,79
 Khovd,Svetogorsk,61
 Akbarpur,Khovd,99
-Altai,Ancona,0
+Altai,Ancona,1
 Ulan Bator,Rundu,70
 Sühbaatar,Ikalamavony,24
 Sühbaatar,Lakeside,49
@@ -24078,7 +24078,7 @@ Banda Aceh,Żabbar,63
 Vilnius,Valletta,75
 Charleville-Mézières,Qormi,12
 Qormi,Buenos Aires,34
-Mosta,Sanshui,0
+Mosta,Sanshui,1
 Maués,Birkirkara,18
 Birkirkara,Arnstadt,36
 Nyaungdon,Vacoas,37
@@ -24105,7 +24105,7 @@ Nan,Male,94
 Male,Kumru,86
 Palmetto Bay,Male,8
 Male,Manosque,40
-Barddhamān,Karonga,0
+Barddhamān,Karonga,1
 Salima,Dzierżoniów,4
 Salima,Sinop,41
 Nsanje,Qufu,64
@@ -24217,7 +24217,7 @@ Ourense,Santiago Tíanguistenco,15
 Allentown,Teziutlan,60
 Texcoco de Mora,Zumpango del Río,49
 Doğubayazıt,Tequixquiac,60
-Tequisquiapan,Floral Park,0
+Tequisquiapan,Floral Park,1
 Cuautitlán Izcalli,Madipakkam,26
 Cuautitlán Izcalli,Andapa,90
 Mount Eliza,Tepoztlán,45
@@ -24229,7 +24229,7 @@ Volokolamsk,Tepeaca,57
 Fujisawa,Tepeaca,7
 Bresso,Tepatlaxco de Hidalgo,29
 Tenosique de Pino Suárez,Oisterwijk,85
-Arvada,Tenosique de Pino Suárez,0
+Arvada,Tenosique de Pino Suárez,1
 Hājo,Temapache,55
 Temapache,Nazaré da Mata,16
 Kurunegala,Tecax,34
@@ -24243,7 +24243,7 @@ Fougères,Teapa,61
 Tomaszów Lubelski,Taxco de Alarcón,14
 Mogliano Veneto,Taxco de Alarcón,3
 Tadmur,Tapachula,60
-Tapachula,Ereğli,0
+Tapachula,Ereğli,1
 Venray,Tapachula,29
 Thatta,Tapachula,19
 Tantoyuca,Barbacena,87
@@ -24283,7 +24283,7 @@ Rancho San Diego,San Cristóbal de las Casas,31
 Pedana,San Andres Tuxtla,44
 Cancún,San Andres Tuxtla,22
 Eloy Alfaro,San Andres Tuxtla,2
-San Andres Tuxtla,Palo,0
+San Andres Tuxtla,Palo,1
 Villa Constitución,Salina Cruz,38
 Igbara-Odo,Río Bravo,19
 Hinche,Río Blanco,91
@@ -24560,7 +24560,7 @@ Bhuvanagiri,Altamira,76
 Skudai,Altamira,81
 Altamira,Dyer,81
 Allende,Huinan,49
-Maricopa,Allende,0
+Maricopa,Allende,1
 Dschang,Allende,13
 Álamo,Chauk,65
 Álamo,Kiev,50
@@ -24576,7 +24576,7 @@ Acatzingo de Hidalgo,Brugge,87
 Kamimaruko,Acatzingo de Hidalgo,22
 Acatlán de Osorio,San Bonifacio,97
 Bethlehem,Acatlán de Osorio,54
-Garoua,Acatlán de Osorio,0
+Garoua,Acatlán de Osorio,1
 Gelibolu,Acatlán de Osorio,32
 Natchez,Acapulco de Juárez,67
 Acapulco de Juárez,Dolores Hidalgo Cuna de la Independencia Nacional,7
@@ -24620,7 +24620,7 @@ Huilango,Limón,8
 Chetumal,Huilango,23
 Plottier,Huilango,29
 Zdolbuniv,Huilango,46
-Santiago Teyahualco,Kingston,0
+Santiago Teyahualco,Kingston,1
 Gujrānwāla,Ojo de Agua,3
 Ojo de Agua,Kalamassery,3
 Buenavista,Bourg-en-Bresse,2
@@ -24665,7 +24665,7 @@ Colorado Springs,Tonalá,77
 Māndal,Tonalá,26
 Cuauhtémoc,Tonalá,3
 Tlaquepaque,Diadema,30
-Dhing,Tlajomulco de Zúñiga,0
+Dhing,Tlajomulco de Zúñiga,1
 Tlajomulco de Zúñiga,Oak Park,17
 Tlajomulco de Zúñiga,Teghra,81
 Bern,Tijuana,4
@@ -24693,10 +24693,10 @@ Dāliyat el Karmil,Tangancícuaro de Arista,67
 Tangancícuaro de Arista,Utena,27
 Tamazula de Gordiano,Pinjaur,82
 Ilovays’k,Tala,22
-Tala,Center Point,0
+Tala,Center Point,1
 Tacámbaro de Codallos,Skvyra,7
 Tacámbaro de Codallos,Schmargendorf,25
-Irbit,Sombrerete,0
+Irbit,Sombrerete,1
 Skokie,Sayula,65
 Sayula,Zijinglu,21
 Sayula,Summerville,57
@@ -24898,7 +24898,7 @@ Fresnillo,Mīrganj,91
 Escuinapa de Hidalgo,Hagere Maryam,27
 Dobropillya,Escuinapa de Hidalgo,67
 Vechta,Ensenada,37
-Seydişehir,Encarnación de Díaz,0
+Seydişehir,Encarnación de Díaz,1
 Encarnación de Díaz,Barabai,72
 Encarnación de Díaz,Abha,58
 Encarnación de Díaz,Fendou,30
@@ -24931,7 +24931,7 @@ Arcore,Ciudad Guzmán,46
 Mornington,Ciudad Delicias,79
 San Antonio Tecómitl,Ciudad Constitución,24
 Ciudad Constitución,Novomoskovs’k,74
-San José de Jáchal,Ciudad Constitución,0
+San José de Jáchal,Ciudad Constitución,1
 Hjørring,Ciudad Anáhuac,2
 Nova Venécia,Ciudad Altamirano,44
 Ciudad Altamirano,Toowoomba,52
@@ -25096,7 +25096,7 @@ Batu Arang,Phitsanulok,80
 Sơn Tây,Batu Arang,9
 Rosa Zarate,Batu Arang,43
 Stevens Point,Shah Alam,21
-Shah Alam,Risca,0
+Shah Alam,Risca,1
 Kópavogur,Cukai,40
 Shirbīn,Cukai,46
 Sömmerda,Kuala Lipis,7
@@ -25121,7 +25121,7 @@ Brake (Unterweser),Tawau,17
 Chiredzi,Tawau,85
 Loandjili,Tawau,83
 ‘Ajlūn,Tawau,88
-Tawau,Kostanay,0
+Tawau,Kostanay,1
 Paka,Gursahāiganj,88
 Paka,Safidon,29
 Paka,Greve,12
@@ -25199,7 +25199,7 @@ Motala,Teluk Intan,93
 Maisons-Alfort,Teluk Intan,70
 Gurun,Abbeville,99
 Semarang,Kepala Batas,11
-Itoman,Tanah Merah,0
+Itoman,Tanah Merah,1
 Pirojpur,Kuching,22
 Kuching,Copenhagen,73
 Kuching,Bad Tölz,59
@@ -25291,7 +25291,7 @@ Pantai Cenang,Anmore,39
 Pantai Cenang,Lawton,76
 Reims,Tete,89
 Tete,La Goulette,9
-Tete,Clydebank,0
+Tete,Clydebank,1
 Ressano Garcia,El Ejido,75
 Quelimane,Bahçelievler,71
 Pemba,Willetton,1
@@ -25332,7 +25332,7 @@ Swakopmund,Paine,52
 Ulan Bator,Rundu,70
 Rehoboth,Rostock,14
 Faruka,Otjiwarongo,51
-Otjiwarongo,Bagneux,0
+Otjiwarongo,Bagneux,1
 Otjiwarongo,Algonquin,87
 Stourport-on-Severn,Okahandja,97
 Okahandja,North Chicopee,82
@@ -25399,7 +25399,7 @@ Wuxi,Diffa,13
 Diffa,Ishikawa,14
 Diffa,Mahlsdorf,1
 Diffa,Elefsína,7
-Dakoro,Villejuif,0
+Dakoro,Villejuif,1
 Paraipaba,Ayorou,59
 Ayorou,Bhola,66
 Belalcazar,Ayorou,26
@@ -25408,7 +25408,7 @@ Salt Lake City,Agadez,84
 Nkoteng,Kingston,59
 Kingston,Unión de Reyes,8
 Shwebo,Kingston,25
-Santiago Teyahualco,Kingston,0
+Santiago Teyahualco,Kingston,1
 Kingston,Pālkonda,13
 Aurora,Zuru,22
 Barnstable,Yenagoa,54
@@ -25443,7 +25443,7 @@ Saki,Fredrikstad,35
 Santyoku,Saki,93
 Oak Forest,Saki,58
 Shagamu,Malbork,28
-Pandak,Shagamu,0
+Pandak,Shagamu,1
 Ribera,Sapele,18
 Nungua,Sapele,57
 Amasya,Rijau,28
@@ -25607,7 +25607,7 @@ Itu,Saint-Dié-des-Vosges,21
 Wesel,Itu,79
 Compostela,Itu,43
 Ise-Ekiti,Oklahoma City,84
-Ise-Ekiti,Nāngloi Jāt,0
+Ise-Ekiti,Nāngloi Jāt,1
 Isanlu-Itedoijowa,Lodhrān,97
 Isanlu-Itedoijowa,Chandauli,5
 Svishtov,Isanlu-Itedoijowa,77
@@ -25717,7 +25717,7 @@ Fiditi,Mansalay,53
 San Bartolomé,Ezza-Ohu,11
 Ezza-Ohu,Shōbu,36
 Morlaix,Esuk Oron,49
-Esuk Oron,Chester,0
+Esuk Oron,Chester,1
 Esuk Oron,Kenda,36
 Sélestat,Esuk Oron,86
 Loja,Esuk Oron,82
@@ -25794,7 +25794,7 @@ Bama,Tshela,67
 Bama,Talamba,65
 Badagry,Ardakān,74
 Kalpetta,Badagry,36
-Badagry,Khardah,0
+Badagry,Khardah,1
 San Francisco,Babana,6
 Babana,Al Quşayr,86
 Babana,Wesseling,13
@@ -25914,7 +25914,7 @@ Makeni,Zevenaar,44
 Zevenaar,Dahlem,17
 Cabagan,Zeist,38
 Belmont,Zeewolde,23
-Zandvoort,El Retén,0
+Zandvoort,El Retén,1
 Salor,Zandvoort,39
 Chhota Udepur,Zaltbommel,1
 Esenyurt,Zaanstad,44
@@ -25993,7 +25993,7 @@ Xiazhen,Veendam,34
 Valkenswaard,York,69
 Wamba,Valkenswaard,30
 Navegantes,Utrecht,73
-Urk,Windsor,0
+Urk,Windsor,1
 Mīāndoāb,Urk,20
 Kyakhta,Uithoorn,83
 Uithoorn,Comrat,82
@@ -26057,7 +26057,7 @@ Ridderkerk,Vapi,37
 Ridderkerk,Phibun Mangsahan,93
 Rhoon,Nimāparha,14
 Mednogorsk,Rhoon,12
-Zamość,Rhoon,0
+Zamość,Rhoon,1
 Olanchito,Rhenen,41
 Meleuz,Putten,63
 Putten,Burscheid,17
@@ -26149,7 +26149,7 @@ Worthing,Katwijk aan Zee,34
 Ronda,Katwijk aan Zee,61
 Warwick,Kampen,12
 Volzhsk,Huizen,99
-Hoorn,Royal Tunbridge Wells,0
+Hoorn,Royal Tunbridge Wells,1
 Hoorn,Atherton,68
 Hoogezand,Suozhen,72
 Nsukka,Hoogeveen,39
@@ -26159,7 +26159,7 @@ Hoogeveen,Dieburg,9
 Choloma,Hoofddorp,96
 Carmagnola,Hoge Vucht,18
 Bentota,Hoensbroek,81
-Hoensbroek,Chelsea,0
+Hoensbroek,Chelsea,1
 Maravatío,Hilvarenbeek,81
 Hilvarenbeek,Cento,80
 Lezhë,Hillegom,54
@@ -26217,7 +26217,7 @@ Babana,Eibergen,83
 Serra Negra,Eersel,47
 Troisdorf,Ede,54
 Duiven,Karak City,99
-Zaragoza,Druten,0
+Zaragoza,Druten,1
 Druten,Gursahāiganj,43
 Dronten,Paradise,24
 Dronten,Losal,62
@@ -26373,7 +26373,7 @@ Jeypore,Arendal,34
 Arendal,Jaigaon,7
 Ålesund,Ajaccio,78
 Kalispell,Ytrebygda,9
-Ytrebygda,Lanaken,0
+Ytrebygda,Lanaken,1
 Ytrebygda,Jidd Ḩafş,73
 Westervoort,Wāling,33
 Wāling,Isiro,99
@@ -26615,7 +26615,7 @@ Tambo Grande,Sa Pá,53
 Kairāna,Tambo Grande,98
 Kleve,Tambo Grande,53
 Sechura,Gol’yanovo,71
-Sedrata,Sechura,0
+Sedrata,Sechura,1
 Vatutino,Sechura,8
 Langley,Santiago de Cao,67
 San Pedro de Lloc,Kalmeshwar,61
@@ -26652,14 +26652,14 @@ Vyāra,Huánuco,9
 Huánuco,Al Wāsiţah,58
 Huamachuco,Al Bāb,20
 Huamachuco,Portsmouth,49
-Huamachuco,Al Jubayhah,0
+Huamachuco,Al Jubayhah,1
 Orós,Huamachuco,79
 Huamachuco,La Possession,86
 Tbilisi,Guadalupe,66
-Guadalupe,Normal,0
+Guadalupe,Normal,1
 Kanye,Guadalupe,37
 Patiya,Guadalupe,1
-Pittsburgh,Ferreñafe,0
+Pittsburgh,Ferreñafe,1
 Shinjō,Coishco,65
 Tulsīpur,Coishco,45
 Chulucanas,Congonhas,53
@@ -26677,7 +26677,7 @@ Kitale,Chepén,64
 Kozienice,Chachapoyas,78
 Monforte de Lemos,Chachapoyas,54
 Catacaos,Mon Repos,22
-Roanne,Catacaos,0
+Roanne,Catacaos,1
 Tulsa,Catacaos,16
 Cajamarca,San Carlos,90
 Cajamarca,Bordj el Kiffan,37
@@ -26942,7 +26942,7 @@ Cannanore,Santiago,24
 Bat Yam,Santa Rosa,49
 Santa Maria,Hammam Sousse,1
 Santa Maria,Saint-Étienne,38
-Santa Maria,Narón,0
+Santa Maria,Narón,1
 Oakdale,Santa Cruz,22
 Santa Cruz,Ibaraki,16
 Soubré,Santa Catalina,90
@@ -26994,7 +26994,7 @@ Alta Gracia,Aurora,55
 Aurora,Matam,88
 San Francisco,Besbes,92
 Weißwasser,San Francisco,64
-San Fernando,Cecina,0
+San Fernando,Cecina,1
 Adliswil,San Fernando,16
 San Fernando,Gameleira,41
 San Fernando,Tacarigua,92
@@ -27011,7 +27011,7 @@ Piotrków Trybunalski,Roxas City,82
 Poyang,Roxas City,56
 Coity,Roxas,26
 Romblon,Diamond Bar,84
-Romblon,Vitória da Conquista,0
+Romblon,Vitória da Conquista,1
 Perumpāvūr,Rizal,79
 Recodo,Tumbes,53
 Santa Elena,Ramos,35
@@ -27071,7 +27071,7 @@ Naushahro Fīroz,Panalanoy,93
 Hagerstown,Panabo,69
 Chegutu,Panabo,81
 Panabo,Sobradinho,98
-San Andres Tuxtla,Palo,0
+San Andres Tuxtla,Palo,1
 Palo,Eisenhüttenstadt,79
 Laguilayan,Pagaluñgan,12
 Much,Pagaluñgan,48
@@ -27231,7 +27231,7 @@ Qingyuan,Lipa City,29
 Grasse,Lingayen,53
 Limay,Marigaon,42
 Winter Springs,Limay,19
-Limay,Rock Springs,0
+Limay,Rock Springs,1
 Lajinha,Libon,88
 Idstein,Libertad,84
 Ilave,Libertad,75
@@ -27249,7 +27249,7 @@ Laguilayan,Ravenna,92
 Laguilayan,Pagaluñgan,12
 Pupri,Laguilayan,72
 La Castellana,Malanje,81
-La Carlota,Batna,0
+La Carlota,Batna,1
 Antibes,Labo,8
 Manzanillo,Labo,6
 Koronadal,Hāsimāra,81
@@ -27538,7 +27538,7 @@ Gorgonzola,Angeles City,66
 Lucé,Amadeo,8
 Kukawa,Amadeo,47
 Terracina,Amadeo,27
-Wuzhou,Amadeo,0
+Wuzhou,Amadeo,1
 Digos,Amadeo,56
 Alicia,Basmat,30
 Alicia,Ptolemaḯda,7
@@ -27782,7 +27782,7 @@ Mardan,Gapan,23
 Mardan,Izúcar de Matamoros,56
 Az Zuwaytīnah,Mardan,74
 Aguadilla,Mangla,40
-Nev’yansk,Mandi Bahāuddīn,0
+Nev’yansk,Mandi Bahāuddīn,1
 Mandi Bahāuddīn,Mödling,92
 Lonavla,Mandi Bahāuddīn,34
 Ninove,Mānānwāla,56
@@ -27793,7 +27793,7 @@ Malakwāl,Jamestown,43
 Deshnoke,Mailsi,10
 Yecapixtla,Mailsi,32
 Mach,Quickborn,64
-Mach,Mweka,0
+Mach,Mweka,1
 Rtishchevo,Loralai,71
 Loralai,Morphett Vale,1
 Ukiah,Loralai,69
@@ -27897,7 +27897,7 @@ Khatauli,Johi,67
 Johi,Masaya,47
 Jīwani,Tuchkovo,3
 Jīwani,Peterhof,92
-Kleve,Jhol,0
+Kleve,Jhol,1
 Griesheim,Jhelum,91
 Jhelum,Zvenigorod,75
 Jhawāriān,Illzach,75
@@ -27935,7 +27935,7 @@ Comalapa,Hāsilpur,70
 Prunedale,Hasan Abdāl,95
 Tullinge,Haru Zbad,32
 Kostroma,Haru Zbad,85
-Chato,Harnoli,0
+Chato,Harnoli,1
 Harīpur,Santana do Paraíso,51
 Harīpur,Sinmak,17
 Kuala Kangsar,Hāla,4
@@ -28006,7 +28006,7 @@ Fontana,Darya Khān,90
 Tiznit,Dādhar,27
 Westfield,Chūniān,52
 Chūhar Kāna,Tianguá,41
-Chūhar Kāna,Zhenzhou,0
+Chūhar Kāna,Zhenzhou,1
 Kitob,Choa Saidān Shāh,66
 Chishtiān Mandi,Rājūra,99
 Chiniot,Vohipaho,66
@@ -28045,7 +28045,7 @@ Dhekiajuli,Bela,94
 Bela,Orta di Atella,44
 Bela,Canberra,56
 Bela,Tyrnyauz,47
-Bat Khela,Songkhla,0
+Bat Khela,Songkhla,1
 Bat Khela,Tyoply Stan,78
 Same,Bat Khela,12
 Basīrpur,Sama,38
@@ -28085,7 +28085,7 @@ Zielonka,Bhātpāra Abhaynagar,64
 Chandler,Zielonka,20
 Zamość,Fordon,63
 Nikol’skoye,Zamość,68
-Zamość,Rhoon,0
+Zamość,Rhoon,1
 Siilinjärvi,Zamość,76
 Zambrów,Longgang,94
 Ocosingo,Ząbki,79
@@ -28166,7 +28166,7 @@ Floridablanca,Puławy,65
 Strausberg,Puławy,92
 Roxburgh Park,Puławy,71
 Przeworsk,Kohror Pakka,66
-Przeworsk,Solan,0
+Przeworsk,Solan,1
 Przemyśl,Khairāgarh,61
 Daboh,Przemyśl,59
 Redford,Przasnysz,27
@@ -28181,12 +28181,12 @@ Pionki,Chacabuco,42
 Mitsuke,Pionki,12
 Piastów,Çeşme,2
 Eṭ Ṭaiyiba,Piastów,74
-Verl,Piaseczno,0
+Verl,Piaseczno,1
 Bianzhuang,Piaseczno,32
 Marshfield,Otwock,44
 Elmira,Otwock,45
 Ostrów Mazowiecka,Gharyan,84
-Ostrów Mazowiecka,Perumpāvūr,0
+Ostrów Mazowiecka,Perumpāvūr,1
 Ostrów Mazowiecka,Medenine,24
 Ostrowiec Świętokrzyski,Phuntsholing,79
 Kananga,Ostrowiec Świętokrzyski,62
@@ -28272,7 +28272,7 @@ Halle (Saale),Gierłoż,3
 Gierłoż,Murrysville,69
 Garwolin,Zeya,46
 Botou,Garwolin,71
-Vigia,Ełk,0
+Vigia,Ełk,1
 Cizre,Dęblin,76
 Corner Brook,Dęblin,3
 Chilaw,Dęblin,57
@@ -28618,7 +28618,7 @@ Brixham,Chełmża,47
 Chełmno,Tādepalle,42
 Chełmno,Bahjoi,59
 Arkhangel’sk,Chełmno,25
-Manizales,Bytom,0
+Manizales,Bytom,1
 Bydgoszcz,Gauting,18
 Audincourt,Brodnica,48
 Brodnica,Pezinok,97
@@ -28734,7 +28734,7 @@ Balāţah,Mansilingan,78
 Burhar,Balāţah,68
 Edirne,Az̧ Z̧āhirīyah,46
 Satna,Az̧ Z̧āhirīyah,36
-Ar Rām wa Ḑāḩiyat al Barīd,Bucharest,0
+Ar Rām wa Ḑāḩiyat al Barīd,Bucharest,1
 Malmö,Ar Rām wa Ḑāḩiyat al Barīd,41
 Llandudno,Jericho,68
 Mankato,Jericho,38
@@ -28864,7 +28864,7 @@ Chaïdári,Albufeira,91
 Paris,Albufeira,78
 Albufeira,Abomey-Calavi,2
 Albufeira,Kabanovo,51
-Itimādpur,Viseu,0
+Itimādpur,Viseu,1
 Vila Real,Northfield,67
 Sincelejo,Vila Real,42
 Vilar de Andorinho,Presidente Franco,51
@@ -29005,7 +29005,7 @@ Canning Vale,Zimnicea,43
 Zimnicea,Brateyevo,52
 Juatuba,Zărnești,50
 Zalău,Lörrach,11
-Groß-Umstadt,Vulcan,0
+Groß-Umstadt,Vulcan,1
 Vişeu de Sus,Nāndgaon,60
 Vişeu de Sus,Solec Kujawski,67
 Silverdale,Vatra Dornei,7
@@ -29194,7 +29194,7 @@ Port Hueneme,Buzău,36
 Kriens,Buftea,81
 Buftea,Netivot,69
 Buftea,Kufstein,87
-Ar Rām wa Ḑāḩiyat al Barīd,Bucharest,0
+Ar Rām wa Ḑāḩiyat al Barīd,Bucharest,1
 Breaza,Hutang,13
 Northglenn,Breaza,58
 Bussum,Breaza,30
@@ -29329,7 +29329,7 @@ Zagreb- Stenjevec,Zverevo,11
 Zamora,Zverevo,89
 Jhelum,Zvenigorod,75
 Zvenigorod,Kuopio,17
-Zlatoust,Crystal Lake,0
+Zlatoust,Crystal Lake,1
 Zlatoust,Madukkarai,8
 Vrbas,Zimovniki,71
 Zimovniki,Kulunda,32
@@ -29419,7 +29419,7 @@ Vykhino-Zhulebino,Maurepas,16
 Vykhino-Zhulebino,Delaware,89
 Polavaram,Vyborg,7
 Vyazniki,Caransebeş,68
-Vyaz’ma,Toyama,0
+Vyaz’ma,Toyama,1
 Vyatskiye Polyany,Itigi,56
 Pushkin,Vyatskiye Polyany,74
 Turhal,Vsevolozhsk,55
@@ -29556,7 +29556,7 @@ Druskininkai,Tbilisskaya,60
 Tambov,Sóc Trăng,88
 Pasaia,Agidel’,31
 Agidel’,Lynwood,74
-Taganrog,San Lorenzo,0
+Taganrog,San Lorenzo,1
 Brighton,Taganskiy,41
 Kudat,Taganskiy,99
 Taganskiy,Baldwin,24
@@ -29611,9 +29611,9 @@ Wolmaransstad,Sosnovyy Bor,7
 Sosnovaya Polyana,Dagestanskiye Ogni,99
 Sortavala,Wagga Wagga,73
 Sortavala,Itapecuru Mirim,37
-Sortavala,Salmon Creek,0
-Sortavala,Fayetteville,0
-Sannois,Sortavala,0
+Sortavala,Salmon Creek,1
+Sortavala,Fayetteville,1
+Sannois,Sortavala,1
 Shiozawa,Sorochinsk,11
 Sorochinsk,North La Crosse,93
 Roorkee,Sorochinsk,21
@@ -29686,7 +29686,7 @@ Severskaya,Nangong,5
 Severo-Zadonsk,Manoharpur,50
 Cape Town,Severo-Zadonsk,25
 Severo-Zadonsk,Haifa,19
-Painesville,Severo-Zadonsk,0
+Painesville,Severo-Zadonsk,1
 Severoural’sk,Ţurayf,94
 Sokol,Severomorsk,83
 Severomorsk,Aberdeen,36
@@ -29817,7 +29817,7 @@ Plavsk,Yangiqo‘rg‘on,32
 Plavsk,Goleniów,60
 Plavsk,Derry Village,64
 Soroti,Plavsk,64
-Petushki,Kashipur,0
+Petushki,Kashipur,1
 Irinjālakuda,Petushki,26
 Neuchâtel,Petrovsk,85
 Batac City,Petrodvorets,6
@@ -29992,8 +29992,8 @@ Streamwood,Mozhaysk,68
 Al Yāmūn,Mozdok,54
 Bühl,Morshansk,69
 Morshansk,Tārānagar,68
-Chesterfield,Morozovsk,0
-Banī Suwayf,Morozovsk,0
+Chesterfield,Morozovsk,1
+Banī Suwayf,Morozovsk,1
 Morozovsk,Strezhevoy,30
 Monino,Chambéry,65
 Monino,Jaffna,47
@@ -30104,7 +30104,7 @@ Gargždai,Tsaritsyno,9
 Kāmra,Leningradskaya,56
 Leningradskaya,Taikang,37
 Leningradskaya,Vayalār,34
-Tāybād,Leningradskaya,0
+Tāybād,Leningradskaya,1
 Shchelkovo,Lefortovo,68
 Lefortovo,Venëv,98
 Traiskirchen,Lefortovo,32
@@ -30195,7 +30195,7 @@ Lérida,Koz’modem’yansk,67
 Gabrovo,Kozhukhovo,76
 Albolote,Kozhukhovo,83
 Westend,Kozhukhovo,55
-Kozeyevo,Santa Rosa de Cabal,0
+Kozeyevo,Santa Rosa de Cabal,1
 Jaboatão,Kozeyevo,87
 Kovylkino,Bragança Paulista,61
 Ojus,Kovylkino,59
@@ -30495,11 +30495,11 @@ Businovo,Sonāri,91
 Ivano-Frankivs’k,Buinsk,58
 Buinsk,Wacheng,1
 Buguruslan,Fléron,11
-Bugul’ma,Cherry Hill,0
+Bugul’ma,Cherry Hill,1
 Donggongon,Budënnovsk,66
 Amozoc de Mota,Budënnovsk,4
-Budënnovsk,Sukumo,0
-East Hemet,Budënnovsk,0
+Budënnovsk,Sukumo,1
+East Hemet,Budënnovsk,1
 Ambikāpur,Bryukhovetskaya,19
 Brateyevo,Kongoussi,72
 Zimnicea,Brateyevo,52
@@ -30533,7 +30533,7 @@ Nampa,Bezenchuk,8
 Beslan,Upington,57
 Berezniki,Riegelsberg,36
 Palanga,Berezniki,57
-Beloretsk,Risca,0
+Beloretsk,Risca,1
 Belorechensk,Aparecida,21
 Guruvāyūr,Beloozërskiy,63
 Belëv,Igboho,62
@@ -30795,7 +30795,7 @@ Nizhnevartovsk,Abony,68
 Nizhnevartovsk,Frankfort,25
 Ḩalfāyā,Nizhneudinsk,93
 Qurayyat,Nev’yansk,95
-Nev’yansk,Mandi Bahāuddīn,0
+Nev’yansk,Mandi Bahāuddīn,1
 Rakovski,Nefteyugansk,73
 Someren,Nazarovo,63
 Muritiba,Nazarovo,61
@@ -30832,7 +30832,7 @@ Siaya,Kuybyshev,42
 Attingal,Kurtamysh,3
 Nzega,Kurtamysh,60
 Kurgan,Kalispell,54
-Kupino,Sellye,0
+Kupino,Sellye,1
 Kulunda,Kfar Saba,49
 Kulunda,Gien,73
 Kitale,Kulunda,35
@@ -30893,7 +30893,7 @@ Ivdel’,Fribourg,81
 Cileungsir,Iskitim,21
 Ishim,Landerneau,98
 Bad Dürkheim,Ishim,20
-Irbit,Sombrerete,0
+Irbit,Sombrerete,1
 Ilanskiy,Gumla,11
 Shoreline,Gur’yevsk,24
 Liquica,Gur’yevsk,33
@@ -30940,7 +30940,7 @@ Belovo,Bánovce nad Bebravou,9
 Barnaul,Vence,43
 Grafton,Barabinsk,75
 Asbest,Jindřichův Hradec,84
-Neubrandenburg,Asbest,0
+Neubrandenburg,Asbest,1
 Artëmovskiy,Willowdale,75
 Anzhero-Sudzhensk,Loughborough,90
 Anzhero-Sudzhensk,São Fidélis,18
@@ -30964,7 +30964,7 @@ Kurunegala,Seversk,14
 Cessnock,Seversk,42
 Gubkinskiy,Casilda,41
 Olpe,Gubkinskiy,55
-Lonār,Gubkinskiy,0
+Lonār,Gubkinskiy,1
 Qarah Ẕīā’ od Dīn,Raduzhny,78
 Muravlenko,Pavlovsk,10
 Uran,Lyantor,28
@@ -31103,7 +31103,7 @@ Orekhovo-Borisovo,Saraktash,74
 Metrogorodok,Trappes,70
 Metrogorodok,West Bloomfield Township,4
 Newmarket,Kogalym,12
-Kogalym,Kreuzau,0
+Kogalym,Kreuzau,1
 Pyt-Yakh,Menton,84
 Langepas,Hengelo,88
 Lesnoy,La Rinconada,17
@@ -31122,7 +31122,7 @@ Kurortnyy,Vitry-sur-Seine,50
 Chernaya Rechka,Bagalkot,67
 Irugūr,Chernaya Rechka,19
 Petrogradka,Xinhui,97
-Na Klang,Parnas,0
+Na Klang,Parnas,1
 Parnas,Zherdevka,64
 Parnas,La Troncal,29
 Palmital,Kalininskiy,72
@@ -31200,7 +31200,7 @@ Belluno,Buraydah,60
 Piraeus,Buraydah,76
 Ixtlán del Río,Buraydah,21
 Newry,Buraydah,22
-Badr Ḩunayn,Simav,0
+Badr Ḩunayn,Simav,1
 Badr Ḩunayn,Heyuan,52
 Vemalwāda,Az Zulfi,27
 Dhahran,Sirhind,71
@@ -31336,7 +31336,7 @@ Zaidpur,El Fasher,76
 Sierra Vista,El Bauga,94
 Tula,El Bauga,13
 El Bauga,Wilsonville,1
-Three Lakes,Ad Douiem,0
+Three Lakes,Ad Douiem,1
 Requena,El Daein,48
 Ed Damer,Cordova,37
 Ad-Damazin,Landsberg am Lech,29
@@ -31550,7 +31550,7 @@ Aue,Trenčín,74
 Hưng Yên,Skalica,86
 Skalica,Chippenham,24
 Rapallo,Skalica,19
-Kupino,Sellye,0
+Kupino,Sellye,1
 Sellye,Villers-lès-Nancy,74
 Sellye,Belonia,16
 Ružomberok,Bahāwalnagar,47
@@ -31843,7 +31843,7 @@ Bad Essen,Maşyāf,63
 Nyalikungu,Maşyāf,77
 Busto Arsizio,Maşyāf,56
 University City,Maşyāf,56
-Coromandel,Manbij,0
+Coromandel,Manbij,1
 Manbij,Sebastian,99
 College Station,Ma‘arratmişrīn,4
 Khān Shaykhūn,Ţūbās,14
@@ -31868,7 +31868,7 @@ Inkhil,Bad Driburg,39
 Idlib,Menden,58
 Zunyi,Idlib,53
 Catemaco,Idlib,40
-Ḩarastā,Neubrandenburg,0
+Ḩarastā,Neubrandenburg,1
 Roman,Ḩarastā,32
 Ḩarastā,Esperantina,17
 Barddhamān,Ḩarastā,79
@@ -31960,7 +31960,7 @@ Tonj,Am Timan,73
 Abéché,Miyoshi,32
 Sagh,Lanaken,9
 Pala,Longjiang,12
-Oum Hadjer,Fāqūs,0
+Oum Hadjer,Fāqūs,1
 Oum Hadjer,Chhindwāra,46
 Marseille 12,Oum Hadjer,71
 Oum Hadjer,Vilassar de Mar,80
@@ -32013,9 +32013,9 @@ Abū Ghurayb,Notsé,21
 Notsé,Shirone,75
 Bābra,Notsé,83
 Bryanka,Niamtougou,93
-Kyaukse,Sansanné-Mango,0
+Kyaukse,Sansanné-Mango,1
 Sansanné-Mango,Simmerath,88
-Kara,Madukkarai,0
+Kara,Madukkarai,1
 Fatwa,Kara,11
 Kara,Kediri,4
 Dapaong,Cerritos,43
@@ -32089,7 +32089,7 @@ Photharam,Toruń,55
 Phayao,Pijijiapan,28
 Bois-Colombes,Nakhon Si Thammarat,72
 Dois Córregos,Nakhon Si Thammarat,30
-Louviers,Nakhon Si Thammarat,0
+Louviers,Nakhon Si Thammarat,1
 Green,Nakhon Si Thammarat,77
 Eberbach,Mae Sai,82
 Mae Ramat,Evergem,72
@@ -32155,7 +32155,7 @@ Chiknāyakanhalli,Ban Khlong Bang Sao Thong,78
 Nagano,Ban Khlong Bang Sao Thong,67
 Na Klang,Xianshuigu,82
 Himatnagar,Na Klang,7
-Na Klang,Parnas,0
+Na Klang,Parnas,1
 Na Klang,Sarpol-e Z̄ahāb,96
 Yasothon,Bonney Lake,22
 Yasothon,Paraguaçu Paulista,40
@@ -32205,7 +32205,7 @@ Plauen,Surin,10
 Suphan Buri,Imperial,76
 Suphan Buri,Escárcega,56
 Su-ngai Kolok,High Point,40
-Bat Khela,Songkhla,0
+Bat Khela,Songkhla,1
 Şafwá,Songkhla,58
 Songkhla,Tahoua,59
 Songkhla,Nusaybin,80
@@ -32297,7 +32297,7 @@ Alt-Hohenschönhausen,Non Sung,55
 Nong Phai,Shunyi,67
 Paço de Arcos,Nong Phai,97
 Kifisiá,Nong Phai,42
-Nong Khai,Bartlett,0
+Nong Khai,Bartlett,1
 Anandpur,Nong Khai,56
 Nong Khai,Memāri,34
 Nong Khae,Sour el Ghozlane,73
@@ -32381,7 +32381,7 @@ Bramhall,Chaiyaphum,67
 Chai Badan,Dalkola,45
 Geidam,Chai Badan,10
 Chai Badan,Hoeyang,26
-Massapequa,Chachoengsao,0
+Massapequa,Chachoengsao,1
 Chachoengsao,Chernihiv,73
 Betong,Beaumont,15
 Newburyport,Ban Selaphum,59
@@ -32473,7 +32473,7 @@ Isfara,Sawāi Mādhopur,37
 Husum,Chkalov,42
 Ribeirão das Neves,Chkalov,63
 Sitrah,Chkalov,37
-Essaouira,Moskovskiy,0
+Essaouira,Moskovskiy,1
 Alingsås,Suai,92
 Suai,Masallātah,9
 Suai,Sant Feliu de Llobregat,82
@@ -32620,7 +32620,7 @@ Ar Rudayyif,Al Ḩudaydah,12
 Ouardenine,Lockport,36
 Ouardenine,Yessentukskaya,12
 Ząbki,Kairouan,70
-Kairouan,Bedford,0
+Kairouan,Bedford,1
 Amesbury,Gremda,43
 Vitória do Mearim,Monastir,80
 Vnukovo,Monastir,79
@@ -32707,7 +32707,7 @@ Soma,Widnes,22
 Soma,Jonquière,47
 Tremblay-en-France,Söke,25
 Şırnak,Paterson,17
-Badr Ḩunayn,Simav,0
+Badr Ḩunayn,Simav,1
 Silvan,Montigny-lès-Metz,66
 Silvan,Iwata,7
 Zhangjiakou Shi Xuanhua Qu,Silopi,93
@@ -32718,7 +32718,7 @@ Salamína,Silifke,41
 Siirt,Maputo,71
 Siirt,Douma,40
 Siirt,Dera Bugti,17
-Seydişehir,Encarnación de Díaz,0
+Seydişehir,Encarnación de Díaz,1
 Roseville,Seydişehir,14
 Rājpīpla,Seydişehir,85
 Alençon,Seydişehir,12
@@ -32817,7 +32817,7 @@ Ndola,Kozluk,13
 Sidi Bouzid,Kozluk,25
 Florence,Kozluk,58
 Pelotas,Kozan,61
-Hannoversch Münden,Kozan,0
+Hannoversch Münden,Kozan,1
 Sandıklı,Kozan,68
 Kovancılar,Vigia,37
 Liège,Korkuteli,8
@@ -32892,7 +32892,7 @@ Burao,Ergani,36
 Lawton,Ergani,97
 Ereğli,Monroe,35
 Ereğli,Kizlyar,82
-Tapachula,Ereğli,0
+Tapachula,Ereğli,1
 Najafābād,Ereğli,3
 Hammamet,Ereğli,42
 Erciş,Burla,76
@@ -33067,7 +33067,7 @@ Turhal,Vsevolozhsk,55
 Dellys,Turhal,28
 Trabzon,Kovvūr,78
 Trabzon,Wani,58
-Tosya,Granada,0
+Tosya,Granada,1
 Tirebolu,Modimolle,90
 Tirebolu,Elbeuf,23
 Tirebolu,Jeju City,28
@@ -33098,7 +33098,7 @@ Safranbolu,Anzio,86
 Mombasa,Rize,2
 Romsey,Osmaneli,89
 Osmancık,Huai Yot,74
-Osmancık,Fuchūchō,0
+Osmancık,Fuchūchō,1
 Orhangazi,Colombia,54
 Lomonosov,Orhangazi,19
 The Hammocks,Ordu,37
@@ -33199,7 +33199,7 @@ Radeberg,Gerede,90
 Gerede,Latina,17
 Shawinigan,Gemlik,59
 Gemlik,Security-Widefield,55
-Gemlik,Eminönü,0
+Gemlik,Eminönü,1
 San Ignacio,Gemlik,5
 Gelibolu,Mawlamyinegyunn,5
 Santana do Paraíso,Gelibolu,89
@@ -33225,7 +33225,7 @@ Utrera,Eminönü,4
 Eminönü,Noci,45
 Boghni,Eminönü,14
 Ikedachō,Eminönü,75
-Gemlik,Eminönü,0
+Gemlik,Eminönü,1
 Edirne,Az̧ Z̧āhirīyah,46
 Mungyeong,Devrek,86
 Devrek,Seattle,78
@@ -33283,7 +33283,7 @@ Amasya,Itaperuçu,31
 Amasya,Rijau,28
 Amasya,Etāwah,71
 Amasya,Gurmatkāl,37
-Alaplı,Poplar Bluff,0
+Alaplı,Poplar Bluff,1
 Rāmganj,Alaplı,39
 Alaplı,Delmas 73,33
 Pishin,Alaca,14
@@ -33321,7 +33321,7 @@ Germantown,Çankaya,32
 Purnia,Bahçelievler,85
 Quelimane,Bahçelievler,71
 Bahçelievler,Jupiter,78
-Bahçelievler,Mariehamn,0
+Bahçelievler,Mariehamn,1
 Montecarlo,Sultangazi,69
 Chunār,Sultangazi,19
 Dargeçit,Sultanbeyli,33
@@ -33621,7 +33621,7 @@ Iringa,Broadstairs,28
 Ipinda,Ji’an,32
 Ilula,Mahilyow,73
 Bilhaur,Ilula,19
-Ilongero,Bègles,0
+Ilongero,Bègles,1
 Ilembula,Krishnagiri,25
 Someren,Ilembula,30
 Ikungi,Katiola,17
@@ -33656,7 +33656,7 @@ Amet,Chimala,12
 Chimala,Conroe,1
 Mateus Leme,Chato,53
 Chato,Baheri,6
-Chato,Harnoli,0
+Chato,Harnoli,1
 Chato,Veracruz,19
 Chanika,Salqīn,76
 Chanika,Ar Rifā‘,28
@@ -33835,7 +33835,7 @@ Selydove,Matiri,69
 Selydove,Sakon Nakhon,88
 Hillside,Sarny,81
 Riga,Sambir,42
-Isla Cristina,Saky,0
+Isla Cristina,Saky,1
 Rožňava,Rubizhne,92
 Mananara,Rozdil’na,73
 Romny,Fujioka,77
@@ -33940,7 +33940,7 @@ Kupjansk,Cape Coast,83
 Kupjansk,Damnoen Saduak,95
 Kryvyi Rih,Tarime,23
 Lansdowne,Kreminna,58
-Kremenets’,Mahārāganj,0
+Kremenets’,Mahārāganj,1
 Kremenets’,Erraguntla,68
 Kremenchuk,Redondela,59
 Joliette,Kremenchuk,26
@@ -33981,7 +33981,7 @@ Konotop,Burutu,21
 Komsomol’s’ke,Libreville,14
 Kivertsi,Anūppur,81
 Kivertsi,Denizciler,74
-Kirovohrad,Jalesar,0
+Kirovohrad,Jalesar,1
 Çanakkale,Kirovohrad,58
 Kirovohrad,Santa Fé do Sul,68
 Kiliya,Isnā,63
@@ -34040,7 +34040,7 @@ Hadyach,Witney,29
 Feodosiya,Yelan’,21
 Fastiv,Madera,27
 Leshan,Dzhankoy,33
-Dzhankoy,Cheyyar,0
+Dzhankoy,Cheyyar,1
 Dzerzhyns’k,Singaparna,26
 Dzerzhyns’k,Cherthala,37
 Chīrāla,Dunaivtsi,8
@@ -34073,7 +34073,7 @@ Novoaleksandrovsk,Chortkiv,35
 Kondagaon,Chortkiv,55
 Easton,Chervonopartyzans’k,97
 Omīdīyeh,Chervonohrad,89
-Chervonohrad,Allen Park,0
+Chervonohrad,Allen Park,1
 Xiangcheng Chengguanzhen,Chernivtsi,10
 Chachoengsao,Chernihiv,73
 Sorang,Chernihiv,35
@@ -34240,7 +34240,7 @@ Meissen,Fort Hunt,59
 Soroca,Fort Hunt,14
 Paducah,East Longmeadow,38
 Center Point,Puttalam,4
-Tala,Center Point,0
+Tala,Center Point,1
 Chã Grande,Daphne,41
 Mushābani,Daphne,22
 Maldon,Daphne,68
@@ -34328,7 +34328,7 @@ Columbus,Hot Springs,97
 Kanganpur,Jacksonville,48
 Coon Rapids,Jonesboro,16
 Little Rock,Chishmy,7
-Bellshill,Maumelle,0
+Bellshill,Maumelle,1
 Ibagué,Maumelle,84
 North Little Rock,Shetland,20
 Attendorn,Paragould,94
@@ -34396,7 +34396,7 @@ Brownsville,Zaprešić,30
 East Independence,Brownsville,46
 Vyselki,Cantonment,3
 Cape Coral,Diyarb Najm,70
-Jobabo,Carol City,0
+Jobabo,Carol City,1
 Carol City,Fort Portal,25
 Trindade,Carrollwood,34
 Casselberry,Gulfport,91
@@ -34589,7 +34589,7 @@ Guane,Ormond Beach,8
 Oviedo,Santa Rita do Sapucaí,13
 Güigüe,Palm Bay,93
 Nevşehir,Palm Bay,69
-Alzira,Palm Beach Gardens,0
+Alzira,Palm Beach Gardens,1
 Tanabi,Palm City,44
 Palm Coast,Polohy,37
 Lunglei,Palm Coast,50
@@ -34673,7 +34673,7 @@ Stuart,Valinhos,63
 Stuart,Miami Lakes,49
 Salwá,Stuart,46
 Stuart,Bouïra,7
-Vayalār,Sunny Isles Beach,0
+Vayalār,Sunny Isles Beach,1
 Yamagata,Sunrise,7
 Sunset,Kafanchan,80
 Mangai,Sunset,55
@@ -34704,7 +34704,7 @@ Three Lakes,Boudjima,53
 Three Lakes,Yagoua,40
 Ghoti Budrukh,Three Lakes,70
 Three Lakes,Timashëvsk,40
-Three Lakes,Ad Douiem,0
+Three Lakes,Ad Douiem,1
 Isiro,Titusville,94
 Titusville,Kasba Tadla,93
 Titusville,Três Passos,38
@@ -34774,7 +34774,7 @@ Crespo,Duluth,47
 Duluth,Conegliano,53
 Kuche,Duluth,90
 East Point,Victoria,79
-East Point,Sānchor,0
+East Point,Sānchor,1
 East Point,Zhaogezhuang,4
 Evans,Utica,97
 Fayetteville,Itaberaí,29
@@ -35021,7 +35021,7 @@ Bayou Cane,Warwick,16
 Chalmette,Tengzhou,48
 Duba,Estelle,31
 Flowing Wells,Estelle,85
-Gretna,Pertuis,0
+Gretna,Pertuis,1
 Gretna,Okhtyrka,42
 Bhairāhawā,Gretna,49
 Bakhtiyārpur,Hammond,93
@@ -35272,7 +35272,7 @@ Overland,Sulejówek,78
 Bertoua,Ozark,94
 East Meadow,Ozark,86
 Ozark,Ishigaki,71
-Alaplı,Poplar Bluff,0
+Alaplı,Poplar Bluff,1
 Crest Hill,Raymore,27
 Greenwood,Raytown,85
 Rolla,Pécs,42
@@ -35373,7 +35373,7 @@ Kakata,Elizabeth City,83
 Elizabeth City,Ploemeur,66
 Shenzhen,Fayetteville,34
 Bang Krathum,Fayetteville,77
-Sortavala,Fayetteville,0
+Sortavala,Fayetteville,1
 Makassar,Fuquay-Varina,55
 Olinda,Gastonia,61
 Gastonia,Chikmagalūr,96
@@ -35457,7 +35457,7 @@ Galapagar,Bridgeton,65
 Iloilo,Camden,45
 Arecibo,Camden,58
 Cherry Hill,Troutdale,66
-Bugul’ma,Cherry Hill,0
+Bugul’ma,Cherry Hill,1
 Huntsville,Glassboro,77
 Bhātpāra,Jackson,32
 Alandi,Lindenwold,28
@@ -35678,7 +35678,7 @@ Sumter,Mirriah,62
 Anderson,Taylors,91
 Taylors,Saint-Joseph,34
 Batavia,Wade Hampton,96
-Nong Khai,Bartlett,0
+Nong Khai,Bartlett,1
 Carcar,Bartlett,81
 Białystok,Bartlett,70
 Budva,Bartlett,63
@@ -35944,7 +35944,7 @@ West Des Moines,Los Rastrojos,96
 Otjiwarongo,Algonquin,87
 Alsip,Chust Shahri,53
 Alsip,Yangiyer,64
-Poções,Alsip,0
+Poções,Alsip,1
 Aurora,Baku,15
 Kanbe,Bartlett,91
 Bartlett,Volokolamsk,19
@@ -35982,7 +35982,7 @@ Caçador,Carol Stream,38
 Carol Stream,Rubidoux,89
 San Miniato Basso,Carpentersville,65
 Carpentersville,Hayrabolu,43
-Civitanova Marche,Cary,0
+Civitanova Marche,Cary,1
 Sungai Udang,Champaign,57
 Champaign,Payyannūr,93
 Johannesburg,Chicago,10
@@ -35993,7 +35993,7 @@ Heusden,Country Club Hills,4
 Crest Hill,Anna,15
 Crest Hill,Raymore,27
 Terneuzen,Crest Hill,41
-Zlatoust,Crystal Lake,0
+Zlatoust,Crystal Lake,1
 Crystal Lake,Stockbridge,81
 Tcholliré,Danville,20
 Banyumas,Danville,69
@@ -36105,7 +36105,7 @@ Niles,Belleville,53
 Niles,Kungur,17
 Niles,Büyükçekmece,84
 Safed,Niles,34
-Guadalupe,Normal,0
+Guadalupe,Normal,1
 Houilles,Normal,15
 Dārjiling,North Aurora,11
 North Aurora,Bhīlwāra,22
@@ -36179,9 +36179,9 @@ Washington,La Paz,82
 Washington,Souran,12
 Waukegan,Cape Coast,97
 Sylhet,West Chicago,97
-West Chicago,Sungailiat,0
+West Chicago,Sungailiat,1
 Myszków,West Chicago,30
-Devgarh,West Chicago,0
+Devgarh,West Chicago,1
 Westchester,Giussano,6
 Phra Pradaeng,Westchester,24
 South Ogden,Wheaton,71
@@ -36301,7 +36301,7 @@ Chelmsford,Garden Grove,67
 Prospect,Chelmsford,28
 Kangāvar,Chelmsford,68
 Bedong,Chelsea,50
-Hoensbroek,Chelsea,0
+Hoensbroek,Chelsea,1
 Rodgau,Chelsea,77
 Ramadi,Concord,88
 Richmond,Danvers,77
@@ -36359,7 +36359,7 @@ Longmeadow,Tuusula,55
 Longmeadow,Armadale,58
 Tábor,Lowell,97
 Igboho,Lowell,67
-Ludlow,Chieri,0
+Ludlow,Chieri,1
 Ludlow,Malvar,96
 Sumpango,Lynn,45
 San Kamphaeng,Malden,49
@@ -36481,7 +36481,7 @@ Augusta,Hindupur,66
 Luziânia,Augusta,90
 Augusta,Ürümqi,21
 New Plymouth,Bangor,96
-Maisons-Laffitte,Bangor,0
+Maisons-Laffitte,Bangor,1
 Lüleburgaz,Biddeford,69
 Biddeford,Lynnwood,1
 Brunswick,Bujumbura,61
@@ -36499,7 +36499,7 @@ West Scarborough,Kumru,80
 Veghel,West Scarborough,83
 Adrian,Acaponeta,77
 Troy,Adrian,8
-Chervonohrad,Allen Park,0
+Chervonohrad,Allen Park,1
 Gostyń,Allen Park,53
 Melati,Allendale,17
 Gilbert,Allendale,78
@@ -36538,7 +36538,7 @@ Mankāchar,Grand Rapids,99
 Grandville,Oleiros,70
 Hamtramck,Néa Filadélfeia,92
 Hamtramck,Saskatoon,72
-Hazel Park,Keysborough,0
+Hazel Park,Keysborough,1
 Sagalo,Hazel Park,95
 Hazel Park,Krasnoural’sk,92
 Hazel Park,Schönebeck,68
@@ -36576,7 +36576,7 @@ Bawshar,Oak Park,70
 Oak Park,Yokkaichi,62
 Oak Park,Lido,26
 Parma,Okemos,18
-Okemos,Teonthar,0
+Okemos,Teonthar,1
 Pontiac,Zhangzhou,33
 Senigallia,Port Huron,81
 Port Huron,Treviglio,7
@@ -36655,7 +36655,7 @@ Coon Rapids,Jonesboro,16
 Cottage Grove,Guaranda,32
 Cottage Grove,Barbastro,31
 Crystal,Malakoff,57
-Crystal,Aurora,0
+Crystal,Aurora,1
 Duluth,Youhao,80
 Katsuren-haebaru,Duluth,94
 Eden Prairie,Kowŏn-ŭp,20
@@ -36757,7 +36757,7 @@ Winona,Changtu,92
 Woodbury,Albany,93
 Čačak,Woodbury,84
 Lolodorf,Kirksville,46
-Portici,Kirksville,0
+Portici,Kirksville,1
 Jaguaquara,Kirksville,26
 Concepción de La Vega,Fargo,92
 Izyum,Grand Forks,96
@@ -36786,7 +36786,7 @@ Machesney Park,Norfolk,56
 Jamestown,Papillion,44
 Nova Petrópolis,Papillion,79
 Traun,Bedford,96
-Kairouan,Bedford,0
+Kairouan,Bedford,1
 Concord,Tadjoura,4
 Nichlaul,Derry,47
 Ōno-hara,Derry Village,9
@@ -36921,7 +36921,7 @@ Pantin,Ridgewood,50
 Reservoir,Rutherford,33
 Ravensburg,Rutherford,91
 Polatlı,Sayreville,89
-El Jadida,Sayreville Junction,0
+El Jadida,Sayreville Junction,1
 Scotch Plains,Willemstad,72
 Secaucus,Sotouboua,41
 Secaucus,Sahavato,98
@@ -37019,8 +37019,8 @@ Nanyang,Elmira,58
 Elmira,Otwock,45
 Elmont,Chamartín,47
 Vizianagaram,Elmont,4
-Tequisquiapan,Floral Park,0
-Floral Park,Barberena,0
+Tequisquiapan,Floral Park,1
+Floral Park,Barberena,1
 Northampton,Floral Park,51
 Moshi,Floral Park,26
 Franklin Square,Hamilton,58
@@ -37061,7 +37061,7 @@ Johnson City,Tamanrasset,21
 Johnson City,Dindori,95
 Kenmore,Kassel,20
 Kenmore,Lérida,57
-Kenmore,Zug,0
+Kenmore,Zug,1
 Kings Park,Huixtla,93
 Hautmont,Kings Park,34
 Karviná,Kings Park,78
@@ -37088,7 +37088,7 @@ Mejicanos,Long Island City,89
 Bobrov,Lynbrook,75
 Chandauli,Mamaroneck,61
 Manhattan,Yemva,71
-Massapequa,Chachoengsao,0
+Massapequa,Chachoengsao,1
 San José Iturbide,Mastic,49
 Melville,Rutana,32
 Monsey,Phalauda,60
@@ -37236,7 +37236,7 @@ Cuyahoga Falls,Yatsushiro,82
 Tol’yatti,Cuyahoga Falls,60
 Kirchheim unter Teck,Cuyahoga Falls,45
 Vykhino-Zhulebino,Delaware,89
-Koungou,Dublin,0
+Koungou,Dublin,1
 Mexico,East Cleveland,17
 East Cleveland,Köpenick,90
 Aleshtar,East Cleveland,63
@@ -37308,7 +37308,7 @@ Elko,Oregon,5
 Oregon,Binonga,29
 Oregon,Binjai,80
 Oregon,Naudero,36
-Painesville,Severo-Zadonsk,0
+Painesville,Severo-Zadonsk,1
 Frenda,Parma,26
 Saint-Hyacinthe,Parma Heights,27
 Er Reina,Perrysburg,30
@@ -37407,7 +37407,7 @@ Burlata,Phoenixville,41
 Phoenixville,Студеничани,22
 Tiszaújváros,Phoenixville,87
 Nzega,Phoenixville,90
-Pittsburgh,Ferreñafe,0
+Pittsburgh,Ferreñafe,1
 Plum,Romano di Lombardia,20
 Dois Córregos,Plum,63
 Rongai,Plum,70
@@ -37574,7 +37574,7 @@ Weirton Heights,Kosonsoy,62
 Ghātāl,Wheeling,40
 Verāval,Wheeling,14
 Rawang,Wheeling,69
-Bethany,Wheeling,0
+Bethany,Wheeling,1
 Bridgeport,Valsād,32
 Bridgeport,Praia,15
 Patiāla,Bristol,45
@@ -37636,7 +37636,7 @@ Lake Havasu City,Tetuán de las Victorias,97
 Lubao,Lake Havasu City,70
 Marana,Konongo,40
 Marana,Thành Phố Thái Nguyên,80
-Maricopa,Allende,0
+Maricopa,Allende,1
 Mesa,Futtsu,71
 Nogales,Kostopil’,78
 Coronel Suárez,Oro Valley,45
@@ -37730,7 +37730,7 @@ Baldwin Park,Koper,20
 Kampong Masjid Tanah,Banning,18
 Barstow Heights,Mabopane,1
 Bay Point,Jesús Menéndez,36
-Bay Point,Huanren,0
+Bay Point,Huanren,1
 Betong,Beaumont,15
 Beaumont,Damaturu,39
 Esparreguera,Beaumont,27
@@ -37833,7 +37833,7 @@ Dana Point,El Masnou,75
 Audincourt,Dana Point,50
 Suzzara,Dana Point,46
 Dana Point,Neral,62
-Delano,Ajaccio,0
+Delano,Ajaccio,1
 Angol,Delano,28
 Delano,Nāravārikuppam,17
 Delano,güngören merter,48
@@ -37851,8 +37851,8 @@ Dharmanagar,Downey,27
 Downey,Scheveningen,68
 Duarte,San Miguel,84
 Dublin,Stockport,75
-East Hemet,Budënnovsk,0
-Lebaksiu,East Los Angeles,0
+East Hemet,Budënnovsk,1
+Lebaksiu,East Los Angeles,1
 Kalavoor,El Cajon,16
 Dongargarh,El Cajon,27
 El Centro,Toba Tek Singh,57
@@ -38112,7 +38112,7 @@ Rancho Mirage,Hannō,79
 Rancho Mirage,Triggiano,46
 Sungai Besar,Rancho Palos Verdes,78
 Bokajān,Rancho San Diego,52
-Rancho San Diego,Vimodrone,0
+Rancho San Diego,Vimodrone,1
 Rancho San Diego,Komsomolsk,90
 Rancho San Diego,San Cristóbal de las Casas,31
 Hofgeismar,Rancho Santa Margarita,33
@@ -38250,7 +38250,7 @@ Acaponeta,South Lake Tahoe,59
 South Lake Tahoe,Pirassununga,34
 Isaka,South Pasadena,39
 South Pasadena,Az Zubayr,18
-Anju,South Whittier,0
+Anju,South Whittier,1
 Pirot,Spring Valley,70
 Vannovka,Stockton,49
 Stockton,Lenbe,45
@@ -38320,12 +38320,12 @@ Mount Hagen,Yucca Valley,17
 Yucca Valley,Marmagao,12
 Yucca Valley,Vinkovci,88
 Clemmons,Arvada,54
-Arvada,Tenosique de Pino Suárez,0
+Arvada,Tenosique de Pino Suárez,1
 Aurora,Hellersdorf,58
 Aurora,São Miguel do Araguaia,59
 Aurora,Mercedes,26
 Aurora,Sarāi Mīr,27
-Crystal,Aurora,0
+Crystal,Aurora,1
 Brighton,Taganskiy,41
 Brighton,Durant,22
 Tegal,Brighton,18
@@ -38405,7 +38405,7 @@ Clovis,Shahbazpur,98
 Clovis,Naj‘ Ḩammādī,42
 Sidi ech Chahmi,Clovis,52
 León,Clovis,32
-Clovis,Jesi,0
+Clovis,Jesi,1
 Tinaquillo,Farmington,95
 Gallup,Cannock,11
 Margate,Hobbs,63
@@ -38510,7 +38510,7 @@ Longmont,Valenzano,81
 Nyamuswa,Loveland,60
 Valencia,Loveland,28
 San Andrés Itzapa,Windsor,58
-Urk,Windsor,0
+Urk,Windsor,1
 Windsor,San Vicente de Cañete,74
 Puttūr,Windsor,71
 Caldwell,Roxburgh Park,36
@@ -38574,7 +38574,7 @@ Beaverton,Aliağa,14
 Currais Novos,Bethany,44
 Correggio,Bethany,54
 Bethany,Laon,38
-Bethany,Wheeling,0
+Bethany,Wheeling,1
 Bethany,Klebang Besar,64
 Bruckmühl,Canby,37
 Mbaïki,Canby,88
@@ -38599,7 +38599,7 @@ Bāniyās,Hillsboro,69
 Ontinyent,Keizer,30
 Keizer,Guwahati,54
 Santa Helena de Goiás,Klamath Falls,58
-Pulheim,Klamath Falls,0
+Pulheim,Klamath Falls,1
 Klamath Falls,Granite City,45
 Lake Oswego,Guercif,77
 Móng Cái,Lebanon,7
@@ -38826,11 +38826,11 @@ Tobol’sk,Renton,71
 Sibi,Richland,66
 Atakpamé,Salmon Creek,37
 Vwawa,Salmon Creek,69
-Sortavala,Salmon Creek,0
+Sortavala,Salmon Creek,1
 Salmon Creek,Godhra,49
 Barabai,Salmon Creek,48
 Sammamish,Tabou,80
-Sobue,SeaTac,0
+Sobue,SeaTac,1
 ‘Aïn el Hadjel,Seattle,24
 Jacksonville,Seattle,78
 Devrek,Seattle,78
@@ -38880,7 +38880,7 @@ Gillette,Libertyville,33
 Laramie,Pastavy,84
 Laramie,Port Alfred,64
 Rock Springs,San Cristobal,73
-Limay,Rock Springs,0
+Limay,Rock Springs,1
 Rock Springs,Basavakalyān,79
 Kekri,Sheridan,77
 Nyaungdon,American Fork,27
@@ -39113,7 +39113,7 @@ Toshbuloq,Eminönü,29
 Sirdaryo,Kirkby in Ashfield,88
 Showot,Nguigmi,25
 Showot,Mirfield,89
-Aracati,Showot,0
+Aracati,Showot,1
 Shamkhor,Shofirkon,36
 Palmeira das Missões,Salor,48
 Salor,Zandvoort,39
@@ -39268,7 +39268,7 @@ Rubio,Sestao,27
 Punto Fijo,Lauro de Freitas,53
 Kamp-Lintfort,Puerto La Cruz,73
 Richha,Puerto La Cruz,73
-Tāramangalam,Puerto La Cruz,0
+Tāramangalam,Puerto La Cruz,1
 Sungai Besar,Puerto Cabello,81
 Anuradhapura,Puerto Ayacucho,99
 Almendralejo,Porlamar,5
@@ -39525,7 +39525,7 @@ Guaçuí,Cần Giờ,46
 Cần Giờ,Babaeski,69
 Cần Giuộc,Guane,99
 Cam Ranh,Fasā,49
-Poyang,Cam Ranh,0
+Poyang,Cam Ranh,1
 Cañas,Cẩm Phả Mines,63
 Cẩm Phả Mines,San Bernardino Contla,63
 Buôn Ma Thuột,Basauri,29
@@ -39647,7 +39647,7 @@ Ahfir,Dzaoudzi,27
 Bullhead City,Koungou,55
 Koungou,Farrukhābād,53
 Joplin,Koungou,34
-Koungou,Dublin,0
+Koungou,Dublin,1
 Krymsk,Roodepoort,75
 Az Zāwīyah,Roodepoort,30
 Zeerust,Daet,40
@@ -39675,7 +39675,7 @@ Tortola,Warmbaths,35
 Vryburg,Kalk,50
 Bedi,Volksrust,83
 Viljoenskroon,Zhuangyuan,27
-Rieti,Viljoenskroon,0
+Rieti,Viljoenskroon,1
 Viljoenskroon,Muborak,9
 Wādi,Vereeniging,17
 Yuzawa,Vereeniging,12
@@ -39702,7 +39702,7 @@ Belvidere,Thohoyandou,48
 Theunissen,Pāno Āqil,52
 Chimbote,Theunissen,26
 Klaipėda,Theunissen,73
-Theunissen,San Mauro Torinese,0
+Theunissen,San Mauro Torinese,1
 Thaba Nchu,Aşkale,83
 Thaba Nchu,Gasteiz / Vitoria,92
 Rạch Giá,Thaba Nchu,33
@@ -39904,7 +39904,7 @@ Jājpur,Kraaifontein,12
 Kraaifontein,Pollença,22
 Hermanus,Pinner,58
 Grabouw,Soltau,71
-Ceres,City of London,0
+Ceres,City of London,1
 Tīkamgarh,Cape Town,80
 Cape Town,Severo-Zadonsk,25
 Troutdale,Cape Town,94

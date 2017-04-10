@@ -78,18 +78,26 @@ public class SearchUSA {
 		String goal="yuma";
 
 
-		String algorithm = "astar";
+		String algorithm = "djikstra";
+		
+		long start_time = System.nanoTime();
 
 		switch(algorithm){
 		case "astar":	System.out.println("Excecuting Astar");
 		Astar astar = new Astar(g,start,goal);
 		astar.executeAlgo();
+		//System.out.println("Manhattan cost: "+astar.calculateHcostManhattan(g.getVertexFromLabel(start),g.getVertexFromLabel(goal)));
 		break;
 		case "djikstra":System.out.println("Excecuting Djikstra");
 		Djikstra djikstra = new Djikstra(g,start,goal);
 		djikstra.executeAlgo();
 		break;
 		}
+		
+		long run_time = System.nanoTime() - start_time;
+		
+		System.out.println("Runtime is :"+run_time/1000000);
+		
 
 	}
 }

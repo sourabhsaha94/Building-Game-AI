@@ -58,7 +58,9 @@ public class SearchWorld {
 		String start="Dubai";
 		String goal="Vatican City";
 
-		String algorithm = "astar";
+		String algorithm = "djikstra";
+		
+		long start_time = System.currentTimeMillis();
 
 		switch(algorithm){
 		case "astar":	System.out.println("Excecuting Astar");
@@ -70,5 +72,7 @@ public class SearchWorld {
 		djikstra.executeAlgo();
 		break;
 		}
+		
+		System.out.println("Runtime : "+(System.currentTimeMillis()-start_time));
 	}
 }

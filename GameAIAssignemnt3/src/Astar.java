@@ -56,7 +56,7 @@ public class Astar {
 
 			if (curr.label.equalsIgnoreCase(g)) // goal check
 			{
-				System.out.println();
+				/*System.out.println();
 				for (String s : Visited) {
 					System.out.print(s + " ,");
 				}
@@ -64,12 +64,12 @@ public class Astar {
 				System.out.println("Expanded nodes:" + Visited.size());
 				System.out.println("");
 				System.out.println("goal reached(End->Start)");
-				System.out.println("");
+				System.out.println("");*/
 				count = printPath(gh.getVertexFromLabel(g), 0);
-				System.out.println("");
+				/*System.out.println("");
 				System.out.println("Actual path nodes:" + count);
 				System.out.println("Actual distance from start to goal: " + curr.path_cost);
-				System.out.println("");
+				System.out.println("");*/
 				break;
 			} else {
 
@@ -122,7 +122,7 @@ public class Astar {
 		}
 
 		if (pq.isEmpty()) {
-			System.out.println("No path found");
+			//System.out.println("No path found");
 		}
 
 	}
@@ -136,7 +136,7 @@ public class Astar {
 	}
 
 	int printPath(Vertex v, int count) {
-		System.out.print(v.vertexType + " ,");
+		//System.out.print(v.vertexType + " ,");
 		finalPath.add(v);
 		count = count + 1;
 		if (!v.label.equalsIgnoreCase(s)) {

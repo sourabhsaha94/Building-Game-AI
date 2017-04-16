@@ -37,6 +37,7 @@ class Character {
 	String current_room = "";
 	PVector target = new PVector(0,0);
 	boolean wander = false;
+	boolean eaten = false;
 }
 
 class ActionNode implements TreeNode {
@@ -125,8 +126,8 @@ class Selector implements BehaviorTreeTask{
 	
 	@Override
 	public boolean run() {
-		for(BehaviorTreeTask c:children){
-			if(c.run()){
+		for(int i=0;i<children.size();i++){
+			if(children.get(i).run()){
 				return true;
 			}
 		}
@@ -142,8 +143,8 @@ class Sequence implements BehaviorTreeTask{
 	
 	@Override
 	public boolean run() {
-		for(BehaviorTreeTask c:children){
-			if(!c.run()){
+		for(int i=0;i<children.size();i++){
+			if(!children.get(i).run()){
 				return false;
 			}
 		}
@@ -169,16 +170,24 @@ class RandomSelector implements BehaviorTreeTask{
 	public boolean run() {
 		
 		if(!m.wander){
-		switch(r.nextInt(5)){
+		int i = r.nextInt(5);
+		System.out.println(i);
+		
+		switch(i){
 		case 0:children.get(0).run();
+		System.out.println("Room A");
 		break;
 		case 1:children.get(1).run();
+		System.out.println("Room B");
 		break;
 		case 2:children.get(2).run();
+		System.out.println("Room C");
 		break;
 		case 3:children.get(3).run();
+		System.out.println("Room D");
 		break;
 		case 4:children.get(4).run();
+		System.out.println("Room E");
 		break;
 		}
 		}
@@ -304,9 +313,15 @@ class SmellTask implements BehaviorTreeTask{
 	@Override
 	public boolean run() {
 		
-		if(calculateDistance(c.position,m.position)<=40)
-			return true;
+		System.out.println(calculateDistance(c.position,m.position));
 		
+		if(calculateDistance(c.position,m.position)<=100){
+			
+			m.wander=false;
+			return true;
+			
+		}
+			
 		return false;
 	}
 	
@@ -328,9 +343,13 @@ class NotEatenTask implements BehaviorTreeTask{
 	@Override
 	public boolean run() {
 		
-		if(calculateDistance(c.position,m.position)<=2)
+		if(calculateDistance(c.position,m.position)<=2){
+			m.wander=false;
+			m.eaten = true;
 			return false;
-		
+			
+		}
+			
 		return true;
 	}
 	
@@ -380,12 +399,13 @@ class BehaviorTree{
 		sequence1.children.add(notEatenTask);
 		sequence1.children.add(followTask);
 		
-		Decorator decorator = new Decorator();
-		decorator.child = sequence1;
+		//Decorator decorator = new Decorator();
+		//decorator.child = sequence1;
 		
 		Sequence sequence2 = new Sequence();
 		sequence2.children.add(smellTask);
-		sequence2.children.add(decorator);
+		//sequence2.children.add(decorator);
+		sequence2.children.add(sequence1);
 		
 		RandomSelector randomSelector = new RandomSelector(m);
 		randomSelector.children.add(a);
@@ -411,14 +431,14 @@ public class GridTest extends PApplet {
 
 	float target_x = 40, target_y = 120;
 	String s_direction = "up";
-	float goalRotation = 0, orientation = 0;
-	int direction = 0;
+	
+	
 	ArrayList<Vector2D> breadcrumbs = new ArrayList<>();
 
 	float gridMatrix[][];
 
 	Character person,monster;
-	boolean personDefined = false, first_run = true, next_pos_flag = false,test=true,testMonster=true;
+	boolean personDefined = false, first_run = true,first_run_m=true, next_pos_flag = false,test=true,testMonster=true;
 
 	int red, green, blue;
 
@@ -430,16 +450,30 @@ public class GridTest extends PApplet {
 	String matrixArray[];
 
 	Graph graph;
-	Astar astar;
+	
 	DecisionTree decisionTree;
 	BehaviorTree behaviorTree;
 	
 	ArrayList<Vertex> vList = new ArrayList<Vertex>();
 	ArrayList<Vertex> tempVList = new ArrayList<Vertex>();
 
+	
+	
+	/*character navigation variables*/
+	int direction = 0;
+	float goalRotation = 0, orientation = 0;
 	Vertex current_position, next_position = null, goal;
+	Astar astar;
+	
+	
+	/*monster navigation variables*/
+	int direction_m = 0;
+	float goalRotation_m = 0, orientation_m = 0;
+	Vertex current_position_m, next_position_m = null, goal_m;
+	Astar astarMonster;
+	
 
-	int i = 0, count = 0;
+	int i = 0, count = 0,count_m=0;
 
 	PImage background;
 
@@ -489,6 +523,7 @@ public class GridTest extends PApplet {
 		
 		monster = getNewBoid(760, 760,0);
 		
+		
 		behaviorTree = new BehaviorTree(person, monster);
 		behaviorTree.run();
 		
@@ -526,7 +561,7 @@ public class GridTest extends PApplet {
 
 		graph = new Graph(vList);
 
-		System.out.println("Creating Graph..");
+		//System.out.println("Creating Graph..");
 
 		try {
 			finput2 = new FileReader("RoomTileGraphEdgeList.txt");
@@ -574,7 +609,7 @@ public class GridTest extends PApplet {
 			}
 		}
 
-		if (person != null) {
+		if (person != null && !monster.eaten) {
 			if (Timeline.getInstance().rightTime()) {
 				update(person, 1);
 				updateMonster(monster,1);
@@ -585,6 +620,14 @@ public class GridTest extends PApplet {
 					rectMode(CORNER);
 				}
 			}
+		}
+		
+		if(monster.eaten){
+			System.out.println("Game over");
+			textSize(50);
+			fill(255, 0, 0);
+			text("PLAYER HAS BEEN EATEN", width/2 - 300, height/2); 
+			
 		}
 		
 		//displayGrid();
@@ -653,7 +696,6 @@ public class GridTest extends PApplet {
 				Vertex goal = graph.quantizeOnGraph(person.target.x, person.target.y);
 				astar = new Astar(graph, start.label, goal.label);
 				astar.executeAlgo();
-				System.out.println(astar.finalPath.size());
 				test = false;
 			}
 			seek(c, pathFollow(person.target.x, person.target.y,astar));
@@ -688,23 +730,25 @@ public class GridTest extends PApplet {
 
 		if (personDefined){
 			
-			if(testMonster){
+			//if(testMonster){
 				behaviorTree.run();
+				System.out.println(monster.target);
 				Vertex start = graph.quantizeOnGraph(monster.position.x, monster.position.y);
 				Vertex goal = graph.quantizeOnGraph(monster.target.x, monster.target.y);
-				astar = new Astar(graph, start.label, goal.label);
-				astar.executeAlgo();
-				System.out.println(astar.finalPath.size());
+				astarMonster = new Astar(graph, start.label, goal.label);
+				astarMonster.executeAlgo();
+				//System.out.println(astarMonster.finalPath.size());
 				testMonster = false;
-			}
-			seekMonster(c, pathFollowMonster(monster.target.x, monster.target.y,astar));
+			//}
+			System.out.println(monster.target);
+			seekMonster(c, pathFollowMonster(monster.target.x, monster.target.y,astarMonster));
 		}
 			
-		count++;
+		count_m++;
 
-		if (count == 10) {
+		if (count_m == 10) {
 			breadcrumbs.add(new Vector2D((int) c.position.x, (int) c.position.y));
-			count = 0;
+			count_m = 0;
 		}
 	}
 
@@ -751,12 +795,18 @@ public class GridTest extends PApplet {
 	
 	public void seekMonster(Character c, PVector target_position) {
 
+		//System.out.println(target_position);
+		
 		if (target_position.x == 999 && target_position.y == 999) {
 			testMonster=true;
+			monster.wander=false;
 			c.max_velocity = 0;
 
 		} else {
-			c.max_velocity = (float)1.5;
+			if(monster.wander)
+				c.max_velocity = (float)1;
+			else
+				c.max_velocity= (float)2;
 		}
 
 		c.velocity = target_position.sub(c.position);
@@ -767,21 +817,21 @@ public class GridTest extends PApplet {
 
 		if (Math.signum(c.velocity.mag()) != 0) {
 
-			orientation = c.velocity.heading() + (float) Math.PI / 2;
+			orientation_m = c.velocity.heading() + (float) Math.PI / 2;
 
-			goalRotation = orientation - c.orientation;
+			goalRotation_m = orientation_m - c.orientation;
 
-			if (goalRotation < 0) {
-				direction = -1;
+			if (goalRotation_m < 0) {
+				direction_m = -1;
 			} else {
-				direction = 1;
+				direction_m = 1;
 			}
 
-			if (goalRotation < c.max_rotation) {
-				c.rotation = goalRotation;
+			if (goalRotation_m < c.max_rotation) {
+				c.rotation = goalRotation_m;
 			} else {
 
-				c.rotation = direction * c.max_rotation;
+				c.rotation = direction_m * c.max_rotation;
 			}
 
 		} else {
@@ -847,39 +897,39 @@ public class GridTest extends PApplet {
 		if (!personDefined) {
 			return new PVector(monster.position.x, monster.position.y);
 		} else {
-			goal = graph.quantizeOnGraph(target_x, target_y);
+			goal_m = graph.quantizeOnGraph(target_x, target_y);
 		
-			current_position = astar.quantizeOnPath(monster.position.x, monster.position.y);
+			current_position_m = astar.quantizeOnPath(monster.position.x, monster.position.y);
 			
-			monster.current_room = current_position.vertexType;
+			monster.current_room = current_position_m.vertexType;
 			
-			if (graph.calculateDistance(goal.lat, goal.lon, current_position.lat, current_position.lon) == 0) {
+			if (graph.calculateDistance(goal_m.lat, goal_m.lon, current_position_m.lat, current_position_m.lon) == 0) {
 
-				if (graph.calculateDistance(current_position.lat, current_position.lon, monster.position.x,
+				if (graph.calculateDistance(current_position_m.lat, current_position_m.lon, monster.position.x,
 						monster.position.y) < 2) {
 					return new PVector(999, 999);
 				}
 
-				return new PVector(current_position.lat.floatValue(), current_position.lon.floatValue());
+				return new PVector(current_position_m.lat.floatValue(), current_position_m.lon.floatValue());
 			}
 
-			if (first_run) {
-				int index = astar.getIndexOfVertexInPath(current_position);
+			if (first_run_m) {
+				int index = astar.getIndexOfVertexInPath(current_position_m);
 
-				next_position = astar.finalPath.get(index - 1);
-				first_run = false;
+				next_position_m = astar.finalPath.get(index - 1);
+				first_run_m = false;
 			}
 
-			if (astar.calculateDistance(monster.position.x, monster.position.y, next_position.lat,
-					next_position.lon) > 2) {
+			if (astar.calculateDistance(monster.position.x, monster.position.y, next_position_m.lat,
+					next_position_m.lon) > 2) {
 				// do nothing keep moving to center of tile
 			} else {
-				int index = astar.getIndexOfVertexInPath(current_position);
-				next_position = astar.finalPath.get(index - 1);
+				int index = astar.getIndexOfVertexInPath(current_position_m);
+				next_position_m = astar.finalPath.get(index - 1);
 
 			}
 
-			return new PVector(next_position.lat.floatValue(), next_position.lon.floatValue());
+			return new PVector(next_position_m.lat.floatValue(), next_position_m.lon.floatValue());
 		}
 	}
 	

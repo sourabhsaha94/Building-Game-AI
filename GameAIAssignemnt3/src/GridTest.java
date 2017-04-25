@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
@@ -64,7 +66,7 @@ class Character {
 		return Math.pow(Math.pow(p1.x-p2.x, 2)+Math.pow(p1.y-p2.y, 2),0.5);
 	}
 }
-
+/**********************************************Decision tree player*******************************************************/
 class ActionNode implements TreeNode {
 
 	TreeNode leftChild;
@@ -143,7 +145,145 @@ class DecisionTree{
 
 }
 
+/**********************************************Decision tree monster*******************************************************/
 
+class ConditionNodeMonster implements TreeNode{
+	
+	String name="";
+	TreeNode lchild,rchild;
+	Character monster;
+	
+	
+	ConditionNodeMonster(String _name,TreeNode _leftchild, TreeNode _rightchild, Character _monster){
+		name = _name;
+		lchild = _leftchild;
+		rchild = _rightchild;
+		monster = _monster;
+	}
+
+	@Override
+	public void evaluate(Character person) {
+		
+		if(name.equalsIgnoreCase("distance")){
+			
+			if(calculateDistance(monster.position,person.position)<=2){
+				monster.eaten = true;
+				monster.wander = false;
+				return;
+			}
+			else if(calculateDistance(monster.position,person.position)<=100){
+				monster.wander = false;
+				monster.current_room = "near";
+			}
+			else if(calculateDistance(monster.position,person.position)<=200){
+				monster.current_room = "near";
+			}
+			else{
+				monster.current_room = "far";
+			}
+			
+			
+			if(monster.current_room.equalsIgnoreCase("near")){
+				lchild.evaluate(person);
+			}else{
+				rchild.evaluate(person);
+			}
+			
+		}else{
+			
+			if(isSameRoom(person,monster)){
+				lchild.evaluate(person);
+			}
+			else{
+				rchild.evaluate(person);
+			}
+			
+		}
+		
+	}
+	
+	double calculateDistance(PVector p1, PVector p2){
+		return Math.pow(Math.pow(p1.x-p2.x, 2)+Math.pow(p1.y-p2.y, 2),0.5);
+	}
+	
+	boolean isSameRoom(Character person, Character monster){
+		return (person.printCurrentRoom().equalsIgnoreCase(monster.printCurrentRoom()))?true:false;
+	}
+}
+
+class WanderActionNode implements TreeNode{
+
+	Character monster;
+	Random r;
+	
+	public WanderActionNode(Character _monster) {
+		r = new Random();
+		monster = _monster;
+	}
+	
+	@Override
+	public void evaluate(Character person) {
+		
+		if(!monster.wander){
+			int i = r.nextInt(5);
+			switch(i){
+			case 0:monster.target.x=40;monster.target.y=120;monster.wander=true;
+			break;
+			case 1:monster.target.x=40;monster.target.y=760;monster.wander=true;
+			break;
+			case 2:monster.target.x=760;monster.target.y=760;monster.wander=true;
+			break;
+			case 3:monster.target.x=760;monster.target.y=280;monster.wander=true;
+			break;
+			case 4:monster.target.x=760;monster.target.y=120;monster.wander=true;
+			break;
+			}
+		}
+		
+	}
+	
+}
+
+class FollowActionNode implements TreeNode{
+
+	Character monster;
+	
+	public FollowActionNode(Character _monster) {
+		monster = _monster;
+	}
+	
+	@Override
+	public void evaluate(Character person) {
+		monster.target.x = person.position.x;
+		monster.target.y = person.position.y;
+	}
+	
+}
+
+class DecisionTreeMonster{
+	ConditionNodeMonster root;
+	Character monster;
+	Graph graph;
+	
+	DecisionTreeMonster (Character _monster, Graph _graph){
+		monster = _monster;
+		graph = _graph;
+		
+		FollowActionNode actionNode = new FollowActionNode(monster);
+		WanderActionNode actionNode2 = new WanderActionNode(monster);
+		
+		ConditionNodeMonster sameRoom = new ConditionNodeMonster("sameRoom",actionNode2,actionNode2,monster);
+		
+		root = new ConditionNodeMonster("distance", actionNode, sameRoom,monster);
+		
+	}
+	
+	void evaluate(Character person){
+		root.evaluate(person);
+	}
+}
+
+/**********************************************Behavior tree player*******************************************************/
 class Selector implements BehaviorTreeTask{
 
 	ArrayList<BehaviorTreeTask> children = new ArrayList<>();
@@ -338,7 +478,10 @@ class SmellTask implements BehaviorTreeTask{
 	public boolean run() {
 
 		//System.out.println(calculateDistance(c.position,m.position));
-
+		if(calculateDistance(c.position,m.position)<=200){
+			m.current_room = "near";
+		}
+		
 		if(calculateDistance(c.position,m.position)<=100){
 
 			m.current_room = "near";
@@ -383,6 +526,7 @@ class NotEatenTask implements BehaviorTreeTask{
 	double calculateDistance(PVector p1, PVector p2){
 		return Math.pow(Math.pow(p1.x-p2.x, 2)+Math.pow(p1.y-p2.y, 2),0.5);
 	}
+	
 }
 
 class FollowTask implements BehaviorTreeTask{
@@ -454,12 +598,18 @@ class BehaviorTree{
 
 }
 
+/**********************************************Implementation of Algorithm*****************************************************/
+
 public class GridTest extends PApplet {
 
 	float target_x = 40, target_y = 120;
 	String s_direction = "up";
 	String distance = "";
 
+	boolean behaviourMode = false ;//false for decision tree
+	
+	FileWriter fwriter;
+	BufferedWriter bufferedWriter;
 
 	ArrayList<Vector2D> breadcrumbs = new ArrayList<>();
 
@@ -480,6 +630,7 @@ public class GridTest extends PApplet {
 	Graph graph;
 
 	DecisionTree decisionTree;
+	DecisionTreeMonster decisionTreeMonster;
 	BehaviorTree behaviorTree;
 
 	ArrayList<Vertex> vList = new ArrayList<Vertex>();
@@ -510,7 +661,7 @@ public class GridTest extends PApplet {
 	}
 
 	public void setup() {
-
+		
 		background = loadImage("layout.jpg");
 
 		background(background);
@@ -518,6 +669,8 @@ public class GridTest extends PApplet {
 		gridMatrix = new float[Math.floorDiv(height, grid_width)][Math.floorDiv(width, grid_width)];
 
 		try {
+			this.fwriter = new FileWriter("dataset.txt");
+			this.bufferedWriter = new BufferedWriter(fwriter);
 			this.finput = new FileReader("gridMatrix.txt");
 			this.bufferedReader = new BufferedReader(finput);
 			int j = 0;
@@ -549,12 +702,16 @@ public class GridTest extends PApplet {
 
 		decisionTree.evaluate();
 
-		monster = getNewBoid(760, 760,0);
+		monster = getNewBoid(760, 760,0);//40,120 40,760 760,760 760,280 760,120
 
-
-		behaviorTree = new BehaviorTree(person, monster);
-		behaviorTree.run();
-
+		if(behaviourMode){
+			behaviorTree = new BehaviorTree(person, monster);
+			behaviorTree.run();
+		}
+		else{
+			decisionTreeMonster = new DecisionTreeMonster(monster, graph);
+			decisionTreeMonster.evaluate(person);
+		}
 	}
 
 	public void createGraph() {
@@ -653,7 +810,7 @@ public class GridTest extends PApplet {
 		
 
 		if(monster.eaten){
-			System.out.println("Game over");
+			//System.out.println("Game over");
 			textSize(50);
 			fill(255, 0, 0);
 			text("PLAYER HAS BEEN EATEN", width/2 - 300, height/2); 
@@ -661,13 +818,25 @@ public class GridTest extends PApplet {
 		}
 		else{
 			
-			System.out.println(person.printCurrentRoom()+","+monster.printCurrentRoom()+","+monster.current_room+","+monster.wander);
+			System.out.println(isSameRoom(person, monster)+","+monster.current_room+","+monster.wander);
+			
+			try {
+				bufferedWriter.append(isSameRoom(person,monster)+","+monster.current_room+","+monster.wander+"\n");
+				bufferedWriter.flush();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 
 		//displayGrid();
 
 	}
-
+	
+	public String isSameRoom(Character c1, Character c2){
+		return (c1.printCurrentRoom().equalsIgnoreCase(c2.printCurrentRoom()))?"true":"false";
+	}
+	
 	public void mousePressed() {
 
 		///System.out.println(mouseX+" "+mouseY);
@@ -760,7 +929,11 @@ public class GridTest extends PApplet {
 		if (personDefined){
 
 			//if(testMonster){
-			behaviorTree.run();
+			if(behaviourMode)
+				behaviorTree.run();
+			else
+				decisionTreeMonster.evaluate(person);
+			
 			//System.out.println(monster.target);
 			Vertex start = graph.quantizeOnGraph(monster.position.x, monster.position.y);
 			Vertex goal = graph.quantizeOnGraph(monster.target.x, monster.target.y);

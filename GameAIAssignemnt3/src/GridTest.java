@@ -606,7 +606,7 @@ public class GridTest extends PApplet {
 	String s_direction = "up";
 	String distance = "";
 
-	boolean behaviourMode = false ;//false for decision tree
+	boolean behaviourMode;
 	
 	FileWriter fwriter;
 	BufferedWriter bufferedWriter;
@@ -636,6 +636,7 @@ public class GridTest extends PApplet {
 	ArrayList<Vertex> vList = new ArrayList<Vertex>();
 	ArrayList<Vertex> tempVList = new ArrayList<Vertex>();
 
+	Random r = new Random();
 
 
 	/*character navigation variables*/
@@ -658,60 +659,11 @@ public class GridTest extends PApplet {
 
 	public void settings() {
 		size(800, 800);
+		behaviourMode = false; //change this true-behavior tree, false decision tree
 	}
 
 	public void setup() {
-		
-		background = loadImage("layout.jpg");
-
-		background(background);
-
-		gridMatrix = new float[Math.floorDiv(height, grid_width)][Math.floorDiv(width, grid_width)];
-
-		try {
-			this.fwriter = new FileWriter("dataset.txt");
-			this.bufferedWriter = new BufferedWriter(fwriter);
-			this.finput = new FileReader("gridMatrix.txt");
-			this.bufferedReader = new BufferedReader(finput);
-			int j = 0;
-
-			while ((currentLine = this.bufferedReader.readLine()) != null) {
-				matrixArray = currentLine.split(" ");
-				for (int i = 0; i < matrixArray.length; i++) {
-					gridMatrix[i][j] = Float.parseFloat(matrixArray[i]);
-				}
-				j++;
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		Thread timeline = new Thread(Timeline.getInstance());
-		timeline.start();
-
-		createGraph();
-
-		person = getNewBoid(40, 760,255);
-		person.current_room = "2";
-		personDefined = true;
-
-		decisionTree = new DecisionTree(person,graph);
-
-		decisionTree.evaluate();
-
-		monster = getNewBoid(760, 760,0);//40,120 40,760 760,760 760,280 760,120
-
-		if(behaviourMode){
-			behaviorTree = new BehaviorTree(person, monster);
-			behaviorTree.run();
-		}
-		else{
-			decisionTreeMonster = new DecisionTreeMonster(monster, graph);
-			decisionTreeMonster.evaluate(person);
-		}
+		reset();
 	}
 
 	public void createGraph() {
@@ -811,25 +763,93 @@ public class GridTest extends PApplet {
 
 		if(monster.eaten){
 			//System.out.println("Game over");
-			textSize(50);
-			fill(255, 0, 0);
-			text("PLAYER HAS BEEN EATEN", width/2 - 300, height/2); 
+			reset(); 
 
 		}
 		else{
 			
 			System.out.println(isSameRoom(person, monster)+","+monster.current_room+","+monster.wander);
 			
-			try {
+			/*try {
 				bufferedWriter.append(isSameRoom(person,monster)+","+monster.current_room+","+monster.wander+"\n");
 				bufferedWriter.flush();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 		}
 
 		//displayGrid();
+
+	}
+	
+	public void reset(){
+		
+		personDefined = false; first_run = true;first_run_m=true; next_pos_flag = false;test=true;testMonster=true;
+		
+		background = loadImage("layout.jpg");
+
+		background(background);
+
+		gridMatrix = new float[Math.floorDiv(height, grid_width)][Math.floorDiv(width, grid_width)];
+
+		try {
+			//this.fwriter = new FileWriter("dataset.txt");
+			//this.bufferedWriter = new BufferedWriter(fwriter);
+			this.finput = new FileReader("gridMatrix.txt");
+			this.bufferedReader = new BufferedReader(finput);
+			int j = 0;
+
+			while ((currentLine = this.bufferedReader.readLine()) != null) {
+				matrixArray = currentLine.split(" ");
+				for (int i = 0; i < matrixArray.length; i++) {
+					gridMatrix[i][j] = Float.parseFloat(matrixArray[i]);
+				}
+				j++;
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		Thread timeline = new Thread(Timeline.getInstance());
+		timeline.start();
+
+		createGraph();
+		
+		int i = r.nextInt(4);
+		int x=760,y=760;
+		switch(i){
+		case 0:x=40;y=120;
+		break;
+		case 1:x=760;y=760;
+		break;
+		case 2:x=760;y=280;
+		break;
+		case 3:x=760;y=120;
+		break;
+		}
+
+		person = getNewBoid(40, 760,255);
+		person.current_room = "2";
+		personDefined = true;
+
+		decisionTree = new DecisionTree(person,graph);
+
+		decisionTree.evaluate();
+
+		monster = getNewBoid(x, y,0);//40,120 40,760 760,760 760,280 760,120
+
+		if(behaviourMode){
+			behaviorTree = new BehaviorTree(person, monster);
+			behaviorTree.run();
+		}
+		else{
+			decisionTreeMonster = new DecisionTreeMonster(monster, graph);
+			decisionTreeMonster.evaluate(person);
+		}
 
 	}
 	
